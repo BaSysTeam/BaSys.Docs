@@ -1,1 +1,1 @@
-# BaSYS: Документация
+[English](index.md)
