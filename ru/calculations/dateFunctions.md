@@ -292,7 +292,7 @@ Date
 
 #### Синтаксис
 ```javascript
-dateDifference(startDate, finishDate, intervalKind);
+dateDifference(startDate, finishDate, intervalKind)
 ```
 #### Параметры
 startDate: Date - дата начала интервала.
