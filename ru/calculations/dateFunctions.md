@@ -283,3 +283,37 @@ Date
 ```
 
 ## Прочие функции BaSYS, для работы с датами
+
+### dateDifference
+Вычисляет разность между двумя датами для различных типов интервала. 
+Разность вычисляется между конечной датой и начальной датой finishDate - startDate. 
+Если дата окончания интервала предшествует дате начала интервала, результат будет отрицательным.
+
+#### Синтаксис
+```javascript
+dateDifference(startDate, finishDate, intervalKind);
+```
+#### Параметры
+startDate: Date - дата начала интервала.
+
+finishDate: Date - дата окончания интервала.
+
+intervalKind: String - вид интервала. Допустимые значения:
+ - 'day'
+ - 'month'
+ - 'quarter'
+ - 'year'
+
+#### Возвращаемое значение
+Number
+
+#### Пример
+```javascript
+var date1 = new Date('2024-09-17');
+var date2 = new Date('2025-09-19');
+
+dateDifference(date1, date2, 'day'); // 367
+dateDifference(date1, date2, 'quarter'); // 4
+dateDifference(date1, date2, 'month'); // 12
+dateDifference(date1, date2, 'year'); // 1
+```
