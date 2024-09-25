@@ -23,13 +23,15 @@ createTable([
 
 ## Методы
 
-| Метод                                     | Возвращает | Описание                            |
-|:------------------------------------------|:-----------|:------------------------------------|
-| [innerJoin](dataTableJoins.md#inner-join) | DataTable  | Внутреннее соединение таблиц        |
-| [fullJoin](dataTableJoins.md#full-join)   | DataTable  | Полное внешнее соединение таблиц    |
-| [leftJoin](dataTableJoins.md#left-join)   | DataTable  | Левое внешнее соединение таблиц     |
-| [rightJoin](dataTableJoins.md#right-join) | DataTable  | Правое внешнее соединение таблиц    |
-| union                                     | DataTable  | Объединение уникальных строк таблиц |
-| unionAll                                  | DataTable  | Объединение всех строк таблиц       |
+| Метод                                                      | Возвращает | Описание                            |
+| :--------------------------------------------------------- | :--------- | :---------------------------------- |
+| [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable  | Распределение FIFO                  |
+| [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable  | Распределение LIFO                  |
+| [innerJoin](dataTableJoins.md#inner-join)                  | DataTable  | Внутреннее соединение таблиц        |
+| [fullJoin](dataTableJoins.md#full-join)                    | DataTable  | Полное внешнее соединение таблиц    |
+| [leftJoin](dataTableJoins.md#left-join)                    | DataTable  | Левое внешнее соединение таблиц     |
+| [rightJoin](dataTableJoins.md#right-join)                  | DataTable  | Правое внешнее соединение таблиц    |
+| union                                                      | DataTable  | Объединение уникальных строк таблиц |
+| unionAll                                                   | DataTable  | Объединение всех строк таблиц       |
 
 
