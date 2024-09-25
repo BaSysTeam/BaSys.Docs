@@ -23,15 +23,107 @@ createTable([
 
 ## Методы
 
-| Метод                                                      | Возвращает | Описание                            |
-| :--------------------------------------------------------- | :--------- | :---------------------------------- |
-| [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable  | Распределение FIFO                  |
-| [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable  | Распределение LIFO                  |
-| [innerJoin](dataTableJoins.md#inner-join)                  | DataTable  | Внутреннее соединение таблиц        |
-| [fullJoin](dataTableJoins.md#full-join)                    | DataTable  | Полное внешнее соединение таблиц    |
-| [leftJoin](dataTableJoins.md#left-join)                    | DataTable  | Левое внешнее соединение таблиц     |
-| [rightJoin](dataTableJoins.md#right-join)                  | DataTable  | Правое внешнее соединение таблиц    |
-| union                                                      | DataTable  | Объединение уникальных строк таблиц |
-| unionAll                                                   | DataTable  | Объединение всех строк таблиц       |
+| Метод                                                      | Возвращает      | Описание                            |
+| :--------------------------------------------------------- | :-------------- | :---------------------------------- |
+| [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу        |
+| [clone](#clone)                                            | DataTable       | Создание копии таблицы              |
+| [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы            |
+| [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                  |
+| [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable       | Распределение LIFO                  |
+| [innerJoin](dataTableJoins.md#inner-join)                  | DataTable       | Внутреннее соединение таблиц        |
+| [fullJoin](dataTableJoins.md#full-join)                    | DataTable       | Полное внешнее соединение таблиц    |
+| [getColumn](#getcolumn)                                    | DataTableColumn | Поиск колонки таблицы по имени      |
+| [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц     |
+| [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц    |
+| union                                                      | DataTable       | Объединение уникальных строк таблиц |
+| unionAll                                                   | DataTable       | Объединение всех строк таблиц       |
 
 
+## addColumn
+
+Добавляет колонку в таблицу.
+
+### Синтаксис
+```javascript
+dataTable.addColumn(column)
+```
+### Параметры
+- column: DataTableColumn - описание колонки таблицы.
+
+### Возвращаемое значение
+DataTable
+
+### Пример
+```javascript
+createTable().addColumn({ name: 'period', dataType: 'date'})
+```
+
+## clone
+
+Создает копию таблицы. 
+Копируется как структура таблицы (колонки) так и данные.
+
+### Синтаксис
+```javascript
+dataTable.clone()
+```
+
+### Параметры
+нет
+
+### Возвращаемое значение
+DataTable
+
+### Пример
+```javascript
+// Создание таблицы товаров и добавление строки в таблицу.
+var productsTable = createTable([{ name: 'product'}, { name: 'quantity', dataType: 'number'}]).addRow(['product 1', 100]);
+// Создание копии таблицы и добавление новой колонки. Таблица товаров productsTable остается неизменной.
+var copyTable = productsTable.clone().addColumn({ name: 'amount', dataType: 'number'});
+return copyTable;
+```
+
+## deleteColumn
+
+Удаляет колонку таблицы.
+
+### Синтаксис
+```javascript
+dataTable.deleteColumn(columnName)
+```
+
+### Параметры
+- columnName: string - имя колонки таблицы.
+
+### Возвращаемое значение
+DataTable
+
+### Пример
+```javascript
+createTable([{ name: 'product'}, { name: 'quantity', dataType: 'number'}, { name: 'price', dataType: 'number'}])
+  .addRow(['product 1', 100, 10]).deleteColumn('quantity')
+```
+
+## getColumn
+
+Выполняет поиск колонки по имени.
+
+### Синтаксис
+```javascript
+dataTable.getColumn(columnName)
+```
+
+### Параметры
+- columnName: string - имя колонки.
+
+### Возвращаемое значение
+DataTableColumn
+
+### Пример
+```javascript
+// Создание таблицы товаров и добавление строки в таблицу.
+var productsTable = createTable([{ name: 'product'}, { name: 'quantity', dataType: 'number'}]).addRow(['product 1', 100]);
+// Поиск колонки по имени.
+var column = productsTable.getColumn('quantity');
+return column;
+```
