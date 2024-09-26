@@ -23,26 +23,29 @@ createTable([
 
 ## Методы
 
-| Метод                                                      | Возвращает      | Описание                            |
-| :--------------------------------------------------------- | :-------------- | :---------------------------------- |
-| [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу        |
-| [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу         |
-| [clear](#clear)                                            | DataTable       | Очистка строк таблицы               |
-| [clone](#clone)                                            | DataTable       | Создание копии таблицы              |
-| [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы            |
-| [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                  |
-| [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable       | Распределение LIFO                  |
-| [innerJoin](dataTableJoins.md#inner-join)                  | DataTable       | Внутреннее соединение таблиц        |
-| [filter](#filter)                                          | DataTable       | Фильтрация строк таблицы            |
-| [fullJoin](dataTableJoins.md#full-join)                    | DataTable       | Полное внешнее соединение таблиц    |
-| [getColumn](#getcolumn)                                    | DataTableColumn | Поиск колонки таблицы по имени      |
-| [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц     |
-| [load](dataTable.md#load)                                  | DataTable       | Добавление данных в таблицу         |
-| [newRow](#newrow)                                          | Object          | Создание новой строки таблицы       |
-| [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц    |
-| [orderBy](#orderby)                                        | DataTable       | Сортировка строк таблицы            |
-| union                                                      | DataTable       | Объединение уникальных строк таблиц |
-| unionAll                                                   | DataTable       | Объединение всех строк таблиц       |
+| Метод                                                      | Возвращает      | Описание                                |
+| :--------------------------------------------------------- | :-------------- | :-------------------------------------- |
+| [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу            |
+| [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу             |
+| [clear](#clear)                                            | DataTable       | Очистка строк таблицы                   |
+| [clone](#clone)                                            | DataTable       | Создание копии таблицы                  |
+| [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы                |
+| [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                      |
+| [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable       | Распределение LIFO                      |
+| [innerJoin](dataTableJoins.md#inner-join)                  | DataTable       | Внутреннее соединение таблиц            |
+| [filter](#filter)                                          | DataTable       | Фильтрация строк таблицы                |
+| [fullJoin](dataTableJoins.md#full-join)                    | DataTable       | Полное внешнее соединение таблиц        |
+| [getColumn](#getcolumn)                                    | DataTableColumn | Поиск колонки таблицы по имени          |
+| [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц         |
+| [load](dataTable.md#load)                                  | DataTable       | Добавление данных в таблицу             |
+| [max](#max)                                                | DataTable       | Вычисление максимума по колонке таблицы |
+| [min](#min)                                                | DataTable       | Вычисление минимума по колонке таблицы  |
+| [newRow](#newrow)                                          | Object          | Создание новой строки таблицы           |
+| [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц        |
+| [orderBy](#orderby)                                        | DataTable       | Сортировка строк таблицы                |
+| [sum](#sum)                                                | DataTable       | Вычисление суммы по колонке таблицы     |
+| union                                                      | DataTable       | Объединение уникальных строк таблиц     |
+| unionAll                                                   | DataTable       | Объединение всех строк таблиц           |
 
 
 ## addColumn
@@ -213,6 +216,7 @@ var productsTable = createTable([{ name: 'product'}, { name: 'quantity', dataTyp
 var column = productsTable.getColumn('quantity');
 return column;
 ```
+
 ## load
 Добавляет данные в таблицу. Данные могут быть переданы в виде массива, 
 содержащего массивы значений полей строк или массива объектов. 
@@ -326,4 +330,100 @@ var tableRates = createTable([
   // Выполнение сортировки по колонке period по убыванию.
   .orderBy( (a, b)=> b.period.getTime() - a.period.getTime())
 return tableRates;
+```
+
+## max
+Вычисляет максимальное значений по указанной колонке таблицы. 
+
+### Синтаксис
+```javascript
+dataTable.max(columnName)
+```
+### Параметры
+- columnName: string - имя колонки таблицы, по которой вычисляется максимальное значение.
+ 
+### Возвращаемое значение
+number
+
+### Пример
+```javascript
+// Создание таблицы.
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу.
+  .load([
+    [new Date('2024-09-01'), 'Person 2', 2000, true],
+    [new Date('2024-05-01'), 'Person 3', 3000, true],
+    [new Date('2024-11-01'), 'Person 1', 1000, false],
+    [new Date('2024-04-01'), 'Person 4', 4000, true],
+  ]);
+// Вычисление максимума по колонке 'rate'.
+return tableRates.max('rate');
+```
+
+## min
+Вычисляет минимальное значений по указанной колонке таблицы. 
+
+### Синтаксис
+```javascript
+dataTable.min(columnName)
+```
+### Параметры
+- columnName: string - имя колонки таблицы, по которой вычисляется минимальное значение.
+ 
+### Возвращаемое значение
+number
+
+### Пример
+```javascript
+// Создание таблицы.
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу.
+  .load([
+    [new Date('2024-09-01'), 'Person 2', 2000, true],
+    [new Date('2024-05-01'), 'Person 3', 3000, true],
+    [new Date('2024-11-01'), 'Person 1', 1000, false],
+    [new Date('2024-04-01'), 'Person 4', 4000, true],
+  ]);
+// Вычисление минимума по колонке 'rate'.
+return tableRates.min('rate');
+```
+
+## sum
+Вычисляет сумму значений по указанной колонке таблицы. 
+
+### Синтаксис
+```javascript
+dataTable.sum(columnName)
+```
+### Параметры
+- columnName: string - имя колонки таблицы, по которой вычисляется сумма.
+ 
+### Возвращаемое значение
+number
+
+### Пример
+```javascript
+// Создание таблицы.
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу.
+  .load([
+    [new Date('2024-09-01'), 'Person 2', 2000, true],
+    [new Date('2024-05-01'), 'Person 3', 3000, true],
+    [new Date('2024-11-01'), 'Person 1', 1000, false],
+    [new Date('2024-04-01'), 'Person 4', 4000, true],
+  ]);
+// Вычисление суммы по колонке 'rate'.
+return tableRates.sum('rate');
 ```

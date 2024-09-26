@@ -24,5 +24,8 @@
 | DataTable | [filter](dataTable.md#filter)                     | Фильтрация строк таблицы                        |
 | DataTable | [getColumn](dataTable.md#getcolumn)               | Поиск колонки таблицы по имени                  |
 | DataTable | [load](dataTable.md#load)                         | Добавление данных в таблицу                     |
+| DataTable | [max](dataTable#max)                              | Вычисление максимума по колонке таблицы         |
+| DataTable | [min](dataTable#min)                              | Вычисление минимума по колонке таблицы          |
 | DataTable | [newRow](dataTable.md#newrow)                     | Создание новой строки таблицы                   |
 | DataTable | [orderBy](dataTable.md#orderby)                   | Сортировка строк таблицы                        |
+| DataTable | [sum](dataTable.md#sum)                           | Вычисление суммы по колонке таблицы             |
