@@ -25,3 +25,4 @@
 | DataTable | [getColumn](dataTable.md#getcolumn)               | Поиск колонки таблицы по имени                  |
 | DataTable | [load](dataTable.md#load)                         | Добавление данных в таблицу                     |
 | DataTable | [newRow](dataTable.md#newrow)                     | Создание новой строки таблицы                   |
+| DataTable | [orderBy](dataTable.md#orderby)                   | Сортировка строк таблицы                        |

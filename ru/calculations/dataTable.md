@@ -40,6 +40,7 @@ createTable([
 | [load](dataTable.md#load)                                  | DataTable       | Добавление данных в таблицу         |
 | [newRow](#newrow)                                          | Object          | Создание новой строки таблицы       |
 | [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц    |
+| [orderBy](#orderby)                                        | DataTable       | Сортировка строк таблицы            |
 | union                                                      | DataTable       | Объединение уникальных строк таблиц |
 | unionAll                                                   | DataTable       | Объединение всех строк таблиц       |
 
@@ -265,4 +266,64 @@ Object
 
 ```javascript
 createTable([{ name: 'product'}, { name: 'quantity', dataType: 'number'}]).newRow();
+```
+
+## orderBy
+Сортирует строки таблицы на основе заданного условия. Условие сортировки передается 
+в виде стрелочной функции (компаратора), которая сравнивает две строки таблицы и возвращает 
+число для определения порядка их следования.
+
+### Синтаксис
+```javascript
+dataTable.orderBy(comparator)
+```
+### Параметры
+- comparator: (a, b) => number — стрелочная функция, задающая условие сортировки. Принимает два объекта строки a и b, и возвращает:
+   - отрицательное число, если строка a должна предшествовать строке b (сортировка по возрастанию);
+   - положительное число, если строка b должна предшествовать строке a (сортировка по убыванию);
+   - 0, если строки равны и их порядок не изменяется.
+
+### Возвращаемое значение
+DataTable — возвращает текущий объект DataTable с отсортированными строками.
+
+### Примеры
+
+Выполнение сортировки по числовой колонке по возрастанию.
+```javascript
+// Создание таблицы.
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу.
+  .load([
+    ['2024-09-01', 'Person 2', 2000, true],
+    ['2024-05-01', 'Person 3', 3000, true],
+    ['2024-11-01', 'Person 1', 1000, false],
+    ['2024-04-01', 'Person 4', 4000, true],
+  ])
+  // Выполнение сортировки по колонке rate по возрастанию.
+  .orderBy( (a, b)=> a.rate - b.rate)
+return tableRates;
+```
+
+Выполнение сортировки по колонке дат по убыванию.
+```javascript
+// Создание таблицы.
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу.
+  .load([
+    [new Date('2024-09-01'), 'Person 2', 2000, true],
+    [new Date('2024-05-01'), 'Person 3', 3000, true],
+    [new Date('2024-11-01'), 'Person 1', 1000, false],
+    [new Date('2024-04-01'), 'Person 4', 4000, true],
+  ])
+  // Выполнение сортировки по колонке period по убыванию.
+  .orderBy( (a, b)=> b.period.getTime() - a.period.getTime())
+return tableRates;
 ```
