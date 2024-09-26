@@ -178,9 +178,14 @@ DataTable
 
 ### Пример
 ```javascript
-// Создание таблицы
-var tableRates = createTable([{ name: 'period', dataType: 'date'}, { name: 'person'}, { name: 'rate', dataType: 'number'}, { name: 'isWorking', dataType: 'boolean'}])
-  // Добавление данных в таблицу. Первая строка передается как массив значений полей строки. В этом случае важно соблюдать порядок значений.
+// Создание таблицы.
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу. Первая строка передается как массив значений полей строки. 
+  // В этом случае важно соблюдать порядок значений.
   // Вторая строка добавляется в виде объекта.
   .load([
     ['2024-09-01', 'Person 1', 1000, true],
