@@ -33,6 +33,7 @@ createTable([
 | [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                  |
 | [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable       | Распределение LIFO                  |
 | [innerJoin](dataTableJoins.md#inner-join)                  | DataTable       | Внутреннее соединение таблиц        |
+| [filter](#filter)                                          | DataTable       | Фильтрация строк таблицы            |
 | [fullJoin](dataTableJoins.md#full-join)                    | DataTable       | Полное внешнее соединение таблиц    |
 | [getColumn](#getcolumn)                                    | DataTableColumn | Поиск колонки таблицы по имени      |
 | [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц     |
@@ -150,6 +151,42 @@ DataTable
 ```javascript
 createTable([{ name: 'product'}, { name: 'quantity', dataType: 'number'}, { name: 'price', dataType: 'number'}])
   .addRow(['product 1', 100, 10]).deleteColumn('quantity')
+```
+
+## filter
+Фильтрует строки таблицы на основе заданного условия. Условие передается в виде стрелочной функции (предиката), 
+которая принимает строку таблицы в качестве аргумента и возвращает логическое значение (true или false). 
+Если предикат возвращает true, строка включается в результат фильтрации, в противном случае строка исключается.
+
+### Синтаксис
+```javascript
+dataTable.filter(predicate)
+```
+### Параметры
+- predicate: (row) => boolean — стрелочная функция, принимающая в качестве аргумента объект строки таблицы 
+  и возвращающая true, если строка должна быть включена в результат фильтрации, и false в противном случае.
+
+### Возвращаемое значение
+DataTable
+
+### Пример
+```javascript
+// Создание таблицы.
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу.
+  .load([
+    ['2024-09-01', 'Person 1', 1000, true],
+    ['2024-09-01', 'Person 2', 2000, true],
+    ['2024-09-01', 'Person 3', 3000, true],
+    ['2024-09-01', 'Person 4', 4000, true],
+  ])
+  // Выполнение фильтрации.
+  .filter(row=> row.rate > 2000)
+return tableRates;
 ```
 
 ## getColumn
