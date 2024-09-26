@@ -34,6 +34,7 @@ createTable([
 | [fullJoin](dataTableJoins.md#full-join)                    | DataTable       | Полное внешнее соединение таблиц    |
 | [getColumn](#getcolumn)                                    | DataTableColumn | Поиск колонки таблицы по имени      |
 | [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц     |
+| [newRow](#newrow)                                          | Object          | Создание новой строки таблицы       |
 | [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц    |
 | union                                                      | DataTable       | Объединение уникальных строк таблиц |
 | unionAll                                                   | DataTable       | Объединение всех строк таблиц       |
@@ -126,4 +127,25 @@ var productsTable = createTable([{ name: 'product'}, { name: 'quantity', dataTyp
 // Поиск колонки по имени.
 var column = productsTable.getColumn('quantity');
 return column;
+```
+## newRow
+Создает новую строку таблицы и заполняет значениями по умолчанию.
+
+### Синтаксис
+```javascript
+dataTable.newRow(pushNewRow)
+```
+### Параметры
+-*pushNewRow (необязательный)*: boolean - указывает на необходимость поместить новую строку 
+в коллекцию строк таблицы. Значение по умолчанию: true.
+
+### Возвращаемое значение
+Object
+
+### Пример
+Создает новую строку в таблице, заполняет значениями по умолчанию 
+и помещает новую строку в коллекцию колонок таблицы.
+
+```javascript
+createTable([{ name: 'product'}, { name: 'quantity', dataType: 'number'}]).newRow();
 ```

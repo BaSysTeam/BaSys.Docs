@@ -20,3 +20,4 @@
 |           | [dateTimeNow](dateFunctions.md#datetimenow)       | Возвращает текущую дату                         |
 | DataTable | [deleteColumn](dataTable.md#deletecolumn)         | Удаление колонки таблицы                        |
 | DataTable | [getColumn](dataTable.md#getcolumn)               | Поиск колонки таблицы по имени                  |
+| DataTable | [newRow](dataTable.md#newrow)                     | Создание новой строки таблицы                   |
