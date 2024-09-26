@@ -27,6 +27,7 @@ createTable([
 | :--------------------------------------------------------- | :-------------- | :-------------------------------------- |
 | [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу            |
 | [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу             |
+| [avg](#avg)                                                | DataTable       | Вычисление среднего по колонке таблицы  |
 | [clear](#clear)                                            | DataTable       | Очистка строк таблицы                   |
 | [clone](#clone)                                            | DataTable       | Создание копии таблицы                  |
 | [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы                |
@@ -96,6 +97,37 @@ var tableRates = createTable([{ name: 'period', dataType: 'date'}, { name: 'pers
   // Добавление строки таблицы. Данные передаются в виде объекта.
   .addRow({person: 'Person 2', period: '2024-08-01', isWorking: false, rate: 2000});
 return tableRates;
+```
+## avg
+Вычисляет среднее значений по указанной колонке таблицы. 
+
+### Синтаксис
+```javascript
+dataTable.min(columnName)
+```
+### Параметры
+- columnName: string - имя колонки таблицы, по которой вычисляется среднее значение.
+ 
+### Возвращаемое значение
+number
+
+### Пример
+```javascript
+// Создание таблицы.
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу.
+  .load([
+    [new Date('2024-09-01'), 'Person 2', 2000, true],
+    [new Date('2024-05-01'), 'Person 3', 3000, true],
+    [new Date('2024-11-01'), 'Person 1', 1000, false],
+    [new Date('2024-04-01'), 'Person 4', 4000, true],
+  ]);
+// Вычисление среднего по колонке 'rate'.
+return tableRates.avg('rate');
 ```
 
 ## clear
