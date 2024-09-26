@@ -24,7 +24,7 @@ createTable([
 ## Методы
 
 | Метод                                                      | Возвращает      | Описание                            |
-| :--------------------------------------------------------- | :-------------- | :---------------------------------- |
+|:-----------------------------------------------------------|:----------------|:------------------------------------|
 | [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу        |
 | [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу         |
 | [clone](#clone)                                            | DataTable       | Создание копии таблицы              |
@@ -35,6 +35,7 @@ createTable([
 | [fullJoin](dataTableJoins.md#full-join)                    | DataTable       | Полное внешнее соединение таблиц    |
 | [getColumn](#getcolumn)                                    | DataTableColumn | Поиск колонки таблицы по имени      |
 | [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц     |
+| [load](dataTable.md#load)                                  | DataTable       | Добавление данных в таблицу         |
 | [newRow](#newrow)                                          | Object          | Создание новой строки таблицы       |
 | [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц    |
 | union                                                      | DataTable       | Объединение уникальных строк таблиц |
@@ -160,6 +161,34 @@ var productsTable = createTable([{ name: 'product'}, { name: 'quantity', dataTyp
 var column = productsTable.getColumn('quantity');
 return column;
 ```
+## load
+Добавляет данные в таблицу. Данные могут быть переданы в виде массива, 
+содержащего массивы значений полей строк или массива объектов. 
+Допускается смешение массивов значений и объектов в рамках одного набора данных.
+
+### Синтаксис
+```javascript
+dataTable.load(data)
+```
+### Параметры
+- data: any[] - массив объектов или массив, содержащий массивы значений полей строк.
+
+### Возвращаемое значение
+DataTable
+
+### Пример
+```javascript
+// Создание таблицы
+var tableRates = createTable([{ name: 'period', dataType: 'date'}, { name: 'person'}, { name: 'rate', dataType: 'number'}, { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу. Первая строка передается как массив значений полей строки. В этом случае важно соблюдать порядок значений.
+  // Вторая строка добавляется в виде объекта.
+  .load([
+    ['2024-09-01', 'Person 1', 1000, true],
+    { person: 'Person 2', period: '2024-08-01', isWorking: false, rate: 2000}
+  ])
+return tableRates;
+```
+
 ## newRow
 Создает новую строку таблицы и заполняет значениями по умолчанию.
 
