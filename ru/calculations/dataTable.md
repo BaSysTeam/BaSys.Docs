@@ -24,9 +24,10 @@ createTable([
 ## Методы
 
 | Метод                                                      | Возвращает      | Описание                            |
-|:-----------------------------------------------------------|:----------------|:------------------------------------|
+| :--------------------------------------------------------- | :-------------- | :---------------------------------- |
 | [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу        |
 | [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу         |
+| [clear](#clear)                                            | DataTable       | Очистка строк таблицы               |
 | [clone](#clone)                                            | DataTable       | Создание копии таблицы              |
 | [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы            |
 | [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                  |
@@ -91,6 +92,19 @@ var tableRates = createTable([{ name: 'period', dataType: 'date'}, { name: 'pers
   .addRow({person: 'Person 2', period: '2024-08-01', isWorking: false, rate: 2000});
 return tableRates;
 ```
+
+## clear
+Очищает строки таблицы. Колонки остаются неизменными.
+
+### Синтаксис
+```javascript
+dataTable.clear()
+```
+### Параметры
+нет
+
+### Возвращаемое значение
+DataTable
 
 ## clone
 

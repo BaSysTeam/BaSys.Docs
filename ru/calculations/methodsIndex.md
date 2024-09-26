@@ -13,6 +13,7 @@
 | Date      | [beginQuarter](dateFunctions.md#beginquarter)     | Вычисляет начало квартала для указанной даты    |
 | Date      | [beginYear](dateFunctions.md#beginyear)           | Вычисляет начало года для указанной даты        |
 | DataTable | [clone](dataTable.md#clone)                       | Создание копии таблицы                          |
+| DataTable | [clear](dataTable.md#clear)                       | Очистка колонок таблицы                         |
 | Date      | [endDay](dateFunctions.md#endday)                 | Вычисляет конец дня для указанной даты          |
 | Date      | [endMonth](dateFunctions.md#endmonth)             | Вычисляет конец месяца для указанной даты       |
 | Date      | [endQuarter](dateFunctions.md#endquarter)         | Вычисляет конец квартала для указанной даты     |
