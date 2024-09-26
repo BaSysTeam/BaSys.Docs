@@ -30,6 +30,7 @@ createTable([
 | [avg](#avg)                                                | DataTable       | Вычисление среднего по колонке таблицы  |
 | [clear](#clear)                                            | DataTable       | Очистка строк таблицы                   |
 | [clone](#clone)                                            | DataTable       | Создание копии таблицы                  |
+| [count](#count)                                            | DataTable       | Подсчет количества строк в таблице      |
 | [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы                |
 | [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                      |
 | [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable       | Распределение LIFO                      |
@@ -98,6 +99,7 @@ var tableRates = createTable([{ name: 'period', dataType: 'date'}, { name: 'pers
   .addRow({person: 'Person 2', period: '2024-08-01', isWorking: false, rate: 2000});
 return tableRates;
 ```
+
 ## avg
 Вычисляет среднее значений по указанной колонке таблицы. 
 
@@ -166,6 +168,42 @@ var productsTable = createTable([{ name: 'product'}, { name: 'quantity', dataTyp
 // Создание копии таблицы и добавление новой колонки. Таблица товаров productsTable остается неизменной.
 var copyTable = productsTable.clone().addColumn({ name: 'amount', dataType: 'number'});
 return copyTable;
+```
+
+## count
+Подсчитывает количество строк в таблице. Если указано имя колонки, подсчитываются только строки, 
+в которых значения в указанной колонке не пустые. Проверка на заполненность значений выполняется 
+в соответствии с правилами JavaScript, где значения null, undefined, пустая строка (''), 0, false считаются пустыми.
+
+### Синтаксис
+```javascript
+dataTable.count(columnName)
+```
+### Параметры
+- *columnName (необязательный)*: string - имя колонки, по которой выполняется проверка на заполненность значений. 
+  Если параметр не указан, функция вернёт общее количество строк в таблице. Если параметр указан, 
+  возвращается количество строк, где значения в данной колонке не пустые. 
+ 
+### Возвращаемое значение
+number - Количество строк в таблице или количество строк с заполненными значениями в указанной колонке.
+
+### Пример
+```javascript
+// Создание таблицы.
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление данных в таблицу.
+  .load([
+    [new Date('2024-09-01'), 'Person 2', 2000, true],
+    [new Date('2024-05-01'), 'Person 3', 3000, true],
+    [new Date('2024-11-01'), 'Person 1', 1000, false],
+    [new Date('2024-04-01'), 'Person 4', 4000, true],
+  ]);
+// Вычисление количества строк с заполненным полем isWorking.
+return tableRates.count('isWorking');
 ```
 
 ## deleteColumn
