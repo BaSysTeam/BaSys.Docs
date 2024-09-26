@@ -6,6 +6,7 @@
 | Date      | [addDays](dateFunctions.md#adddays)               | Добавляет указанное количество дней к дате      |
 | Date      | [addMonths](dateFunctions.md#addmonths)           | Добавляет указанное количество месяцев к дате   |
 | Date      | [addQuarters](dateFunctions.md#addquarters)       | Добавляет указанное количество кварталов к дате |
+| DataTable | [addRow](dataTable.md#addrow)                     | Добавление строки к таблице данных              |
 | Date      | [addYears](dateFunctions.md#addyears)             | Добавляет указанное количество лет к дате       |
 | Date      | [beginDay](dateFunctions.md#beginday)             | Вычисляет начало дня для указанной даты         |
 | Date      | [beginMonth](dateFunctions.md#beginmonth)         | Вычисляет начало месяца для указанной даты      |

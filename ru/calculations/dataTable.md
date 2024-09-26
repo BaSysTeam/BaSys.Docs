@@ -26,6 +26,7 @@ createTable([
 | Метод                                                      | Возвращает      | Описание                            |
 | :--------------------------------------------------------- | :-------------- | :---------------------------------- |
 | [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу        |
+| [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу         |
 | [clone](#clone)                                            | DataTable       | Создание копии таблицы              |
 | [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы            |
 | [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                  |
@@ -57,6 +58,37 @@ DataTable
 ### Пример
 ```javascript
 createTable().addColumn({ name: 'period', dataType: 'date'})
+```
+
+## addRow
+Добавляет строку в таблицу. Данные строки могут быть переданы в виде массива значений. 
+В этом случае важно соблюдать позицию значения в массиве. Кроме того данные могут быть переданы в виде объекта.
+Пропущенные значения будут инициализированы значениями по-умолчанию.
+
+### Синтаксис
+```javascript
+dataTable.addRow(data)
+```
+
+### Параметры
+- data: object[] - массив, содержащий данные добавляемой строки.
+  
+или
+
+- data: object - объект, содержащий данные добавляемой строки.
+
+### Возвращаемое значение
+DataTable
+
+### Пример
+```javascript
+// Создание таблицы
+var tableRates = createTable([{ name: 'period', dataType: 'date'}, { name: 'person'}, { name: 'rate', dataType: 'number'}, { name: 'isWorking', dataType: 'boolean'}])
+  // Добавление строки таблицы. Данные передаются в виде массива значений. Важна соблюдать позицию значения в массиве.
+  .addRow(['2024-09-01', 'Person 1', 1000, true])
+  // Добавление строки таблицы. Данные передаются в виде объекта.
+  .addRow({person: 'Person 2', period: '2024-08-01', isWorking: false, rate: 2000});
+return tableRates;
 ```
 
 ## clone
