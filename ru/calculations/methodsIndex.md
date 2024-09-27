@@ -32,6 +32,7 @@
 | DataTable | [groupBy](dataTable.md#groupby)                            | Группировка таблицы                               |
 |           | [isEmpty](otherFunctions.md#isempty)                       | Определяет является ли значение пустым            |
 |           | [iif](otherFunctions.md#iif)                               | Возвращает значение в зависимости от условия      |
+|           | [ifs](otherFunctions.md#ifs)                               | Аналог Switch для формул                          |
 |           | [isNotEmpty](otherFunctions.md#isnotempty)                 | Определяет является ли значение заполненным       |
 | DataTable | [innerJoin](dataTableJoins.md#inner-join)                  | Внутреннее соединение таблиц                      |
 | DataTable | [leftJoin](dataTableJoins.md#left-join)                    | Левое внешнее соединение таблиц                   |
