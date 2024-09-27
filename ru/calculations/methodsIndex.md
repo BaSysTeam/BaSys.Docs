@@ -31,6 +31,7 @@
 | DataTable | [getColumn](dataTable.md#getcolumn)                        | Поиск колонки таблицы по имени                    |
 | DataTable | [groupBy](dataTable.md#groupby)                            | Группировка таблицы                               |
 |           | [isEmpty](otherFunctions.md#isempty)                       | Определяет является ли значение пустым            |
+|           | [iif](otherFunctions.md#iif)                               | Возвращает значение в зависимости от условия      |
 |           | [isNotEmpty](otherFunctions.md#isnotempty)                 | Определяет является ли значение заполненным       |
 | DataTable | [innerJoin](dataTableJoins.md#inner-join)                  | Внутреннее соединение таблиц                      |
 | DataTable | [leftJoin](dataTableJoins.md#left-join)                    | Левое внешнее соединение таблиц                   |
