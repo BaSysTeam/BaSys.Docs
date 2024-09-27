@@ -27,6 +27,7 @@
 | DataTable | [filter](dataTable.md#filter)                     | Фильтрация строк таблицы                        |
 | DataTable | [fullJoin](dataTableJoins.md#full-join)           | Полное внешнее соединение таблиц                |
 | DataTable | [getColumn](dataTable.md#getcolumn)               | Поиск колонки таблицы по имени                  |
+| DataTable | [groupBy](dataTable.md#groupby)                   | Группировка таблицы                             |
 | DataTable | [leftJoin](dataTableJoins.md#left-join)           | Левое внешнее соединение таблиц                 |
 | DataTable | [load](dataTable.md#load)                         | Добавление данных в таблицу                     |
 | DataTable | [max](dataTable#max)                              | Вычисление максимума по колонке таблицы         |

@@ -38,6 +38,7 @@ createTable([
 | [filter](#filter)                                          | DataTable       | Фильтрация строк таблицы                |
 | [fullJoin](dataTableJoins.md#full-join)                    | DataTable       | Полное внешнее соединение таблиц        |
 | [getColumn](#getcolumn)                                    | DataTableColumn | Поиск колонки таблицы по имени          |
+| [groupBy](#groupby)                                        | DataTable       | Группировка таблицы                     |
 | [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц         |
 | [load](dataTable.md#load)                                  | DataTable       | Добавление данных в таблицу             |
 | [max](#max)                                                | DataTable       | Вычисление максимума по колонке таблицы |
@@ -288,6 +289,54 @@ var column = productsTable.getColumn('quantity');
 return column;
 ```
 
+## groupBy
+Выполняет группировку строк таблицы по указанным ключевым колонкам и применяет агрегатные функции к выбранным колонкам.
+
+### Синтаксис
+```javascript
+dataTable.groupBy(keyColumns, groupingColumns)
+```
+### Параметры
+- keyColumns: string[] - Массив строк с именами колонок, по которым будут сгруппированы строки. 
+  Эти колонки будут использоваться как уникальные идентификаторы групп.
+- groupingColumns: [GroupingColumn](groupingColumn.md)[] - Массив объектов, описывающих колонки для агрегации и применяемые к ним агрегатные функции. Каждый объект может включать имя колонки, псевдоним и агрегатную функцию.
+-  
+Допустимые значения агрегатных функций:
+  - 'avg' - среднее значение;
+  - 'count' - количество элементов;
+  - 'max' - максимальное значение;
+  - 'min' - минимальное значение;
+  - 'sum' - сумма значений.
+
+### Возвращаемое значение
+DataTable - сгруппированная таблица данных.
+
+### Пример
+```javascript
+// Создание таблицы.
+var tableProducts = createTable(
+  [{name: 'product'}, { name: 'product_group'}, { name: 'store'}, { name: 'quantity', dataType: 'number'}])
+  // Заполнение таблицы данными.
+  .load([
+    ['Product 1', 'Group 1', 'Store 1', 86],
+    ['Product 19', 'Group 3', 'Store 3', 89],
+    ['Product 16', 'Group 4', 'Store 1', 75],
+    ['Product 14', 'Group 2', 'Store 1', 18],
+    ['Product 12', 'Group 2', 'Store 3', 77],
+    ['Product 25', 'Group 3', 'Store 2', 32]
+  ])
+  // Выполнение группировки по полю product_group c вычисленим различных агрегатных функций.
+  .groupBy(['product_group'], [
+    'quantity', 
+    {name: 'quantity', alias:'q_max', aggregate:'max'},
+    {name: 'quantity', alias:'q_min', aggregate:'min'},
+    {name: 'quantity', alias:'q_avg', aggregate:'avg'},
+    {name: 'quantity', alias:'q_count', aggregate:'count'}
+  ]);
+
+return tableProducts;
+```
+
 ## load
 Добавляет данные в таблицу. Данные могут быть переданы в виде массива, 
 содержащего массивы значений полей строк или массива объектов. 
@@ -404,7 +453,7 @@ return tableRates;
 ```
 
 ## max
-Вычисляет максимальное значений по указанной колонке таблицы. 
+Вычисляет максимальное значение по указанной колонке таблицы. 
 
 ### Синтаксис
 ```javascript
@@ -436,7 +485,7 @@ return tableRates.max('rate');
 ```
 
 ## min
-Вычисляет минимальное значений по указанной колонке таблицы. 
+Вычисляет минимальное значение по указанной колонке таблицы. 
 
 ### Синтаксис
 ```javascript
@@ -466,6 +515,7 @@ var tableRates = createTable([
 // Вычисление минимума по колонке 'rate'.
 return tableRates.min('rate');
 ```
+
 ## process
 Обрабатывает строки таблицы, выполняя переданную стрелочную функцию для каждой строки.
 Функция может изменять содержимое строки или выполнять другие операции.
