@@ -44,6 +44,7 @@ createTable([
 | [min](#min)                                                | DataTable       | Вычисление минимума по колонке таблицы  |
 | [newRow](#newrow)                                          | Object          | Создание новой строки таблицы           |
 | [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц        |
+| [process](#process)                                        | DataTable       | Обработка строк таблицы                 |
 | [orderBy](#orderby)                                        | DataTable       | Сортировка строк таблицы                |
 | [sum](#sum)                                                | DataTable       | Вычисление суммы по колонке таблицы     |
 | union                                                      | DataTable       | Объединение уникальных строк таблиц     |
@@ -185,7 +186,7 @@ dataTable.count(columnName)
   возвращается количество строк, где значения в данной колонке не пустые. 
  
 ### Возвращаемое значение
-number - Количество строк в таблице или количество строк с заполненными значениями в указанной колонке.
+- number - Количество строк в таблице или количество строк с заполненными значениями в указанной колонке.
 
 ### Пример
 ```javascript
@@ -464,6 +465,36 @@ var tableRates = createTable([
   ]);
 // Вычисление минимума по колонке 'rate'.
 return tableRates.min('rate');
+```
+## process
+Обрабатывает строки таблицы, выполняя переданную стрелочную функцию для каждой строки.
+Функция может изменять содержимое строки или выполнять другие операции.
+
+### Синтаксис
+```javascript
+dataTable.process(action)
+```
+### Параметры
+- action: (row) => void - стрелочная функция, исполняемая для каждой строки таблицы.
+  Параметры функции:
+  - row: объект, представляющий строку таблицы, который может быть изменён в процессе обработки.
+
+### Возвращаемое значение
+DataTable - возвращает текущий объект DataTable, что позволяет использовать метод в цепочке вызовов.
+
+### Пример
+```javascript
+// Создание таблицы.
+var tableProducts = createTable([ 
+  { name: 'product'}, 
+  { name: 'price', dataType: 'number'}, 
+  { name: 'quantity', dataType: 'number'}, 
+  { name: 'amount', dataType: 'number'}])
+  // Заполнение данных таблицы.
+  .load([['Product 1', 100, 5], ['Product 2', 200, 10]])
+  // Вычисление значения в колонке amount.
+  .process(row=> row.amount = row.quantity * row. price);
+return tableProducts;
 ```
 
 ## sum
