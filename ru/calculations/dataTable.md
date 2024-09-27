@@ -48,8 +48,8 @@ createTable([
 | [process](#process)                                        | DataTable       | Обработка строк таблицы                 |
 | [orderBy](#orderby)                                        | DataTable       | Сортировка строк таблицы                |
 | [sum](#sum)                                                | DataTable       | Вычисление суммы по колонке таблицы     |
-| union                                                      | DataTable       | Объединение уникальных строк таблиц     |
-| unionAll                                                   | DataTable       | Объединение всех строк таблиц           |
+| [union](#union)                                            | DataTable       | Объединение уникальных строк таблиц     |
+| [unionAll](#unionall)                                      | DataTable       | Объединение всех строк таблиц           |
 
 
 ## addColumn
@@ -577,4 +577,75 @@ var tableRates = createTable([
   ]);
 // Вычисление суммы по колонке 'rate'.
 return tableRates.sum('rate');
+```
+
+## union
+Осуществляет объединение текущей таблицы с другой таблицей, добавляя только уникальные строки. 
+В отличие от unionAll, выполняется проверка на уникальность строк, что может замедлять выполнение, 
+но гарантирует отсутствие дубликатов.
+
+### Синтаксис
+```javascript
+dataTable.union(tableToUnion)
+```
+### Параметры
+- tableToUnion: DataTable - таблица, которую нужно объединить с текущей таблицей. 
+Строки из этой таблицы будут добавлены только в случае, если они отсутствуют в основной таблице.
+
+### Возвращаемое значение
+DataTable - Объединённая таблица, содержащая уникальные строки из обеих таблиц.
+
+### Пример
+
+Данный пример демонстрирует объединение двух таблиц. 
+Строка ['product_1', 10, 100] в обеих таблицах одинаковая, поэтому она не будет добавлена второй раз. 
+Однако строка ['product_3', 20, 4000] будет добавлена, так как она уникальна.
+
+```javascript
+// Определение колонок таблиц.
+var columns = [{name: 'product'}, {name: 'quantity', dataType: 'number'}, {name: 'amount', dataType: 'number'}];
+// Создание основной таблицы.
+var mainTable = createTable(columns)
+  .addRow(['product_1', 10, 100])
+  .addRow(['product_2', 5, 2000]);
+// Создание таблица для объединения.
+var tableToUnion = createTable(columns)
+  .addRow(['product_1', 10, 100])
+  .addRow( ['product_3', 20, 4000]);
+// Выполнение объединения таблиц.
+return mainTable.union(tableToUnion);
+```
+
+## unionAll
+Осуществляет объединение текущей таблицы с другой таблицей, добавляя все строки. 
+В отличие от union, проверка на уникальность строк не выполняется.
+
+### Синтаксис
+```javascript
+dataTable.union(tableToUnion)
+```
+### Параметры
+- tableToUnion: DataTable - таблица, которую нужно объединить с текущей таблицей. 
+
+### Возвращаемое значение
+DataTable - Объединённая таблица, содержащая все строки из обеих таблиц.
+
+### Пример
+
+Данный пример демонстрирует объединение двух таблиц. 
+Строка ['product_1', 10, 100] в обеих таблицах одинаковая, поэтому в результирующей таблице она будет задублирована.
+
+```javascript
+// Определение колонок таблиц.
+var columns = [{name: 'product'}, {name: 'quantity', dataType: 'number'}, {name: 'amount', dataType: 'number'}];
+// Создание основной таблицы.
+var mainTable = createTable(columns)
+  .addRow(['product_1', 10, 100])
+  .addRow(['product_2', 5, 2000]);
+// Создание таблица для объединения.
+var tableToUnion = createTable(columns)
+  .addRow(['product_1', 10, 100])
+  .addRow( ['product_3', 20, 4000]);
+// Выполнение объединения таблиц.
+return mainTable.unionAll(tableToUnion);
 ```

@@ -37,3 +37,5 @@
 | DataTable | [process](dataTable.md#process)                   | Обработка строк таблицы                         |
 | DataTable | [rightJoin](dataTableJoins.md#right-join)         | Правое внешнее соединение таблиц                |
 | DataTable | [sum](dataTable.md#sum)                           | Вычисление суммы по колонке таблицы             |
+| DataTable | [union](dataTable.md#union) | Объединение уникальных строк таблиц |
+| DataTable | [unionAll](dataTable.md#unionall) | Объединение всех строк таблиц |
