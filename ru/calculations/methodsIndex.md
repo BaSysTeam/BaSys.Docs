@@ -16,6 +16,7 @@
 | DataTable | [clone](dataTable.md#clone)                       | Создание копии таблицы                          |
 | DataTable | [clear](dataTable.md#clear)                       | Очистка колонок таблицы                         |
 | DataTable | [count](dataTable.md#count)                       | Подсчет количества строк в таблице              |
+|           | [createTable](dataTable.md#createtable)           | Cоздание DataTable                              |
 | Date      | [endDay](dateFunctions.md#endday)                 | Вычисляет конец дня для указанной даты          |
 | Date      | [endMonth](dateFunctions.md#endmonth)             | Вычисляет конец месяца для указанной даты       |
 | Date      | [endQuarter](dateFunctions.md#endquarter)         | Вычисляет конец квартала для указанной даты     |
@@ -37,5 +38,5 @@
 | DataTable | [process](dataTable.md#process)                   | Обработка строк таблицы                         |
 | DataTable | [rightJoin](dataTableJoins.md#right-join)         | Правое внешнее соединение таблиц                |
 | DataTable | [sum](dataTable.md#sum)                           | Вычисление суммы по колонке таблицы             |
-| DataTable | [union](dataTable.md#union) | Объединение уникальных строк таблиц |
-| DataTable | [unionAll](dataTable.md#unionall) | Объединение всех строк таблиц |
+| DataTable | [union](dataTable.md#union)                       | Объединение уникальных строк таблиц             |
+| DataTable | [unionAll](dataTable.md#unionall)                 | Объединение всех строк таблиц                   |
