@@ -97,21 +97,30 @@ createTable('product, qauntity number, amount number, is_available boolean')
 
 ## addColumn
 
-Добавляет колонку в таблицу.
+Добавляет колонку в таблицу. Конфигурация колонки может передана в виде объекта или в виде строкового описания.
 
 ### Синтаксис
 ```javascript
 dataTable.addColumn(column)
 ```
 ### Параметры
-- column: DataTableColumn - описание колонки таблицы.
+- column: [DataTableColumn](dataTableColumn.md) - объект-описание колонки таблицы.
+
+или 
+- column: string - строковое описание колонки таблицы.
 
 ### Возвращаемое значение
 DataTable
 
-### Пример
+### Примеры
+
+Конфигурация колонки передается в виде объекта.
 ```javascript
 createTable().addColumn({ name: 'period', dataType: 'date'})
+```
+Конфигурация колонки передается в виде строкового описания.
+```javascript
+createTable().addColumn('period date')
 ```
 
 ## addRow
