@@ -1,4 +1,4 @@
-[Documentation](/en/index.md)
+[English documentation](/en/index.md)
 
-[Документация](/ru/index.md) 
+[Документация на русском](/ru/index.md) 
 
