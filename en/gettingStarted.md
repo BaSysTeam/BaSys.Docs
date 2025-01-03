@@ -24,7 +24,6 @@ services:
       # CurrentApp
       InitAppSettings:CurrentApp:Id: main
       InitAppSettings:CurrentApp:Title: Main
-
       # Sa. Parameters for creating the system database.
       # Super administrator login.
       InitAppSettings:Sa:Login: <super_admin_login>
@@ -34,7 +33,6 @@ services:
       InitAppSettings:Sa:DbKind: 1
       # Connection string for the system database.
       InitAppSettings:Sa:ConnectionString: <super_admin_base_connections_string>
-
       # MainDb. Parameters for creating the working database.
       # Database name (can contain lowercase Latin letters, numbers, and underscores)
       InitAppSettings:MainDb:Name: <db_name>
@@ -70,7 +68,6 @@ services:
       # CurrentApp
       InitAppSettings:CurrentApp:Id: main
       InitAppSettings:CurrentApp:Title: Main
-
       # Sa. Parameters for creating the system database.
       # Super administrator login.
       InitAppSettings:Sa:Login: sa@mydomain.com
@@ -80,7 +77,6 @@ services:
       InitAppSettings:Sa:DbKind: 1
       # Connection string for the system database.
       InitAppSettings:Sa:ConnectionString: Server=host.docker.internal;Port=5432;Database=basys_system;User ID=postgres;Password=<your_sql_server_password>;Timeout=60;
-
       # MainDb. Parameters for creating the working database.
       # Database name (can contain lowercase Latin letters, numbers, and underscores)
       InitAppSettings:MainDb:Name: basys_work_1

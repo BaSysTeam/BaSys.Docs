@@ -70,7 +70,6 @@ services:
       # CurrentApp
       InitAppSettings:CurrentApp:Id: main
       InitAppSettings:CurrentApp:Title: Main
-
       # Sa. Параметры для создания системной базы данных.
       # Логин супер администратора.
       InitAppSettings:Sa:Login: sa@mydomain.com
@@ -80,7 +79,6 @@ services:
       InitAppSettings:Sa:DbKind: 1
       # Строка подключения к системной базе данных.
       InitAppSettings:Sa:ConnectionString: Server=host.docker.internal;Port=5432;Database=basys_system;User ID=postgres;Password=<your_sql_server_password>;Timeout=60;
-
       # MainDb. Параметры для создания рабочей базы данных.
       # Имя базы данных (может содержать латинские буквы в нижнем регистре, цифры и символ подчеркивания)
       InitAppSettings:MainDb:Name: basys_work_1
