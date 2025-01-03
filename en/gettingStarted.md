@@ -54,7 +54,7 @@ services:
 
 ## Example of docker-compose.yml
 
-Here is an example configuration for a local installation of BaSYS using PostgreSQL. Note that the server name host.docker.internal corresponds to the locally installed database. Be sure to replace <your_sql_server_password> with your database password.
+Here is an example configuration for a local installation of BaSYS using PostgreSQL. Note that the server name host.docker.internal corresponds to the locally installed database. Be sure to replace \<your_sql_server_password\> with your database password.
 
 ```yml
 version: '3'
