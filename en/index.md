@@ -1,3 +1,3 @@
 [Русский](../ru/index.md)
 
-[Getting started](/en/gettingStarted.md)
+[Getting started](gettingStarted.md)
