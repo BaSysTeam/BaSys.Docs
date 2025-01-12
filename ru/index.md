@@ -1,6 +1,6 @@
 [English](../en/index.md)
 ---
 ## Содержание
-[Начало работы](/ru/gettingStarted/gettingStartedIndex.md)
+[Начало работы](/gettingStarted/gettingStartedIndex.md)
 
 [Вычисления](/calculations/introduction.md)
