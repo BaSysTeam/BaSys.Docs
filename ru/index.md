@@ -9,3 +9,5 @@ BaSYS (Business Applications System) — это LowCode-платформа дл�
 [Начало работы](/gettingStarted/gettingStartedIndex.md)
 
 [Вычисления](/calculations/introduction.md)
+
+[Команды](/commands/introduction.md)
