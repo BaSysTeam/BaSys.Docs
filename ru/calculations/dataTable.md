@@ -70,10 +70,11 @@ createTable('product, qauntity number, amount number, is_available boolean')
 | :--------------------------------------------------------- | :-------------- | :-------------------------------------- |
 | [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу            |
 | [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу             |
-| [avg](#avg)                                                | DataTable       | Вычисление среднего по колонке таблицы  |
+| [avg](#avg)                                                | Number          | Вычисление среднего по колонке таблицы  |
 | [clear](#clear)                                            | DataTable       | Очистка строк таблицы                   |
 | [clone](#clone)                                            | DataTable       | Создание копии таблицы                  |
-| [count](#count)                                            | DataTable       | Подсчет количества строк в таблице      |
+| [count](#count)                                            | Number          | Подсчет количества строк в таблице      |
+| [cumSum](#cumsum)                                          | DataTable       | Вычисление нарастающего итога           |
 | [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы                |
 | [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                      |
 | [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable       | Распределение LIFO                      |
@@ -84,16 +85,15 @@ createTable('product, qauntity number, amount number, is_available boolean')
 | [groupBy](#groupby)                                        | DataTable       | Группировка таблицы                     |
 | [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц         |
 | [load](dataTable.md#load)                                  | DataTable       | Добавление данных в таблицу             |
-| [max](#max)                                                | DataTable       | Вычисление максимума по колонке таблицы |
-| [min](#min)                                                | DataTable       | Вычисление минимума по колонке таблицы  |
+| [max](#max)                                                | Number          | Вычисление максимума по колонке таблицы |
+| [min](#min)                                                | Number          | Вычисление минимума по колонке таблицы  |
 | [newRow](#newrow)                                          | Object          | Создание новой строки таблицы           |
 | [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц        |
 | [process](#process)                                        | DataTable       | Обработка строк таблицы                 |
 | [orderBy](#orderby)                                        | DataTable       | Сортировка строк таблицы                |
-| [sum](#sum)                                                | DataTable       | Вычисление суммы по колонке таблицы     |
+| [sum](#sum)                                                | Number          | Вычисление суммы по колонке таблицы     |
 | [union](#union)                                            | DataTable       | Объединение уникальных строк таблиц     |
 | [unionAll](#unionall)                                      | DataTable       | Объединение всех строк таблиц           |
-
 
 ## addColumn
 
@@ -224,6 +224,36 @@ var copyTable = productsTable.clone().addColumn({ name: 'amount', dataType: 'num
 return copyTable;
 ```
 
+## cumSum
+Вычисляет нарастающий итог по указанной колонке.
+### Синтаксис
+```javascript
+dataTable.cumSum(resultColumnName, sourceColumnName)
+```
+### Параметры
+- resultColumnName: string - имя колонки таблицы, в которую будет помещен результат вычислений.
+- sourceColumnName: string - имя колонки таблицы, по которой производится вычисление нарастающего итога. 
+### Возвращаемое значение
+DataTable
+### Пример
+В данном примере вычисляется нарастающий итог по колонке quantity, результаты помещаются в колонку quantity_cum. 
+```javascript
+var tableProducts = createTable(
+  [{name: 'product'}, { name: 'product_group'}, { name: 'store'}, { name: 'quantity', dataType: 'number'}])
+  // Заполнение таблицы данными.
+  .load([
+    ['Product 1', 'Group 1', 'Store 1', 10],
+    ['Product 19', 'Group 3', 'Store 3', 10],
+    ['Product 16', 'Group 4', 'Store 1', 10],
+    ['Product 14', 'Group 2', 'Store 1', 10],
+    ['Product 12', 'Group 2', 'Store 3', 10],
+    ['Product 25', 'Group 3', 'Store 2', 10]
+  ])
+  .addColumn({ name: 'quantity_cum', dataType: 'number'})
+  .cumSum('quantity_cum', 'quantity');
+
+return tableProducts;
+```
 ## count
 Подсчитывает количество строк в таблице. Если указано имя колонки, подсчитываются только строки, 
 в которых значения в указанной колонке не пустые. Проверка на заполненность значений выполняется 

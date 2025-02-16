@@ -16,6 +16,7 @@
 | DataTable | [clone](dataTable.md#clone)                                | Создание копии таблицы                            |
 | DataTable | [clear](dataTable.md#clear)                                | Очистка колонок таблицы                           |
 | DataTable | [count](dataTable.md#count)                                | Подсчет количества строк в таблице                |
+| DataTable | [cumSum](dataTable.md#cumsum)                              | Вычисление нарастающего итога                     |
 |           | [createTable](dataTable.md#createtable)                    | Cоздание DataTable                                |
 |           | [dateDifference](dateFunctions.md#datedifference)          | Вычисление разности дат                           |
 |           | [dateTimeNow](dateFunctions.md#datetimenow)                | Получение текущей даты                            |
