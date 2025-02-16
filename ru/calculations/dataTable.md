@@ -225,18 +225,25 @@ return copyTable;
 ```
 
 ## cumSum
+
 Вычисляет нарастающий итог по указанной колонке.
+
 ### Синтаксис
+
 ```javascript
 dataTable.cumSum(resultColumnName, sourceColumnName)
 ```
+
 ### Параметры
 - resultColumnName: string - имя колонки таблицы, в которую будет помещен результат вычислений.
 - sourceColumnName: string - имя колонки таблицы, по которой производится вычисление нарастающего итога. 
+  
 ### Возвращаемое значение
 DataTable
+
 ### Пример
 В данном примере вычисляется нарастающий итог по колонке quantity, результаты помещаются в колонку quantity_cum. 
+
 ```javascript
 var tableProducts = createTable(
   [{name: 'product'}, { name: 'product_group'}, { name: 'store'}, { name: 'quantity', dataType: 'number'}])
