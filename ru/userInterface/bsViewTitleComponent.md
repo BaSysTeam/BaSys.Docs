@@ -12,3 +12,4 @@
 
 ```html
 <BsViewTitle :title="title" :isWaiting="isWaiting" :isModified="isModified" />
+```
