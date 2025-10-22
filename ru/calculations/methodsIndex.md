@@ -42,6 +42,7 @@
 | DataTable | [min](dataTable#min)                                       | Вычисление минимума по колонке таблицы            |
 | DataTable | [newRow](dataTable.md#newrow)                              | Создание новой строки таблицы                     |
 | DataTable | [orderBy](dataTable.md#orderby)                            | Сортировка строк таблицы                          |
+|           | [parseNumber](otherFunctions.md#parsenumber)               | Преобразование строки в число                     |
 | DataTable | [process](dataTable.md#process)                            | Обработка строк таблицы                           |
 | DataTable | [rightJoin](dataTableJoins.md#right-join)                  | Правое внешнее соединение таблиц                  |
 | DataTable | [sum](dataTable.md#sum)                                    | Вычисление суммы по колонке таблицы               |
