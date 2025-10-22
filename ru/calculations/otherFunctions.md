@@ -161,3 +161,30 @@ var n2 = parseNumber('БЛ');
 // { n1: 8, n2: 0 }
 return {n1, n2}; 
 ```
+
+## runWorkflow
+Запускает процесс (workflow) на выполнение и возвращает результат после его завершения.
+
+### Синтаксис
+```javascript
+var result = await runWorkflow(workflowName, resultStepName, parameters, timeout);
+```
+### Параметры
+workflowName: string - имя процесса.
+resultStepName: string - имя шага процесса, из которого необходимо извлечь данные.
+*parameters (необязательный)*: [workflowParameter](workflowParameter.md)[] - массив параметров процесса.
+*timeout (необязательный)*: число - таймаут в секундах. По умолчанию - 15 секунд.
+### Возвращаемое значение
+any - значение из указанного шага процесса.
+
+### Пример
+```javascript
+var result = await runWorkflow('load_from_excel', 
+                               'result', 
+                               [{name: 'id', 
+                                 dataType: 'integer', 
+                                 value: $h.number}]);
+
+return result;
+
+```
