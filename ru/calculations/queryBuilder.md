@@ -185,3 +185,21 @@ Promise
 )
 .rows[0].currency;
 ```
+
+### Пример 3. Информация о прикрепленных файлах.
+
+Если для объекта метаданных настроено использование прикреплённых файлов, информацию о них можно получить запросом к «виртуальной» таблице по следующему шаблону:  
+`<kindName>.<objectName>.attached_files`.
+
+В примере ниже при установке параметра **id** явно задано значение [`System.Data.DbType`](https://learn.microsoft.com/en-us/dotnet/api/system.data.dbtype?view=net-9.0) — `11` (это `DbType.Int32`), соответствующее целочисленному типу `int`.
+
+```javascript
+var filesData = await from("operation.тарифы_дорожные.attached_files")
+  .select(['uid', 'filename'])
+  .where("objectuid = @id")
+  // 11 - System.DbType.Int32
+  .parameter("id", $h.number, 11)
+  .query();
+
+return filesData;
+```
