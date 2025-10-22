@@ -66,34 +66,35 @@ createTable('product, qauntity number, amount number, is_available boolean')
 
 ## Методы
 
-| Метод                                                      | Возвращает      | Описание                                |
-| :--------------------------------------------------------- | :-------------- | :-------------------------------------- |
-| [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу            |
-| [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу             |
-| [avg](#avg)                                                | Number          | Вычисление среднего по колонке таблицы  |
-| [clear](#clear)                                            | DataTable       | Очистка строк таблицы                   |
-| [clone](#clone)                                            | DataTable       | Создание копии таблицы                  |
-| [count](#count)                                            | Number          | Подсчет количества строк в таблице      |
-| [cumSum](#cumsum)                                          | DataTable       | Вычисление нарастающего итога           |
-| [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы                |
-| [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                      |
-| [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable       | Распределение LIFO                      |
-| [innerJoin](dataTableJoins.md#inner-join)                  | DataTable       | Внутреннее соединение таблиц            |
-| [filter](#filter)                                          | DataTable       | Фильтрация строк таблицы                |
-| [fullJoin](dataTableJoins.md#full-join)                    | DataTable       | Полное внешнее соединение таблиц        |
-| [getColumn](#getcolumn)                                    | DataTableColumn | Поиск колонки таблицы по имени          |
-| [groupBy](#groupby)                                        | DataTable       | Группировка таблицы                     |
-| [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц         |
-| [load](dataTable.md#load)                                  | DataTable       | Добавление данных в таблицу             |
-| [max](#max)                                                | Number          | Вычисление максимума по колонке таблицы |
-| [min](#min)                                                | Number          | Вычисление минимума по колонке таблицы  |
-| [newRow](#newrow)                                          | Object          | Создание новой строки таблицы           |
-| [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц        |
-| [process](#process)                                        | DataTable       | Обработка строк таблицы                 |
-| [orderBy](#orderby)                                        | DataTable       | Сортировка строк таблицы                |
-| [sum](#sum)                                                | Number          | Вычисление суммы по колонке таблицы     |
-| [union](#union)                                            | DataTable       | Объединение уникальных строк таблиц     |
-| [unionAll](#unionall)                                      | DataTable       | Объединение всех строк таблиц           |
+| Метод                                                      | Возвращает      | Описание                                    |
+| :--------------------------------------------------------- | :-------------- | :------------------------------------------ |
+| [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу                |
+| [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу                 |
+| [avg](#avg)                                                | Number          | Вычисление среднего по колонке таблицы      |
+| [clear](#clear)                                            | DataTable       | Очистка строк таблицы                       |
+| [clone](#clone)                                            | DataTable       | Создание копии таблицы                      |
+| [count](#count)                                            | Number          | Подсчет количества строк в таблице          |
+| [cumSum](#cumsum)                                          | DataTable       | Вычисление нарастающего итога               |
+| [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы                    |
+| [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                          |
+| [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable       | Распределение LIFO                          |
+| [innerJoin](dataTableJoins.md#inner-join)                  | DataTable       | Внутреннее соединение таблиц                |
+| [filter](#filter)                                          | DataTable       | Фильтрация строк таблицы                    |
+| [fullJoin](dataTableJoins.md#full-join)                    | DataTable       | Полное внешнее соединение таблиц            |
+| [getColumn](#getcolumn)                                    | DataTableColumn | Поиск колонки таблицы по имени              |
+| [groupBy](#groupby)                                        | DataTable       | Группировка таблицы                         |
+| [leftJoin](dataTableJoins.md#left-join)                    | DataTable       | Левое внешнее соединение таблиц             |
+| [load](dataTable.md#load)                                  | DataTable       | Добавление данных в таблицу                 |
+| [max](#max)                                                | Number          | Вычисление максимума по колонке таблицы     |
+| [min](#min)                                                | Number          | Вычисление минимума по колонке таблицы      |
+| [newRow](#newrow)                                          | Object          | Создание новой строки таблицы               |
+| [rightJoin](dataTableJoins.md#right-join)                  | DataTable       | Правое внешнее соединение таблиц            |
+| [process](#process)                                        | DataTable       | Обработка строк таблицы                     |
+| [orderBy](#orderby)                                        | DataTable       | Сортировка строк таблицы                    |
+| [sum](#sum)                                                | Number          | Вычисление суммы по колонке таблицы         |
+| [union](#union)                                            | DataTable       | Объединение уникальных строк таблиц         |
+| [unionAll](#unionall)                                      | DataTable       | Объединение всех строк таблиц               |
+| [unpivot](#unpivot)                                        | DataTable       | Преобразует кросс-таблицу в плоскую таблицу |
 
 ## addColumn
 
@@ -737,4 +738,36 @@ var tableToUnion = createTable(columns)
   .addRow( ['product_3', 20, 4000]);
 // Выполнение объединения таблиц.
 return mainTable.unionAll(tableToUnion);
+```
+
+
+## unpivot
+Преобразует кросс-таблицу в плоскую таблицу: значения указанных колонок собираются в одну целевую колонку, а сведения об источнике значения (номер/имя исходной колонки) записываются в отдельные служебные колонки.
+
+Порядок строк в результате следует порядку колонок из unpivotColumnNames.
+Все остальные (неразворачиваемые) колонки копируются без изменений и дублируются для каждой “собранной” записи.
+Колонки, указанные в unpivotColumnNames, должны существовать в исходной таблице.
+
+### Синтаксис
+```javascript
+dataTable.unpivot(resultColumn, unpivotColumnNames, unpivotColumnNumber, unpivotColumnName)
+```
+### Параметры
+- **resultColumn**: string | [dataTableColumn](dataTableColumn.md) - имя или конфигурация колонки новой колонки, в которую будут помещены значения из кросс-колонок.
+- **unpivotColumnNames**: string[] - список колонок, которые необходимо “развернуть” (собрать в одну колонку).
+- *unpivotColumnNumber (необязательный)*: string - имя колонки, в которую будет записан порядковый номер исходной колонки из unpivotColumnNames.
+По умолчанию: <resultColumnName>_unpivot_number.
+- *unpivotColumnName (необязательный)*: string - имя колонки, в которую будет записано имя исходной колонки.
+По умолчанию: <resultColumnName>_unpivot_name.
+
+### Возвращаемое значение
+DataTable
+### Пример
+Разворачивает кросс-таблицу ведомости учёта рабочего времени в плоскую таблицу.
+```javascript
+var tableStart = createTable([{ name: 'person'}, { name: 'd_01'}, { name: 'd_02'}, { name: 'd_03'}])
+  .load([['Person 1', '8', '10', '8'], ['Person 2', 'БЛ', '8','8']]);
+
+var tableResult = tableStart.unpivot('time_str', ['d_01', 'd_02', 'd_03'], 'day_number', 'day_name');
+return tableResult;
 ```
