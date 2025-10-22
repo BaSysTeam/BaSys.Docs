@@ -203,3 +203,19 @@ var filesData = await from("operation.тарифы_дорожные.attached_fil
 
 return filesData;
 ```
+
+### Пример 4. Запрос к табличной части.
+
+Если `DataObject` содержит табличные части (*DetailsTables*), к ним можно обратиться, выполнив запрос к таблице вида:  
+`<kindName>.<objectName>.<detailsTableName>`.
+
+В примере ниже извлекаются все строки табличной части **время** у объекта вида **operation** с именем **ведомость**. Возвращаются только строки того объекта, у которого идентификатор равен `3`. При установке параметра **id** явно задано значение [`System.Data.DbType`](https://learn.microsoft.com/en-us/dotnet/api/system.data.dbtype?view=net-9.0) — `11` (это `DbType.Int32`), соответствующее целочисленному типу `int`.
+
+```javascript
+var tableTime = await from("operation.ведомость.время")
+  .where("object_uid = @id")
+  .parameter("id", 3, 11)
+  .query();
+
+return tableTime;
+```
