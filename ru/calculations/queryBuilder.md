@@ -155,7 +155,7 @@ QueryBuilder
 ```javascript
 await from('operation.task')
   .where('number = @number')
-  .parameter('number', 7)
+  .parameter('number', 1)
   .query();
 ```
 
