@@ -124,26 +124,47 @@ from("register.currency_rates")
 ```
 
 ### **parameter**
-Устанавливает значение параметра запроса.
+Устанавливает значение параметра запроса.  
+Если значение `dbType` не указано, система попытается определить его автоматически на основе переданного значения:
+
+- **Дата и время** — для значений типа `date` будет задано `DbType.DateTime` (6).  
+- **Логический тип** — для значений `boolean` будет задано `DbType.Boolean` (3).  
+- **Числа**:  
+  - если значение является **целым числом** и попадает в диапазон `[-2 147 483 648, 2 147 483 647]`, будет выбран `DbType.Int32` (11);  
+  - если целое число **вне указанного диапазона**, используется `DbType.Int64` (12);  
+  - если число **дробное**, будет установлен `DbType.Decimal` (7).  
+
+Если автоматически определить `dbType` невозможно или выбранный тип не подходит для конкретного случая, параметр `dbType` следует указать явно.
+
 
 #### Синтаксис
 ```javascript
 parameter(parameterName, parameterValue, dbType)
 ```
 #### Параметры
-parameterName - (string, обязательный). Имя параметра запроса. Задается **без** символа @.
-parameterValue - (any, обязательный). Значение параметра запроса.
-dbType - (number, опциональный). Числовые значения перечисления [System.DbType](https://learn.microsoft.com/ru-ru/dotnet/api/system.data.dbtype?view=net-8.0). Указывается в тех случаях, когда система не может определить тип параметра автоматически.
+- parameterName - (string, обязательный). Имя параметра запроса. Задается **без** символа @.
+- parameterValue - (any, обязательный). Значение параметра запроса.
+- dbType - (number, опциональный). Числовые значения перечисления [System.DbType](https://learn.microsoft.com/ru-ru/dotnet/api/system.data.dbtype?view=net-8.0). Указывается в тех случаях, когда система не может определить тип параметра автоматически.
 
 #### Возвращаемое значение
 QueryBuilder
 
-#### Пример
+#### Примеры
+
+Система неявно устанавливает dbType = 11 (DbType.Int32), так как передано целое число.
 ```javascript
-from("register.currency_rates")
-  .where("currency = @currency")
-  .parameter("currency", 'usd')
-  .query()
+await from('operation.task')
+  .where('number = @number')
+  .parameter('number', 7)
+  .query();
+```
+
+Явно устанавливаем dbType = 7 (DbType.Decimal), чтобы указать, что мы сравниваем десятичные числа.
+```javascript
+await from('operation.order')
+  .where('total <= @maxTotal')
+  .parameter('maxTotal', 1000, 7)
+  .query();
 ```
 
 ### **query** 
