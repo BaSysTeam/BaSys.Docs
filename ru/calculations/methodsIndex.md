@@ -47,6 +47,7 @@
 | DataTable | [rightJoin](dataTableJoins.md#right-join)                  | Правое внешнее соединение таблиц                  |
 |           | [runWorkflow](otherFunctions.md#runworkflow)               | Запуск процесса                                   |
 | DataTable | [sum](dataTable.md#sum)                                    | Вычисление суммы по колонке таблицы               |
+|           | [toLocalISO](dateFunctions.md#tolocaliso)                  | Преобразование даты в ISO формат                  |
 | DataTable | [union](dataTable.md#union)                                | Объединение уникальных строк таблиц               |
 | DataTable | [unionAll](dataTable.md#unionall)                          | Объединение всех строк таблиц                     |
 | DataTable | [unpivot](dataTable.md#unpivot)                            | Преобразует кросс-таблицу в плоскую таблицу       |
