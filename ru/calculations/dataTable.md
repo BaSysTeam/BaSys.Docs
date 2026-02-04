@@ -92,6 +92,7 @@ createTable('product, qauntity number, amount number, is_available boolean')
 | [process](#process)                                        | DataTable       | Обработка строк таблицы                     |
 | [orderBy](#orderby)                                        | DataTable       | Сортировка строк таблицы                    |
 | [sum](#sum)                                                | Number          | Вычисление суммы по колонке таблицы         |
+| [toArray](#toarray)                                        | Array           | Преобразование колонки в массив             |
 | [union](#union)                                            | DataTable       | Объединение уникальных строк таблиц         |
 | [unionAll](#unionall)                                      | DataTable       | Объединение всех строк таблиц               |
 | [unpivot](#unpivot)                                        | DataTable       | Преобразует кросс-таблицу в плоскую таблицу |
@@ -635,6 +636,30 @@ var tableProducts = createTable([
   // Вычисление значения в колонке amount.
   .process(row=> row.amount = row.quantity * row. price);
 return tableProducts;
+```
+
+## toArray
+Возвращает значения указанной колонки `DataTable` в виде массива.
+
+### Синтаксис
+```javascript
+dataTable.toArray(columnName, distinctOnly)
+```
+### Параметры
+- `columnName` (string): имя колонки, значения которой нужно вернуть;
+- `distinctOnly` (boolean, необязательный): если `true`, возвращаются только уникальные значения. По умолчанию `true`.  
+### Возвращаемое значение
+Array — массив значений выбранной колонки.
+### Пример
+Получаем значения колонки `task` в виде массива. Так как параметр `distinctOnly` не указан, по умолчанию возвращаются только уникальные значения.
+```javascript
+var tableMessages = createTable('task number, message').load([
+  [1, 'Message 1.1'], 
+  [1, 'Message 1.2'], 
+  [2, 'Message 2.1']
+]);
+
+return tableMessages.toArray('task');
 ```
 
 ## sum
