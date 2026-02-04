@@ -40,6 +40,7 @@ QueryBuilder.
 | Метод                   | Возвращает   | Описание                                   |
 | :---------------------- | :----------- | :----------------------------------------- |
 | [select](#select)       | QueryBuilder | Задаёт перечень извлекаемых полей          |
+| [groupBy](#groupBy)     | QueryBuilder | Задаёт группировку данных                  |
 | [orderBy](#orderby)     | QueryBuilder | Задаёт выражение сортировки                |
 | [parameter](#parameter) | QueryBuilder | Устанавливает параметр                     |
 | [top](#top)             | QueryBuilder | Задаёт количество выбираемых первых строк  |
