@@ -77,6 +77,7 @@ createTable('product, qauntity number, amount number, is_available boolean')
 | [count](#count)                                            | Number          | Подсчет количества строк в таблице          |
 | [cumSum](#cumsum)                                          | DataTable       | Вычисление нарастающего итога               |
 | [deleteColumn](#deletecolumn)                              | DataTable       | Удаление колонки таблицы                    |
+| [deleteColumns](#deletecolumns)                            | DataTable       | Удаление нескольких колонок таблицы         |
 | [distributeFifo](dataTableDistribution.md#distribute-fifo) | DataTable       | Распределение FIFO                          |
 | [distributeLifo](dataTableDistribution.md#distribute-lifo) | DataTable       | Распределение LIFO                          |
 | [innerJoin](dataTableJoins.md#inner-join)                  | DataTable       | Внутреннее соединение таблиц                |
@@ -356,6 +357,38 @@ DataTable
 ```javascript
 createTable([{ name: 'product'}, { name: 'quantity', dataType: 'number'}, { name: 'price', dataType: 'number'}])
   .addRow(['product 1', 100, 10]).deleteColumn('quantity')
+```
+
+## deleteColumns
+
+Удаляет несколько колонок таблицы.
+
+### Синтаксис
+```javascript
+dataTable.deleteColumns(columnNames)
+```
+
+### Параметры
+- columnNames: string[] - массив имён колонок таблицы, которые необходимо удалить.
+
+или
+- columnNames: string - строковое описание удаляемых колонок, разделённых запятыми.
+
+### Возвращаемое значение
+DataTable
+
+### Примеры
+
+Имена удаляемых колонок передаются в виде массива строк.
+```javascript
+createTable([{ name: 'product'}, { name: 'quantity', dataType: 'number'}, { name: 'price', dataType: 'number'}, { name: 'discount', dataType: 'number'}])
+  .addRow(['product 1', 100, 10, 5]).deleteColumns(['quantity', 'discount'])
+```
+Имена удаляемых колонок передаются в виде строкового описания, разделённого запятыми.
+```javascript
+createTable('product, quantity number, price number, discount number')
+  .addRow(['product 1', 100, 10, 5])
+  .deleteColumns('quantity, discount')
 ```
 
 ## filter

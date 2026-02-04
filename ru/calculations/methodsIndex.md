@@ -22,6 +22,7 @@
 |           | [dateDifference](dateFunctions.md#datedifference)          | Вычисление разности дат                           |
 |           | [dateTimeNow](dateFunctions.md#datetimenow)                | Получение текущей даты                            |
 | DataTable | [deleteColumn](dataTable.md#deletecolumn)                  | Удаление колонки таблицы                          |
+| DataTable | [deleteColumns](dataTable.md#deletecolumns)                | Удаление нескольких колонок таблицы               |
 | DataTable | [distributeFifo](dataTableDistribution.md#distribute-fifo) | Распределение FIFO                                |
 | DataTable | [distributeLifo](dataTableDistribution.md#distribute-lifo) | Распределение LIFO                                |
 | Date      | [endDay](dateFunctions.md#endday)                          | Вычисление конца дня для указанной даты           |
