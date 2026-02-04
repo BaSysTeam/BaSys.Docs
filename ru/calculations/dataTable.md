@@ -129,7 +129,7 @@ createTable().addColumn('period date')
 
 ## addColumns
 
-Добавляет несколько колонок в таблицу. Конфигурация колонок может быть передана в виде массива объектов или в виде массива строковых описаний.
+Добавляет несколько колонок в таблицу. Конфигурация колонок может быть передана в виде массива объектов, в виде массива строковых описаний или в виде единого строкового описания.
 
 ### Синтаксис
 ```javascript
@@ -140,6 +140,9 @@ dataTable.addColumns(columns)
 
 или 
 - columns: string[] - массив строковых описаний колонок таблицы формата 'name \<dataType\>'.
+
+или
+- columns: string - строковое описание колонок таблицы, разделённое запятыми: 'name1 \<dataType1\>, ..., nameN \<dataTypeN\>'.
 
 ### Возвращаемое значение
 DataTable
@@ -158,8 +161,7 @@ createTable().addColumns([
 ```javascript
 createTable().addColumns(['period date', 'quantity number', 'amount number'])
 ```
-
-Конфигурация колонок передается в виде строки описания.
+Конфигурация колонок передается в виде единого строкового описания, разделённого запятыми.
 ```javascript
 createTable().addColumns('period date, quantity number, amount number')
 ```
