@@ -3,6 +3,7 @@
 | Объект    | Метод                                                      | Описание                                          |
 | :-------- | :--------------------------------------------------------- | :------------------------------------------------ |
 | DataTable | [addColumn](dataTable.md#addColumn)                        | Добавление колонки в DataTable                    |
+| DataTable | [addColumns](dataTable.md#addColumns)                      | Добавление колонок в DataTable                    |
 | Date      | [addDays](dateFunctions.md#adddays)                        | Добавление указанного количества дней к дате      |
 | Date      | [addMonths](dateFunctions.md#addmonths)                    | Добавление указанного количество месяцев к дате   |
 | Date      | [addQuarters](dateFunctions.md#addquarters)                | Добавление указанного количество кварталов к дате |
