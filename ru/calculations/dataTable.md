@@ -189,7 +189,12 @@ DataTable
 ### Пример
 ```javascript
 // Создание таблицы
-var tableRates = createTable([{ name: 'period', dataType: 'date'}, { name: 'person'}, { name: 'rate', dataType: 'number'}, { name: 'isWorking', dataType: 'boolean'}])
+var tableRates = createTable([
+  { name: 'period', dataType: 'date'}, 
+  { name: 'person'}, 
+  { name: 'rate', dataType: 'number'}, 
+  { name: 'isWorking', dataType: 'boolean'}
+  ])
   // Добавление строки таблицы. Данные передаются в виде массива значений. Важна соблюдать позицию значения в массиве.
   .addRow(['2024-09-01', 'Person 1', 1000, true])
   // Добавление строки таблицы. Данные передаются в виде объекта.
@@ -720,9 +725,11 @@ dataTable.toArray(columnName, distinctOnly)
 ```
 ### Параметры
 - `columnName` (string): имя колонки, значения которой нужно вернуть;
-- `distinctOnly` (boolean, необязательный): если `true`, возвращаются только уникальные значения. По умолчанию `true`.  
+- `distinctOnly` (boolean, необязательный): если `true`, возвращаются только уникальные значения. По умолчанию `true`.
+-   
 ### Возвращаемое значение
 Array — массив значений выбранной колонки.
+
 ### Пример
 Получаем значения колонки `task` в виде массива. Так как параметр `distinctOnly` не указан, по умолчанию возвращаются только уникальные значения.
 ```javascript
