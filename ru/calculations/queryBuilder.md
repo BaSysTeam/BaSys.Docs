@@ -115,12 +115,24 @@ whereExpression - string, выражение фильтрации на диал�
 #### Возвращаемое значение
 QueryBuilder
 
-#### Пример
+#### Примеры
+
+Фильтрация данных по условию равенства значению параметра. В примере выбираются записи курса валюты, где поле `currency` равно значению `'usd'`, переданному через параметр `@currency`.
 ```javascript
 from("register.currency_rates")
   .where("currency = @currency")
   .parameter("currency", 'usd')
   .query()
+```
+
+Фильтрация данных по условию вхождения в массив значений. В примере извлекаются задачи, у которых поле `number` соответствует одному из значений массива `[60, 61]`, переданного через параметр `@numbers`. Оператор `in` проверяет наличие значения в указанном списке.
+```javascript
+var tasks = await from('operation.task')
+  .where('number in @numbers')
+  .parameter('numbers', [60, 61])
+  .query();
+
+return tasks;
 ```
 
 ### **parameter**
