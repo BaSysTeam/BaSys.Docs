@@ -69,6 +69,7 @@ createTable('product, qauntity number, amount number, is_available boolean')
 | Метод                                                      | Возвращает      | Описание                                    |
 | :--------------------------------------------------------- | :-------------- | :------------------------------------------ |
 | [addColumn](#addcolumn)                                    | DataTable       | Добавление колонки в таблицу                |
+| [addColumns](#addcolumns)                                  | DataTable       | Добавление нескольких колонок в таблицу     |
 | [addRow](#addrow)                                          | DataTable       | Добавление строки в таблицу                 |
 | [avg](#avg)                                                | Number          | Вычисление среднего по колонке таблицы      |
 | [clear](#clear)                                            | DataTable       | Очистка строк таблицы                       |
@@ -123,6 +124,43 @@ createTable().addColumn({ name: 'period', dataType: 'date'})
 Конфигурация колонки передается в виде строкового описания.
 ```javascript
 createTable().addColumn('period date')
+```
+
+## addColumns
+
+Добавляет несколько колонок в таблицу. Конфигурация колонок может быть передана в виде массива объектов или в виде массива строковых описаний.
+
+### Синтаксис
+```javascript
+dataTable.addColumns(columns)
+```
+### Параметры
+- columns: [DataTableColumn](dataTableColumn.md)[] - массив объектов-описаний колонок таблицы.
+
+или 
+- columns: string[] - массив строковых описаний колонок таблицы формата 'name \<dataType\>'.
+
+### Возвращаемое значение
+DataTable
+
+### Примеры
+
+Конфигурация колонок передается в виде массива объектов.
+```javascript
+createTable().addColumns([
+  { name: 'period', dataType: 'date'},
+  { name: 'quantity', dataType: 'number'},
+  { name: 'amount', dataType: 'number'}
+])
+```
+Конфигурация колонок передается в виде массива строковых описаний.
+```javascript
+createTable().addColumns(['period date', 'quantity number', 'amount number'])
+```
+
+Конфигурация колонок передается в виде строки описания.
+```javascript
+createTable().addColumns('period date, quantity number, amount number')
 ```
 
 ## addRow
