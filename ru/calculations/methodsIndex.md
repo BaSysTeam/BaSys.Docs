@@ -30,6 +30,7 @@
 | Date      | [endQuarter](dateFunctions.md#endquarter)                  | Вычисление конца квартала для указанной даты      |
 | Date      | [endYear](dateFunctions.md#endyear)                        | Вычисление конца года для указанной даты          |
 | DataTable | [filter](dataTable.md#filter)                              | Фильтрация строк таблицы                          |
+|           | [format](otherFunctions.md#format)                         | Форматирование значения в строку                  |
 | DataTable | [fullJoin](dataTableJoins.md#full-join)                    | Полное внешнее соединение таблиц                  |
 | DataTable | [getColumn](dataTable.md#getcolumn)                        | Поиск колонки таблицы по имени                    |
 | DataTable | [groupBy](dataTable.md#groupby)                            | Группировка таблицы                               |
