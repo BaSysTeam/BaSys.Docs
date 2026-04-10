@@ -8,8 +8,8 @@
 format(value, formatOrOptions)
 ```
 ### Параметры
-- value: number | Date | boolean - значение, которое необходимо отформатировать.
-- formatOrOptions *(необязательный)*: string | NumberFormatOptions | BooleanFormatOptions - строка формата или объект с параметрами форматирования. Тип параметра зависит от типа значения.
+- value: number \| Date \| boolean - значение, которое необходимо отформатировать.
+- formatOrOptions *(необязательный)*: string \| NumberFormatOptions \| BooleanFormatOptions - строка формата или объект с параметрами форматирования. Тип параметра зависит от типа значения.
 
 #### Форматирование чисел
 Для числовых значений параметр может быть строкой формата или объектом NumberFormatOptions.
