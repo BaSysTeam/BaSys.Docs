@@ -1,4 +1,4 @@
-# Структура метаданных
+# Метаданные. Введение.
 
 [Введение](introduction.md)
 
@@ -7,3 +7,5 @@
 [Meta object table](metaObjectTable.md)
 
 [Meta object table column](metaObjectTableColumn.md)
+
+[Создание записей (проведение по регистрам)](recordsCreation.md)
