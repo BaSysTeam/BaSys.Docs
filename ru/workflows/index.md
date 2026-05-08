@@ -12,4 +12,6 @@
 
 [Шаг "Мэппинг Excel"](excelMappingStep.md)
 
+[Шаг "Условие (If)"](ifStep.md)
+
 [Шаг "Отправить почту (SMTP)"](smtpSendStep.md)
