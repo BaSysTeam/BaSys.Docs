@@ -10,4 +10,6 @@
 
 [Шаг "Чтение файла"](readFileStep.md)
 
+[Шаг "Мэппинг Excel"](excelMappingStep.md)
+
 [Шаг "Отправить почту (SMTP)"](smtpSendStep.md)
