@@ -8,4 +8,6 @@
 
 [Шаг "Загрузка объекта данных"](dataObjectLoaderStep.md)
 
+[Шаг "Чтение файла"](readFileStep.md)
+
 [Шаг "Отправить почту (SMTP)"](smtpSendStep.md)
