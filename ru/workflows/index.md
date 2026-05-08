@@ -14,4 +14,6 @@
 
 [Шаг "Условие (If)"](ifStep.md)
 
+[Шаг "Итератор (Iterator)"](iteratorStep.md)
+
 [Шаг "Отправить почту (SMTP)"](smtpSendStep.md)
