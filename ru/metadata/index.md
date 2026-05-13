@@ -9,3 +9,5 @@
 [Meta object table column](metaObjectTableColumn.md)
 
 [Создание записей (проведение по регистрам)](recordsCreation.md)
+
+[Меню](menu.md)
