@@ -179,6 +179,9 @@ export default {
 | Табличное представление | `BsTableViewComponent`                               | Табличное представление с фильтрами, сортировкой и постраничной загрузкой; колонки описываются через `TableViewColumnViewModel`. |
 | Текст                   | [`BsTextComponent`](bsTextComponent.md)              | Отображение текста с учётом семантики (severity, форматирование).                                                   |
 | Подпись                 | [`BsLabelComponent`](bsLabelComponent.md)            | Подпись (`<label>`) к полю ввода или элементу формы.                                                                |
+| Поле формы              | [`BsFormFieldComponent`](bsFormFieldComponent.md)    | Контейнер «подпись + элемент ввода» в 12-колоночной сетке PrimeFlex.                                                |
+| Поле с маской           | [`BsInputPattern`](bsInputPatternComponent.md)       | Однострочное поле ввода с проверкой значения по регулярному выражению.                                              |
+| Сворачиваемая группа    | [`BsCollapsibleGroup`](bsCollapsibleGroupComponent.md) | Сворачиваемая группа элементов с кликабельным заголовком и шевроном.                                              |
 | Выбор элемента          | `BsObjectReferenceSelect`                            | Выпадающий список со ссылкой на объект метаданных.                                                                  |
 | Множественный выбор     | `BsObjectReferenceMultiSelect`                       | Выпадающий список с множественным выбором ссылок на объекты метаданных.                                             |
 | Выбор периода           | `BsPeriodSelector`                                   | Выбор периода (для отчётов и фильтров).                                                                             |
