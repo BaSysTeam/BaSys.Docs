@@ -78,7 +78,7 @@
 | Название            | Имя                                                            | Назначение                                    |
 | ------------------- | -------------------------------------------------------------- | --------------------------------------------- |
 | Метка               | [`pv-badge`](https://v3.primevue.org/badge/)                   | Бейдж (счётчик, статус).                      |
-| Кнопка              | [`pv-button`](https://v3.primevue.org/button/)                 | Кнопка.                                       |
+| Кнопка              | [`pv-button`](pvButtonComponent.md)                            | Кнопка.                                       |
 | Группа кнопок       | [`pv-button-group`](https://v3.primevue.org/button/)           | Группа кнопок.                                |
 | Кнопка с меню       | [`pv-split-button`](https://v3.primevue.org/splitbutton/)      | Кнопка с выпадающим меню.                     |
 | Элемент             | [`pv-split-button-item`](https://v3.primevue.org/splitbutton/) | Пункт меню кнопки `pv-split-button`.          |
