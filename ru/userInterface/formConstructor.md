@@ -67,10 +67,10 @@
 | Поле формы                    | [`bs-form-field`](bsFormFieldComponent.md) | Контейнер для поля ввода с подписью и признаком обязательности. |
 | Поле с маской                 | [`bs-input-pattern`](bsInputPatternComponent.md) | Поле ввода с маской.                        |
 | Сворачиваемая группа          | [`bs-collapsible-group`](bsCollapsibleGroupComponent.md) | Сворачиваемая группа элементов.                                 |
-| Выбор элемента                | `bs-object-reference-select` | Поле выбора объектной ссылки (объект метаданных).               |
-| Табличная часть               | `bs-details-table`           | Табличная часть документа/справочника (детали).                 |
+| Выбор элемента                | [`bs-object-reference-select`](bsObjectReferenceSelectComponent.md) | Поле выбора объектной ссылки (объект метаданных).               |
+| Табличная часть               | [`bs-details-table`](bsDetailsTableComponent.md) | Табличная часть документа/справочника (детали).                 |
 | Колонка                       | `bs-details-table-column`    | Колонка табличной части.                                        |
-| Таблица (отображение)         | `bs-table-view`              | Список записей (форма списка).                                  |
+| Таблица (отображение)         | [`bs-table-view`](bsTableViewComponent.md) | Список записей (форма списка).                    |
 | Колонка                       | `bs-table-view-column`       | Колонка списка.                                                 |
 
 ### Компоненты PrimeVue 3
