@@ -146,36 +146,42 @@ export default {
 
 ### Компоненты PrimeVue 3
 
-- [Badge](https://v3.primevue.org/badge/)
-- [Button](https://v3.primevue.org/button/)
-- [Calendar](https://v3.primevue.org/calendar/)
-- [Card](https://v3.primevue.org/card/)
-- [Chart](https://v3.primevue.org/chart/)
-- [Column](https://v3.primevue.org/column/) (используется внутри `DataTable`)
-- [DataTable](https://v3.primevue.org/datatable/)
-- [Dialog](https://v3.primevue.org/dialog/)
-- [Divider](https://v3.primevue.org/divider/)
-- [Dropdown](https://v3.primevue.org/dropdown/)
-- [InputNumber](https://v3.primevue.org/inputnumber/)
-- [InputSwitch](https://v3.primevue.org/inputswitch/)
-- [InputText](https://v3.primevue.org/inputtext/)
-- [OrganizationChart](https://v3.primevue.org/organizationchart/)
-- [SelectButton](https://v3.primevue.org/selectbutton/)
-- [Sidebar](https://v3.primevue.org/sidebar/)
-- [TabView](https://v3.primevue.org/tabview/) / [TabPanel](https://v3.primevue.org/tabview/)
-- [Tag](https://v3.primevue.org/tag/)
-- [Textarea](https://v3.primevue.org/textarea/)
-- [Toolbar](https://v3.primevue.org/toolbar/)
-- [TriStateCheckbox](https://v3.primevue.org/tristatecheckbox/)
+| Название            | Имя                                                              | Назначение                                                       |
+| ------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
+| Метка               | [`Badge`](https://v3.primevue.org/badge/)                        | Бейдж (счётчик, статус).                                         |
+| Кнопка              | [`Button`](https://v3.primevue.org/button/)                      | Кнопка.                                                          |
+| Поле даты           | [`Calendar`](https://v3.primevue.org/calendar/)                  | Поле ввода даты/времени.                                         |
+| Карточка            | [`Card`](https://v3.primevue.org/card/)                          | Контейнер-карточка.                                              |
+| График              | [`Chart`](https://v3.primevue.org/chart/)                        | Графики и диаграммы.                                             |
+| Колонка             | [`Column`](https://v3.primevue.org/column/)                      | Колонка таблицы `DataTable`.                                     |
+| Таблица             | [`DataTable`](https://v3.primevue.org/datatable/)                | Таблица с фильтрами, сортировкой и постраничной загрузкой.       |
+| Диалог              | [`Dialog`](https://v3.primevue.org/dialog/)                      | Модальный диалог.                                                |
+| Разделитель         | [`Divider`](https://v3.primevue.org/divider/)                    | Горизонтальный/вертикальный разделитель.                         |
+| Выпадающий список   | [`Dropdown`](https://v3.primevue.org/dropdown/)                  | Выпадающий список.                                               |
+| Числовое поле       | [`InputNumber`](https://v3.primevue.org/inputnumber/)            | Поле ввода числа.                                                |
+| Переключатель       | [`InputSwitch`](https://v3.primevue.org/inputswitch/)            | Переключатель.                                                   |
+| Текстовое поле      | [`InputText`](https://v3.primevue.org/inputtext/)                | Однострочное текстовое поле.                                     |
+| Орг. структура      | [`OrganizationChart`](https://v3.primevue.org/organizationchart/) | Дерево организационной структуры.                               |
+| Группа кнопок выбора | [`SelectButton`](https://v3.primevue.org/selectbutton/)         | Группа кнопок одиночного/множественного выбора.                  |
+| Боковая панель      | [`Sidebar`](https://v3.primevue.org/sidebar/)                    | Выезжающая боковая панель.                                       |
+| Закладки            | [`TabView`](https://v3.primevue.org/tabview/)                    | Набор вкладок.                                                   |
+| Закладка            | [`TabPanel`](https://v3.primevue.org/tabview/)                   | Вкладка внутри `TabView`.                                        |
+| Тег                 | [`Tag`](https://v3.primevue.org/tag/)                            | Метка-тег.                                                       |
+| Многострочное поле  | [`Textarea`](https://v3.primevue.org/textarea/)                  | Многострочное текстовое поле.                                    |
+| Панель инструментов | [`Toolbar`](https://v3.primevue.org/toolbar/)                    | Панель инструментов со слотами `start`/`end`.                    |
+| Тройной флажок      | [`TriStateCheckbox`](https://v3.primevue.org/tristatecheckbox/)  | Флажок с тремя состояниями.                                      |
 
 ### Компоненты системы BaSYS
 
-- [BsViewTitle](bsViewTitleComponent.md) — заголовок страницы с индикатором ожидания/модификации.
-- `BsTableViewComponent` — табличное представление данных с фильтрами, сортировкой и постраничной загрузкой; колонки описываются через `TableViewColumnViewModel`.
-- `BsTextComponent` — отображение текста с учётом семантики (severity, форматирование).
-- `BsObjectReferenceSelect` / `BsObjectReferenceMultiSelect` — выпадающий список со ссылкой на объекты метаданных.
-- `BsPeriodSelector` — выбор периода.
-- `BsFilterRow` — строка фильтра для отчётов.
+| Название                | Имя                                                  | Назначение                                                                                                          |
+| ----------------------- | ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Заголовок страницы      | [`BsViewTitle`](bsViewTitleComponent.md)             | Заголовок страницы с индикатором ожидания/модификации.                                                              |
+| Табличное представление | `BsTableViewComponent`                               | Табличное представление с фильтрами, сортировкой и постраничной загрузкой; колонки описываются через `TableViewColumnViewModel`. |
+| Текст                   | `BsTextComponent`                                    | Отображение текста с учётом семантики (severity, форматирование).                                                   |
+| Выбор элемента          | `BsObjectReferenceSelect`                            | Выпадающий список со ссылкой на объект метаданных.                                                                  |
+| Множественный выбор     | `BsObjectReferenceMultiSelect`                       | Выпадающий список с множественным выбором ссылок на объекты метаданных.                                             |
+| Выбор периода           | `BsPeriodSelector`                                   | Выбор периода (для отчётов и фильтров).                                                                             |
+| Строка фильтра          | `BsFilterRow`                                        | Строка фильтра для отчётов.                                                                                         |
 
 > Для использования значка PrimeIcons (`pi pi-…`) дополнительные действия не требуются — иконки подключены глобально.
 
