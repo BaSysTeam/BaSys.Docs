@@ -77,18 +77,18 @@
 
 | Название            | Имя                                                            | Назначение                                    |
 | ------------------- | -------------------------------------------------------------- | --------------------------------------------- |
-| Метка               | [`pv-badge`](https://v3.primevue.org/badge/)                   | Бейдж (счётчик, статус).                      |
+| Метка               | [`pv-badge`](pvBadgeComponent.md)                              | Бейдж (счётчик, статус).                      |
 | Кнопка              | [`pv-button`](pvButtonComponent.md)                            | Кнопка.                                       |
-| Группа кнопок       | [`pv-button-group`](https://v3.primevue.org/button/)           | Группа кнопок.                                |
-| Кнопка с меню       | [`pv-split-button`](https://v3.primevue.org/splitbutton/)      | Кнопка с выпадающим меню.                     |
-| Элемент             | [`pv-split-button-item`](https://v3.primevue.org/splitbutton/) | Пункт меню кнопки `pv-split-button`.          |
-| Разделитель         | [`pv-divider`](https://v3.primevue.org/divider/)               | Горизонтальный/вертикальный разделитель.      |
-| Панель инструментов | [`pv-toolbar`](https://v3.primevue.org/toolbar/)               | Панель инструментов со слотами `start`/`end`. |
-| Закладки            | [`pv-tab-view`](https://v3.primevue.org/tabview/)              | Набор вкладок.                                |
-| Закладка            | [`pv-tab-panel`](https://v3.primevue.org/tabview/)             | Вкладка внутри `pv-tab-view`.                 |
-| Поле даты           | [`pv-calendar`](https://v3.primevue.org/calendar/)             | Поле ввода даты/времени.                      |
-| Флажок              | [`pv-checkbox`](https://v3.primevue.org/checkbox/)             | Флажок.                                       |
-| Переключатель       | [`pv-input-switch`](https://v3.primevue.org/inputswitch/)      | Переключатель.                                |
+| Группа кнопок       | [`pv-button-group`](pvButtonGroupComponent.md)                 | Группа кнопок.                                |
+| Кнопка с меню       | [`pv-split-button`](pvSplitButtonComponent.md)                 | Кнопка с выпадающим меню.                     |
+| Элемент             | [`pv-split-button-item`](pvSplitButtonItemComponent.md)        | Пункт меню кнопки `pv-split-button`.          |
+| Разделитель         | [`pv-divider`](pvDividerComponent.md)                          | Горизонтальный/вертикальный разделитель.      |
+| Панель инструментов | [`pv-toolbar`](pvToolbarComponent.md)                          | Панель инструментов со слотами `start`/`end`. |
+| Закладки            | [`pv-tab-view`](pvTabViewComponent.md)                         | Набор вкладок.                                |
+| Закладка            | [`pv-tab-panel`](pvTabPanelComponent.md)                       | Вкладка внутри `pv-tab-view`.                 |
+| Поле даты           | [`pv-calendar`](pvCalendarComponent.md)                        | Поле ввода даты/времени.                      |
+| Флажок              | [`pv-checkbox`](pvCheckboxComponent.md)                        | Флажок.                                       |
+| Переключатель       | [`pv-input-switch`](pvInputSwitchComponent.md)                 | Переключатель.                                |
 | Текстовое поле      | [`pv-input-text`](https://v3.primevue.org/inputtext/)          | Однострочное текстовое поле.                  |
 | Многострочное поле  | [`pv-input-textarea`](https://v3.primevue.org/textarea/)       | Многострочное текстовое поле.                 |
 | Числовое поле       | [`pv-input-number`](https://v3.primevue.org/inputnumber/)      | Поле ввода числа.                             |
