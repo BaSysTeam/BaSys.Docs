@@ -148,27 +148,27 @@ export default {
 
 | Название            | Имя                                                              | Назначение                                                       |
 | ------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
-| Метка               | [`Badge`](https://v3.primevue.org/badge/)                        | Бейдж (счётчик, статус).                                         |
+| Метка               | [`Badge`](pvBadgeComponent.md)                                   | Бейдж (счётчик, статус).                                         |
 | Кнопка              | [`Button`](pvButtonComponent.md)                                 | Кнопка.                                                          |
-| Поле даты           | [`Calendar`](https://v3.primevue.org/calendar/)                  | Поле ввода даты/времени.                                         |
+| Поле даты           | [`Calendar`](pvCalendarComponent.md)                             | Поле ввода даты/времени.                                         |
 | Карточка            | [`Card`](https://v3.primevue.org/card/)                          | Контейнер-карточка.                                              |
 | График              | [`Chart`](https://v3.primevue.org/chart/)                        | Графики и диаграммы.                                             |
 | Колонка             | [`Column`](https://v3.primevue.org/column/)                      | Колонка таблицы `DataTable`.                                     |
 | Таблица             | [`DataTable`](https://v3.primevue.org/datatable/)                | Таблица с фильтрами, сортировкой и постраничной загрузкой.       |
 | Диалог              | [`Dialog`](https://v3.primevue.org/dialog/)                      | Модальный диалог.                                                |
-| Разделитель         | [`Divider`](https://v3.primevue.org/divider/)                    | Горизонтальный/вертикальный разделитель.                         |
+| Разделитель         | [`Divider`](pvDividerComponent.md)                               | Горизонтальный/вертикальный разделитель.                         |
 | Выпадающий список   | [`Dropdown`](https://v3.primevue.org/dropdown/)                  | Выпадающий список.                                               |
-| Числовое поле       | [`InputNumber`](https://v3.primevue.org/inputnumber/)            | Поле ввода числа.                                                |
-| Переключатель       | [`InputSwitch`](https://v3.primevue.org/inputswitch/)            | Переключатель.                                                   |
-| Текстовое поле      | [`InputText`](https://v3.primevue.org/inputtext/)                | Однострочное текстовое поле.                                     |
+| Числовое поле       | [`InputNumber`](pvInputNumberComponent.md)                       | Поле ввода числа.                                                |
+| Переключатель       | [`InputSwitch`](pvInputSwitchComponent.md)                       | Переключатель.                                                   |
+| Текстовое поле      | [`InputText`](pvInputTextComponent.md)                           | Однострочное текстовое поле.                                     |
 | Орг. структура      | [`OrganizationChart`](https://v3.primevue.org/organizationchart/) | Дерево организационной структуры.                               |
 | Группа кнопок выбора | [`SelectButton`](https://v3.primevue.org/selectbutton/)         | Группа кнопок одиночного/множественного выбора.                  |
 | Боковая панель      | [`Sidebar`](https://v3.primevue.org/sidebar/)                    | Выезжающая боковая панель.                                       |
-| Закладки            | [`TabView`](https://v3.primevue.org/tabview/)                    | Набор вкладок.                                                   |
-| Закладка            | [`TabPanel`](https://v3.primevue.org/tabview/)                   | Вкладка внутри `TabView`.                                        |
+| Закладки            | [`TabView`](pvTabViewComponent.md)                               | Набор вкладок.                                                   |
+| Закладка            | [`TabPanel`](pvTabPanelComponent.md)                             | Вкладка внутри `TabView`.                                        |
 | Тег                 | [`Tag`](https://v3.primevue.org/tag/)                            | Метка-тег.                                                       |
-| Многострочное поле  | [`Textarea`](https://v3.primevue.org/textarea/)                  | Многострочное текстовое поле.                                    |
-| Панель инструментов | [`Toolbar`](https://v3.primevue.org/toolbar/)                    | Панель инструментов со слотами `start`/`end`.                    |
+| Многострочное поле  | [`Textarea`](pvTextareaComponent.md)                             | Многострочное текстовое поле.                                    |
+| Панель инструментов | [`Toolbar`](pvToolbarComponent.md)                               | Панель инструментов со слотами `start`/`end`.                    |
 | Тройной флажок      | [`TriStateCheckbox`](https://v3.primevue.org/tristatecheckbox/)  | Флажок с тремя состояниями.                                      |
 
 ### Компоненты системы BaSYS

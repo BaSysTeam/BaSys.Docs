@@ -89,9 +89,9 @@
 | Поле даты           | [`pv-calendar`](pvCalendarComponent.md)                        | Поле ввода даты/времени.                      |
 | Флажок              | [`pv-checkbox`](pvCheckboxComponent.md)                        | Флажок.                                       |
 | Переключатель       | [`pv-input-switch`](pvInputSwitchComponent.md)                 | Переключатель.                                |
-| Текстовое поле      | [`pv-input-text`](https://v3.primevue.org/inputtext/)          | Однострочное текстовое поле.                  |
-| Многострочное поле  | [`pv-input-textarea`](https://v3.primevue.org/textarea/)       | Многострочное текстовое поле.                 |
-| Числовое поле       | [`pv-input-number`](https://v3.primevue.org/inputnumber/)      | Поле ввода числа.                             |
+| Текстовое поле      | [`pv-input-text`](pvInputTextComponent.md)                     | Однострочное текстовое поле.                  |
+| Многострочное поле  | [`pv-input-textarea`](pvTextareaComponent.md)                  | Многострочное текстовое поле.                 |
+| Числовое поле       | [`pv-input-number`](pvInputNumberComponent.md)                 | Поле ввода числа.                             |
 
 
 ### Пример кастомизации компонента
