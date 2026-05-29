@@ -83,21 +83,21 @@ data() {
 
 ```json
 {
-  "Id": "pv-tab-view-B1fsLk",
-  "ComponentName": "pv-tab-view",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [],
-  "Items": [
+  "id": "pv-tab-view-B1fsLk",
+  "componentName": "pv-tab-view",
+  "cssClass": "",
+  "style": "",
+  "properties": [],
+  "items": [
     {
-      "Id": "pv-tab-panel-BVwXOB",
-      "ComponentName": "pv-tab-panel",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "header", "Value": "Сообщения" }
+      "id": "pv-tab-panel-BVwXOB",
+      "componentName": "pv-tab-panel",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "header", "value": "Сообщения" }
       ],
-      "Items": [
+      "items": [
         // bs-row → bs-col → pv-toolbar + bs-details-table ...
       ]
     }
@@ -109,20 +109,20 @@ data() {
 
 ```json
 {
-  "Id": "pv-tab-view-UFNeID",
-  "DataUid": "eded8edc-8d6b-4e2f-a068-52d401d1caaa",
-  "ComponentName": "pv-tab-view",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [],
-  "Items": [
+  "id": "pv-tab-view-UFNeID",
+  "dataUid": "eded8edc-8d6b-4e2f-a068-52d401d1caaa",
+  "componentName": "pv-tab-view",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [],
+  "items": [
     {
-      "Id": "pv-tab-panel-wwgBLp",
-      "ComponentName": "pv-tab-panel",
-      "Properties": [
-        { "Name": "header", "Value": "Обязательные поля" }
+      "id": "pv-tab-panel-wwgBLp",
+      "componentName": "pv-tab-panel",
+      "properties": [
+        { "name": "header", "value": "Обязательные поля" }
       ],
-      "Items": [ /* поля шапки */ ]
+      "items": [ /* поля шапки */ ]
     }
     // ... другие pv-tab-panel
   ]

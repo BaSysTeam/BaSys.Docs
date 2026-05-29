@@ -49,15 +49,15 @@
 
 ```json
 {
-  "Id": "pv-input-switch-3xQwLa",
-  "ComponentName": "pv-input-switch",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.is_active" },
-    { "Name": "size", "Value": "small" }
+  "id": "pv-input-switch-3xQwLa",
+  "componentName": "pv-input-switch",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.is_active" },
+    { "name": "size", "value": "small" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -65,16 +65,16 @@
 
 ```json
 {
-  "Id": "pv-input-switch-K7uMeT",
-  "ComponentName": "pv-input-switch",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.is_published" },
-    { "Name": "inputId", "Value": "fld-is-published" },
-    { "Name": ":disabled", "Value": "$h.is_closed" },
-    { "Name": "@Change", "Value": "recalc_publication" }
+  "id": "pv-input-switch-K7uMeT",
+  "componentName": "pv-input-switch",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.is_published" },
+    { "name": "inputId", "value": "fld-is-published" },
+    { "name": ":disabled", "value": "$h.is_closed" },
+    { "name": "@Change", "value": "recalc_publication" }
   ],
-  "Items": []
+  "items": []
 }
 ```

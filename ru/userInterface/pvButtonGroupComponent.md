@@ -37,41 +37,41 @@
 
 ```json
 {
-  "Id": "pv-button-group-8fGhAo",
-  "ComponentName": "pv-button-group",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [],
-  "Items": [
+  "id": "pv-button-group-8fGhAo",
+  "componentName": "pv-button-group",
+  "cssClass": "",
+  "style": "",
+  "properties": [],
+  "items": [
     {
-      "Id": "pv-button-KLeHPa",
-      "ComponentName": "pv-button",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Добавить" },
-        { "Name": "icon", "Value": "pi pi-plus" },
-        { "Name": "@Click", "Value": "standard.add" },
-        { "Name": "severity", "Value": "primary" },
-        { "Name": "size", "Value": "small" },
-        { "Name": "outlined", "Value": "outlined" }
+      "id": "pv-button-KLeHPa",
+      "componentName": "pv-button",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Добавить" },
+        { "name": "icon", "value": "pi pi-plus" },
+        { "name": "@Click", "value": "standard.add" },
+        { "name": "severity", "value": "primary" },
+        { "name": "size", "value": "small" },
+        { "name": "outlined", "value": "outlined" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-button-fZH9A5",
-      "ComponentName": "pv-button",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Редактировать" },
-        { "Name": "icon", "Value": "pi pi-pencil" },
-        { "Name": "@Click", "Value": "standard.edit" },
-        { "Name": "severity", "Value": "primary" },
-        { "Name": "size", "Value": "small" },
-        { "Name": "outlined", "Value": "outlined" }
+      "id": "pv-button-fZH9A5",
+      "componentName": "pv-button",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Редактировать" },
+        { "name": "icon", "value": "pi pi-pencil" },
+        { "name": "@Click", "value": "standard.edit" },
+        { "name": "severity", "value": "primary" },
+        { "name": "size", "value": "small" },
+        { "name": "outlined", "value": "outlined" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -81,58 +81,58 @@
 
 ```json
 {
-  "Id": "pv-button-group-uM22qD",
-  "ComponentName": "pv-button-group",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [],
-  "Items": [
+  "id": "pv-button-group-uM22qD",
+  "componentName": "pv-button-group",
+  "cssClass": "",
+  "style": "",
+  "properties": [],
+  "items": [
     {
-      "Id": "pv-button-YLSvAe",
-      "ComponentName": "pv-button",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Вернуться" },
-        { "Name": "icon", "Value": "pi pi-arrow-left" },
-        { "Name": "@Click", "Value": "standard.return" },
-        { "Name": "severity", "Value": "primary" },
-        { "Name": "size", "Value": "small" },
-        { "Name": "outlined", "Value": "outlined" }
+      "id": "pv-button-YLSvAe",
+      "componentName": "pv-button",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Вернуться" },
+        { "name": "icon", "value": "pi pi-arrow-left" },
+        { "name": "@Click", "value": "standard.return" },
+        { "name": "severity", "value": "primary" },
+        { "name": "size", "value": "small" },
+        { "name": "outlined", "value": "outlined" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-button-9akpYT",
-      "ComponentName": "pv-button",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Сохранить&Закрыть" },
-        { "Name": "icon", "Value": "pi pi-save" },
-        { "Name": "@Click", "Value": "standard.save_close" },
-        { "Name": "severity", "Value": "primary" },
-        { "Name": "size", "Value": "small" },
-        { "Name": "outlined", "Value": "outlined" },
-        { "Name": ":disabled", "Value": "!$h.is_task_user" }
+      "id": "pv-button-9akpYT",
+      "componentName": "pv-button",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Сохранить&Закрыть" },
+        { "name": "icon", "value": "pi pi-save" },
+        { "name": "@Click", "value": "standard.save_close" },
+        { "name": "severity", "value": "primary" },
+        { "name": "size", "value": "small" },
+        { "name": "outlined", "value": "outlined" },
+        { "name": ":disabled", "value": "!$h.is_task_user" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-button-OlwYc7",
-      "ComponentName": "pv-button",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Сохранить" },
-        { "Name": "icon", "Value": "pi pi-save" },
-        { "Name": "@Click", "Value": "standard.save" },
-        { "Name": "severity", "Value": "primary" },
-        { "Name": "size", "Value": "small" },
-        { "Name": "outlined", "Value": "outlined" },
-        { "Name": ":disabled", "Value": "!$h.is_task_user" }
+      "id": "pv-button-OlwYc7",
+      "componentName": "pv-button",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Сохранить" },
+        { "name": "icon", "value": "pi pi-save" },
+        { "name": "@Click", "value": "standard.save" },
+        { "name": "severity", "value": "primary" },
+        { "name": "size", "value": "small" },
+        { "name": "outlined", "value": "outlined" },
+        { "name": ":disabled", "value": "!$h.is_task_user" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }

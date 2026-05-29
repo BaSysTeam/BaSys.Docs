@@ -94,8 +94,8 @@ description: Generates a Russian documentation article for a standard PrimeVue 3
 
 ```json
 {
-  "Id": "pv-xxx-…",
-  "ComponentName": "pv-xxx",
+  "id": "pv-xxx-…",
+  "componentName": "pv-xxx",
   ...
 }
 ```

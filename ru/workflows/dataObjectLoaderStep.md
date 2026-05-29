@@ -90,11 +90,11 @@ item.quantity > 0
 
 ```json
 {
-  "SourceFieldName": "topic",
-  "DestinationFieldName": "topic",
-  "DefaultValue": "",
-  "SearchBy": "",
-  "DataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
+  "sourceFieldName": "topic",
+  "destinationFieldName": "topic",
+  "defaultValue": "",
+  "searchBy": "",
+  "dataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
 }
 ```
 
@@ -106,11 +106,11 @@ item.quantity > 0
 
 ```json
 {
-  "SourceFieldName": "status",
-  "DestinationFieldName": "status",
-  "DefaultValue": "",
-  "SearchBy": "name",
-  "DataTypeUid": "049e5e0f-eb73-4a21-ae91-91505d1ee048"
+  "sourceFieldName": "status",
+  "destinationFieldName": "status",
+  "defaultValue": "",
+  "searchBy": "name",
+  "dataTypeUid": "049e5e0f-eb73-4a21-ae91-91505d1ee048"
 }
 ```
 
@@ -120,11 +120,11 @@ item.quantity > 0
 
 ```json
 {
-  "SourceFieldName": "",
-  "DestinationFieldName": "is_deleted",
-  "DefaultValue": "false",
-  "SearchBy": "",
-  "DataTypeUid": "4bff64cf-eb01-4933-9f3d-b902336751f4"
+  "sourceFieldName": "",
+  "destinationFieldName": "is_deleted",
+  "defaultValue": "false",
+  "searchBy": "",
+  "dataTypeUid": "4bff64cf-eb01-4933-9f3d-b902336751f4"
 }
 ```
 
@@ -194,54 +194,54 @@ return tableData;
 
 ```json
 {
-  "MetaObjectKindUid": "14a60875-e241-4e99-b32d-d45b2726d18b",
-  "MetaObjectUid": "a30177b3-bf29-4e3d-9215-9a1a5e2fcfdb",
-  "SaveRegime": 1,
-  "SearchBy": "",
-  "SourcePath": "data",
-  "Condition": "",
-  "HeaderMapping": [
+  "metaObjectKindUid": "14a60875-e241-4e99-b32d-d45b2726d18b",
+  "metaObjectUid": "a30177b3-bf29-4e3d-9215-9a1a5e2fcfdb",
+  "saveRegime": 1,
+  "searchBy": "",
+  "sourcePath": "data",
+  "condition": "",
+  "headerMapping": [
     {
-      "SourceFieldName": "date",
-      "DestinationFieldName": "date",
-      "DefaultValue": "",
-      "SearchBy": "",
-      "DataTypeUid": "9001eafb-efb1-442f-b288-723bb8002b12"
+      "sourceFieldName": "date",
+      "destinationFieldName": "date",
+      "defaultValue": "",
+      "searchBy": "",
+      "dataTypeUid": "9001eafb-efb1-442f-b288-723bb8002b12"
     },
     {
-      "SourceFieldName": "author",
-      "DestinationFieldName": "author",
-      "DefaultValue": "",
-      "SearchBy": "id",
-      "DataTypeUid": "30fa0620-3db1-43e2-a700-b6295739bbb6"
+      "sourceFieldName": "author",
+      "destinationFieldName": "author",
+      "defaultValue": "",
+      "searchBy": "id",
+      "dataTypeUid": "30fa0620-3db1-43e2-a700-b6295739bbb6"
     },
     {
-      "SourceFieldName": "status",
-      "DestinationFieldName": "status",
-      "DefaultValue": "",
-      "SearchBy": "name",
-      "DataTypeUid": "049e5e0f-eb73-4a21-ae91-91505d1ee048"
+      "sourceFieldName": "status",
+      "destinationFieldName": "status",
+      "defaultValue": "",
+      "searchBy": "name",
+      "dataTypeUid": "049e5e0f-eb73-4a21-ae91-91505d1ee048"
     },
     {
-      "SourceFieldName": "topic",
-      "DestinationFieldName": "topic",
-      "DefaultValue": "",
-      "SearchBy": "",
-      "DataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
+      "sourceFieldName": "topic",
+      "destinationFieldName": "topic",
+      "defaultValue": "",
+      "searchBy": "",
+      "dataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
     },
     {
-      "SourceFieldName": "",
-      "DestinationFieldName": "is_deleted",
-      "DefaultValue": "false",
-      "SearchBy": "",
-      "DataTypeUid": "4bff64cf-eb01-4933-9f3d-b902336751f4"
+      "sourceFieldName": "",
+      "destinationFieldName": "is_deleted",
+      "defaultValue": "false",
+      "searchBy": "",
+      "dataTypeUid": "4bff64cf-eb01-4933-9f3d-b902336751f4"
     }
   ],
-  "TableMapping": [],
-  "KindName": "data_object_loader",
-  "Title": "Create task",
-  "Name": "create_task",
-  "IsActive": true
+  "tableMapping": [],
+  "kindName": "data_object_loader",
+  "title": "Create task",
+  "name": "create_task",
+  "isActive": true
 }
 ```
 
@@ -251,26 +251,26 @@ return tableData;
 
 ```json
 {
-  "MetaObjectKindUid": "14a60875-e241-4e99-b32d-d45b2726d18b",
-  "MetaObjectUid": "a30177b3-bf29-4e3d-9215-9a1a5e2fcfdb",
-  "SaveRegime": 2,
-  "SearchBy": "number",
-  "SourcePath": "data",
-  "Condition": "",
-  "HeaderMapping": [
+  "metaObjectKindUid": "14a60875-e241-4e99-b32d-d45b2726d18b",
+  "metaObjectUid": "a30177b3-bf29-4e3d-9215-9a1a5e2fcfdb",
+  "saveRegime": 2,
+  "searchBy": "number",
+  "sourcePath": "data",
+  "condition": "",
+  "headerMapping": [
     {
-      "SourceFieldName": "status",
-      "DestinationFieldName": "status",
-      "DefaultValue": "",
-      "SearchBy": "name",
-      "DataTypeUid": "049e5e0f-eb73-4a21-ae91-91505d1ee048"
+      "sourceFieldName": "status",
+      "destinationFieldName": "status",
+      "defaultValue": "",
+      "searchBy": "name",
+      "dataTypeUid": "049e5e0f-eb73-4a21-ae91-91505d1ee048"
     }
   ],
-  "TableMapping": [],
-  "KindName": "data_object_loader",
-  "Title": "Set status",
-  "Name": "set_status",
-  "IsActive": true
+  "tableMapping": [],
+  "kindName": "data_object_loader",
+  "title": "Set status",
+  "name": "set_status",
+  "isActive": true
 }
 ```
 
@@ -280,54 +280,54 @@ return tableData;
 
 ```json
 {
-  "MetaObjectKindUid": "14a60875-e241-4e99-b32d-d45b2726d18b",
-  "MetaObjectUid": "82ed45e1-d842-49f4-9e22-0f345836acf2",
-  "SaveRegime": 1,
-  "SearchBy": "",
-  "SourcePath": "header_data",
-  "Condition": "",
-  "HeaderMapping": [
+  "metaObjectKindUid": "14a60875-e241-4e99-b32d-d45b2726d18b",
+  "metaObjectUid": "82ed45e1-d842-49f4-9e22-0f345836acf2",
+  "saveRegime": 1,
+  "searchBy": "",
+  "sourcePath": "header_data",
+  "condition": "",
+  "headerMapping": [
     {
-      "SourceFieldName": "город",
-      "DestinationFieldName": "город",
-      "DefaultValue": "",
-      "SearchBy": "id",
-      "DataTypeUid": "0c951bf0-9652-40bc-937c-c92a2d95242d"
+      "sourceFieldName": "город",
+      "destinationFieldName": "город",
+      "defaultValue": "",
+      "searchBy": "id",
+      "dataTypeUid": "0c951bf0-9652-40bc-937c-c92a2d95242d"
     },
     {
-      "SourceFieldName": "действует_с",
-      "DestinationFieldName": "действует_с",
-      "DefaultValue": "",
-      "SearchBy": "",
-      "DataTypeUid": "9001eafb-efb1-442f-b288-723bb8002b12"
+      "sourceFieldName": "действует_с",
+      "destinationFieldName": "действует_с",
+      "defaultValue": "",
+      "searchBy": "",
+      "dataTypeUid": "9001eafb-efb1-442f-b288-723bb8002b12"
     }
   ],
-  "TableMapping": [
+  "tableMapping": [
     {
-      "TableUid": "dc29dbd1-2a91-c867-3e20-4b9354d33c29",
-      "SourcePath": "_data.table_data.filter(x=>x.operation_id == item.id)",
-      "Mapping": [
+      "tableUid": "dc29dbd1-2a91-c867-3e20-4b9354d33c29",
+      "sourcePath": "_data.table_data.filter(x=>x.operation_id == item.id)",
+      "mapping": [
         {
-          "SourceFieldName": "город",
-          "DestinationFieldName": "город",
-          "DefaultValue": "",
-          "SearchBy": "id",
-          "DataTypeUid": "0c951bf0-9652-40bc-937c-c92a2d95242d"
+          "sourceFieldName": "город",
+          "destinationFieldName": "город",
+          "defaultValue": "",
+          "searchBy": "id",
+          "dataTypeUid": "0c951bf0-9652-40bc-937c-c92a2d95242d"
         },
         {
-          "SourceFieldName": "тариф",
-          "DestinationFieldName": "тариф",
-          "DefaultValue": "",
-          "SearchBy": "",
-          "DataTypeUid": "a05516ac-baae-4f66-9b67-6703998a6a1b"
+          "sourceFieldName": "тариф",
+          "destinationFieldName": "тариф",
+          "defaultValue": "",
+          "searchBy": "",
+          "dataTypeUid": "a05516ac-baae-4f66-9b67-6703998a6a1b"
         }
       ]
     }
   ],
-  "KindName": "data_object_loader",
-  "Title": "Load",
-  "Name": "load",
-  "IsActive": true
+  "kindName": "data_object_loader",
+  "title": "Load",
+  "name": "load",
+  "isActive": true
 }
 ```
 

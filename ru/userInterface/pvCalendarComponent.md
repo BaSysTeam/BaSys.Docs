@@ -65,21 +65,21 @@
 
 ```json
 {
-  "Id": "pv-calendar-y2hdJ3",
-  "DataUid": "b6491015-ca52-5008-b0a4-2b01b50d379b",
-  "ComponentName": "pv-calendar",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.дата_уволен" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "showIcon", "Value": "" },
-    { "Name": "showButtonBar", "Value": "" },
-    { "Name": "iconDisplay", "Value": "input" },
-    { "Name": ":showTime", "Value": "false" },
-    { "Name": "dateFormat", "Value": "dd.mm.yy" }
+  "id": "pv-calendar-y2hdJ3",
+  "dataUid": "b6491015-ca52-5008-b0a4-2b01b50d379b",
+  "componentName": "pv-calendar",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.дата_уволен" },
+    { "name": "size", "value": "small" },
+    { "name": "showIcon", "value": "" },
+    { "name": "showButtonBar", "value": "" },
+    { "name": "iconDisplay", "value": "input" },
+    { "name": ":showTime", "value": "false" },
+    { "name": "dateFormat", "value": "dd.mm.yy" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -87,21 +87,21 @@
 
 ```json
 {
-  "Id": "pv-calendar-YKavgY",
-  "DataUid": "28ae968a-973d-bd39-28fa-7ec91799c2ad",
-  "ComponentName": "pv-calendar",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.deadline" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "showIcon", "Value": "" },
-    { "Name": "showButtonBar", "Value": "" },
-    { "Name": "iconDisplay", "Value": "input" },
-    { "Name": ":showTime", "Value": "true" },
-    { "Name": "dateFormat", "Value": "dd.mm.yy" },
-    { "Name": ":disabled", "Value": "!$h.is_user_author" }
+  "id": "pv-calendar-YKavgY",
+  "dataUid": "28ae968a-973d-bd39-28fa-7ec91799c2ad",
+  "componentName": "pv-calendar",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.deadline" },
+    { "name": "size", "value": "small" },
+    { "name": "showIcon", "value": "" },
+    { "name": "showButtonBar", "value": "" },
+    { "name": "iconDisplay", "value": "input" },
+    { "name": ":showTime", "value": "true" },
+    { "name": "dateFormat", "value": "dd.mm.yy" },
+    { "name": ":disabled", "value": "!$h.is_user_author" }
   ],
-  "Items": []
+  "items": []
 }
 ```

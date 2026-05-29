@@ -74,16 +74,16 @@
 
 ```json
 {
-  "Id": "bs-input-pattern-article",
-  "ComponentName": "bs-input-pattern",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.article" },
-    { "Name": "pattern", "Value": "^[A-Z]{3}-\\d{4}$" },
-    { "Name": "size", "Value": "small" }
+  "id": "bs-input-pattern-article",
+  "componentName": "bs-input-pattern",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.article" },
+    { "name": "pattern", "value": "^[A-Z]{3}-\\d{4}$" },
+    { "name": "size", "value": "small" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -91,16 +91,16 @@
 
 ```json
 {
-  "Id": "bs-input-pattern-code",
-  "ComponentName": "bs-input-pattern",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.code" },
-    { "Name": ":pattern", "Value": "data.header.code_pattern" },
-    { "Name": "size", "Value": "small" }
+  "id": "bs-input-pattern-code",
+  "componentName": "bs-input-pattern",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.code" },
+    { "name": ":pattern", "value": "data.header.code_pattern" },
+    { "name": "size", "value": "small" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -110,15 +110,15 @@
 
 ```json
 {
-  "Id": "bs-details-table-column-floor",
-  "ComponentName": "bs-details-table-column",
-  "Properties": [
-    { "Name": "title", "Value": "Этаж" },
-    { "Name": "name", "Value": "floor" },
-    { "Name": "width", "Value": "auto" },
-    { "Name": "control", "Value": "input-pattern" },
-    { "Name": "pattern", "Value": "^(?:\\d+|НС|БС)$" }
+  "id": "bs-details-table-column-floor",
+  "componentName": "bs-details-table-column",
+  "properties": [
+    { "name": "title", "value": "Этаж" },
+    { "name": "name", "value": "floor" },
+    { "name": "width", "value": "auto" },
+    { "name": "control", "value": "input-pattern" },
+    { "name": "pattern", "value": "^(?:\\d+|НС|БС)$" }
   ],
-  "Items": []
+  "items": []
 }
 ```

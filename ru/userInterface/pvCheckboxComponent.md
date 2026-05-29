@@ -40,27 +40,27 @@
 
 ```json
 {
-  "Id": "bs-form-field-PqokLV",
-  "DataUid": "593754f9-3ae3-abfb-7165-4cf8be8cb659",
-  "ComponentName": "bs-form-field",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "text", "Value": "Создать записи" },
-    { "Name": "labelCols", "Value": "4" }
+  "id": "bs-form-field-PqokLV",
+  "dataUid": "593754f9-3ae3-abfb-7165-4cf8be8cb659",
+  "componentName": "bs-form-field",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "text", "value": "Создать записи" },
+    { "name": "labelCols", "value": "4" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "pv-checkbox-ARIRtq",
-      "DataUid": "593754f9-3ae3-abfb-7165-4cf8be8cb659",
-      "ComponentName": "pv-checkbox",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "vModel", "Value": "$h.create_records" },
-        { "Name": "binary", "Value": "true" }
+      "id": "pv-checkbox-ARIRtq",
+      "dataUid": "593754f9-3ae3-abfb-7165-4cf8be8cb659",
+      "componentName": "pv-checkbox",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "vModel", "value": "$h.create_records" },
+        { "name": "binary", "value": "true" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -70,16 +70,16 @@
 
 ```json
 {
-  "Id": "pv-checkbox-Oe21hu",
-  "DataUid": "973b5610-86b3-c991-76a8-907e7f5d39e8",
-  "ComponentName": "pv-checkbox",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.уволен" },
-    { "Name": "binary", "Value": "true" }
+  "id": "pv-checkbox-Oe21hu",
+  "dataUid": "973b5610-86b3-c991-76a8-907e7f5d39e8",
+  "componentName": "pv-checkbox",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.уволен" },
+    { "name": "binary", "value": "true" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -87,15 +87,15 @@
 
 ```json
 {
-  "Id": "pv-checkbox-DQghS6",
-  "DataUid": "15af10b0-eb96-3aa0-ff24-f2c78948b3a8",
-  "ComponentName": "pv-checkbox",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "data.header.create_records" },
-    { "Name": "binary", "Value": "true" }
+  "id": "pv-checkbox-DQghS6",
+  "dataUid": "15af10b0-eb96-3aa0-ff24-f2c78948b3a8",
+  "componentName": "pv-checkbox",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "data.header.create_records" },
+    { "name": "binary", "value": "true" }
   ],
-  "Items": []
+  "items": []
 }
 ```

@@ -105,68 +105,68 @@
 
 ```json
 {
-  "Id": "bs-table-view-likZiU",
-  "ComponentName": "bs-table-view",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "dataSource", "Value": "operation.task" },
-    { "Name": "@RowSelect", "Value": "standard.row_select" },
-    { "Name": "@RowDblClick", "Value": "standard.row_dbl_click" },
-    { "Name": "name", "Value": "list" },
-    { "Name": "height", "Value": "stretch" }
+  "id": "bs-table-view-likZiU",
+  "componentName": "bs-table-view",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "dataSource", "value": "operation.task" },
+    { "name": "@RowSelect", "value": "standard.row_select" },
+    { "name": "@RowDblClick", "value": "standard.row_dbl_click" },
+    { "name": "name", "value": "list" },
+    { "name": "height", "value": "stretch" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-table-view-column-sk5Ij3",
-      "ComponentName": "bs-table-view-column",
-      "Properties": [
-        { "Name": "title", "Value": "Номер" },
-        { "Name": "frozen", "Value": "true" },
-        { "Name": "name", "Value": "number" },
-        { "Name": "width", "Value": "120px" },
-        { "Name": "sortable", "Value": "true" },
-        { "Name": "filterKind", "Value": "number" }
+      "id": "bs-table-view-column-sk5Ij3",
+      "componentName": "bs-table-view-column",
+      "properties": [
+        { "name": "title", "value": "Номер" },
+        { "name": "frozen", "value": "true" },
+        { "name": "name", "value": "number" },
+        { "name": "width", "value": "120px" },
+        { "name": "sortable", "value": "true" },
+        { "name": "filterKind", "value": "number" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "bs-table-view-column-zKKAP0",
-      "ComponentName": "bs-table-view-column",
-      "Properties": [
-        { "Name": "title", "Value": "Дата" },
-        { "Name": "frozen", "Value": "true" },
-        { "Name": "name", "Value": "date" },
-        { "Name": "sortable", "Value": "true" },
-        { "Name": "width", "Value": "160px" },
-        { "Name": "format", "Value": "dateTime" },
-        { "Name": "filterKind", "Value": "dateTime" }
+      "id": "bs-table-view-column-zKKAP0",
+      "componentName": "bs-table-view-column",
+      "properties": [
+        { "name": "title", "value": "Дата" },
+        { "name": "frozen", "value": "true" },
+        { "name": "name", "value": "date" },
+        { "name": "sortable", "value": "true" },
+        { "name": "width", "value": "160px" },
+        { "name": "format", "value": "dateTime" },
+        { "name": "filterKind", "value": "dateTime" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "bs-table-view-column-GsNTrI",
-      "ComponentName": "bs-table-view-column",
-      "Properties": [
-        { "Name": "title", "Value": "Статус" },
-        { "Name": "name", "Value": "status_display" },
-        { "Name": "width", "Value": "200px" },
-        { "Name": "filterKind", "Value": "objectReference" },
-        { "Name": "filterSource", "Value": "049e5e0f-eb73-4a21-ae91-91505d1ee048" }
+      "id": "bs-table-view-column-GsNTrI",
+      "componentName": "bs-table-view-column",
+      "properties": [
+        { "name": "title", "value": "Статус" },
+        { "name": "name", "value": "status_display" },
+        { "name": "width", "value": "200px" },
+        { "name": "filterKind", "value": "objectReference" },
+        { "name": "filterSource", "value": "049e5e0f-eb73-4a21-ae91-91505d1ee048" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "bs-table-view-column-lQaA4O",
-      "ComponentName": "bs-table-view-column",
-      "Properties": [
-        { "Name": "title", "Value": "Тема" },
-        { "Name": "name", "Value": "topic" },
-        { "Name": "width", "Value": "300px" },
-        { "Name": "sortable", "Value": "true" },
-        { "Name": "filterKind", "Value": "string" }
+      "id": "bs-table-view-column-lQaA4O",
+      "componentName": "bs-table-view-column",
+      "properties": [
+        { "name": "title", "value": "Тема" },
+        { "name": "name", "value": "topic" },
+        { "name": "width", "value": "300px" },
+        { "name": "sortable", "value": "true" },
+        { "name": "filterKind", "value": "string" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }

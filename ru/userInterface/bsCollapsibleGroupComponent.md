@@ -70,30 +70,30 @@
 
 ```json
 {
-  "Id": "bs-collapsible-group-JlldTC",
-  "ComponentName": "bs-collapsible-group",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "title", "Value": "Основные" },
-    { "Name": "open", "Value": "true" },
-    { "Name": "text-align", "Value": "right" }
+  "id": "bs-collapsible-group-JlldTC",
+  "componentName": "bs-collapsible-group",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "title", "value": "Основные" },
+    { "name": "open", "value": "true" },
+    { "name": "text-align", "value": "right" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-row-ZEW0KN",
-      "ComponentName": "bs-row",
-      "CssClass": "grid",
-      "Style": "",
-      "Properties": [],
-      "Items": [
+      "id": "bs-row-ZEW0KN",
+      "componentName": "bs-row",
+      "cssClass": "grid",
+      "style": "",
+      "properties": [],
+      "items": [
         {
-          "Id": "bs-col-...",
-          "ComponentName": "bs-col",
-          "CssClass": "col",
-          "Style": "",
-          "Properties": [],
-          "Items": []
+          "id": "bs-col-...",
+          "componentName": "bs-col",
+          "cssClass": "col",
+          "style": "",
+          "properties": [],
+          "items": []
         }
       ]
     }
@@ -105,23 +105,23 @@
 
 ```json
 {
-  "Id": "bs-collapsible-group-FaaqRO",
-  "ComponentName": "bs-collapsible-group",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "title", "Value": "Добавление визы вручную" },
-    { "Name": "open", "Value": "true" },
-    { "Name": "text-align", "Value": "right" }
+  "id": "bs-collapsible-group-FaaqRO",
+  "componentName": "bs-collapsible-group",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "title", "value": "Добавление визы вручную" },
+    { "name": "open", "value": "true" },
+    { "name": "text-align", "value": "right" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-row-NCVXvU",
-      "ComponentName": "bs-row",
-      "CssClass": "grid",
-      "Style": "",
-      "Properties": [],
-      "Items": []
+      "id": "bs-row-NCVXvU",
+      "componentName": "bs-row",
+      "cssClass": "grid",
+      "style": "",
+      "properties": [],
+      "items": []
     }
   ]
 }
@@ -131,15 +131,15 @@
 
 ```json
 {
-  "Id": "bs-collapsible-group-extra",
-  "ComponentName": "bs-collapsible-group",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "title", "Value": "Дополнительные параметры" },
-    { "Name": ":open", "Value": "$h.is_new" },
-    { "Name": "text-align", "Value": "left" }
+  "id": "bs-collapsible-group-extra",
+  "componentName": "bs-collapsible-group",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "title", "value": "Дополнительные параметры" },
+    { "name": ":open", "value": "$h.is_new" },
+    { "name": "text-align", "value": "left" }
   ],
-  "Items": []
+  "items": []
 }
 ```

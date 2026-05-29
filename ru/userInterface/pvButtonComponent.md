@@ -84,19 +84,19 @@
 
 ```json
 {
-  "Id": "pv-button-KLeHPa",
-  "ComponentName": "pv-button",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "label", "Value": "Добавить" },
-    { "Name": "icon", "Value": "pi pi-plus" },
-    { "Name": "@Click", "Value": "standard.add" },
-    { "Name": "severity", "Value": "primary" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "outlined", "Value": "outlined" }
+  "id": "pv-button-KLeHPa",
+  "componentName": "pv-button",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "label", "value": "Добавить" },
+    { "name": "icon", "value": "pi pi-plus" },
+    { "name": "@Click", "value": "standard.add" },
+    { "name": "severity", "value": "primary" },
+    { "name": "size", "value": "small" },
+    { "name": "outlined", "value": "outlined" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -104,19 +104,19 @@
 
 ```json
 {
-  "Id": "pv-button-0rpJeY",
-  "ComponentName": "pv-button",
-  "CssClass": "ml-1",
-  "Style": "",
-  "Properties": [
-    { "Name": "label", "Value": "" },
-    { "Name": "icon", "Value": "pi pi-file-import" },
-    { "Name": "@Click", "Value": "standard.create_from" },
-    { "Name": "severity", "Value": "primary" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "outlined", "Value": "outlined" }
+  "id": "pv-button-0rpJeY",
+  "componentName": "pv-button",
+  "cssClass": "ml-1",
+  "style": "",
+  "properties": [
+    { "name": "label", "value": "" },
+    { "name": "icon", "value": "pi pi-file-import" },
+    { "name": "@Click", "value": "standard.create_from" },
+    { "name": "severity", "value": "primary" },
+    { "name": "size", "value": "small" },
+    { "name": "outlined", "value": "outlined" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -124,19 +124,19 @@
 
 ```json
 {
-  "Id": "pv-button-UacQEU",
-  "ComponentName": "pv-button",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "label", "Value": "Сообщения мной прочитаны" },
-    { "Name": "icon", "Value": "pi pi-check" },
-    { "Name": "@Click", "Value": "mark_messages" },
-    { "Name": "severity", "Value": "danger" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "slot", "Value": "end" },
-    { "Name": "vIf", "Value": "$h.is_task_user" }
+  "id": "pv-button-UacQEU",
+  "componentName": "pv-button",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "label", "value": "Сообщения мной прочитаны" },
+    { "name": "icon", "value": "pi pi-check" },
+    { "name": "@Click", "value": "mark_messages" },
+    { "name": "severity", "value": "danger" },
+    { "name": "size", "value": "small" },
+    { "name": "slot", "value": "end" },
+    { "name": "vIf", "value": "$h.is_task_user" }
   ],
-  "Items": []
+  "items": []
 }
 ```

@@ -71,8 +71,8 @@ description: Generates a Russian documentation article for a BaSYS frontend Vue 
 
 ```json
 {
-  "Id": "bs-xxx-…",
-  "ComponentName": "bs-xxx",
+  "id": "bs-xxx-…",
+  "componentName": "bs-xxx",
   ...
 }
 ```

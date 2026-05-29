@@ -71,18 +71,18 @@
 
 ```json
 {
-  "Id": "pv-input-number-3oSoC7",
-  "ComponentName": "pv-input-number",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.сумма_договора" },
-    { "Name": "size", "Value": "small" },
-    { "Name": ":minFractionDigits", "Value": "2" },
-    { "Name": ":maxFractionDigits", "Value": "2" },
-    { "Name": ":disabled", "Value": "$h.edit_disabled" }
+  "id": "pv-input-number-3oSoC7",
+  "componentName": "pv-input-number",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.сумма_договора" },
+    { "name": "size", "value": "small" },
+    { "name": ":minFractionDigits", "value": "2" },
+    { "name": ":maxFractionDigits", "value": "2" },
+    { "name": ":disabled", "value": "$h.edit_disabled" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -90,18 +90,18 @@
 
 ```json
 {
-  "Id": "pv-input-number-r7zY3W",
-  "ComponentName": "pv-input-number",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.hours_plan" },
-    { "Name": "size", "Value": "small" },
-    { "Name": ":minFractionDigits", "Value": "1" },
-    { "Name": ":maxFractionDigits", "Value": "1" },
-    { "Name": ":disabled", "Value": "!$h.is_user_author" }
+  "id": "pv-input-number-r7zY3W",
+  "componentName": "pv-input-number",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.hours_plan" },
+    { "name": "size", "value": "small" },
+    { "name": ":minFractionDigits", "value": "1" },
+    { "name": ":maxFractionDigits", "value": "1" },
+    { "name": ":disabled", "value": "!$h.is_user_author" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -109,16 +109,16 @@
 
 ```json
 {
-  "Id": "pv-input-number-OaUzyl",
-  "ComponentName": "pv-input-number",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.visa_manual_order" },
-    { "Name": "size", "Value": "small" },
-    { "Name": ":minFractionDigits", "Value": "0" },
-    { "Name": ":maxFractionDigits", "Value": "0" }
+  "id": "pv-input-number-OaUzyl",
+  "componentName": "pv-input-number",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.visa_manual_order" },
+    { "name": "size", "value": "small" },
+    { "name": ":minFractionDigits", "value": "0" },
+    { "name": ":maxFractionDigits", "value": "0" }
   ],
-  "Items": []
+  "items": []
 }
 ```

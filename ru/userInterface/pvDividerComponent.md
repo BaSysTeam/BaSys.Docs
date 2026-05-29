@@ -75,12 +75,12 @@
 
 ```json
 {
-  "Id": "pv-divider-To8gti",
-  "ComponentName": "pv-divider",
-  "CssClass": "",
-  "Style": "margin: 5px",
-  "Properties": [],
-  "Items": []
+  "id": "pv-divider-To8gti",
+  "componentName": "pv-divider",
+  "cssClass": "",
+  "style": "margin: 5px",
+  "properties": [],
+  "items": []
 }
 ```
 
@@ -88,11 +88,11 @@
 
 ```json
 {
-  "Id": "pv-divider-xSb5hO",
-  "ComponentName": "pv-divider",
-  "CssClass": "",
-  "Style": "margin: 5px",
-  "Properties": [],
-  "Items": []
+  "id": "pv-divider-xSb5hO",
+  "componentName": "pv-divider",
+  "cssClass": "",
+  "style": "margin: 5px",
+  "properties": [],
+  "items": []
 }
 ```

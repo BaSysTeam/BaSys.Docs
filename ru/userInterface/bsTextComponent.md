@@ -58,15 +58,15 @@
 
 ```json
 {
-  "Id": "bs-text-sQnSOG",
-  "ComponentName": "bs-text",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "text", "Value": "Мои задачи" },
-    { "Name": "slot", "Value": "end" }
+  "id": "bs-text-sQnSOG",
+  "componentName": "bs-text",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "text", "value": "Мои задачи" },
+    { "name": "slot", "value": "end" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -74,14 +74,14 @@
 
 ```json
 {
-  "Id": "bs-text-N90uhh",
-  "ComponentName": "bs-text",
-  "CssClass": "w-full text-center",
-  "Style": "font-size: 2rem; color: red;",
-  "Properties": [
-    { "Name": "text", "Value": "Нет замечаний для согласования" }
+  "id": "bs-text-N90uhh",
+  "componentName": "bs-text",
+  "cssClass": "w-full text-center",
+  "style": "font-size: 2rem; color: red;",
+  "properties": [
+    { "name": "text", "value": "Нет замечаний для согласования" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -89,14 +89,14 @@
 
 ```json
 {
-  "Id": "bs-text-status",
-  "ComponentName": "bs-text",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": ":text", "Value": "$h.status_title" },
-    { "Name": "severity", "Value": "success" }
+  "id": "bs-text-status",
+  "componentName": "bs-text",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": ":text", "value": "$h.status_title" },
+    { "name": "severity", "value": "success" }
   ],
-  "Items": []
+  "items": []
 }
 ```

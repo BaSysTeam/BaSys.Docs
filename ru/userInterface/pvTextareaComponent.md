@@ -58,18 +58,18 @@
 
 ```json
 {
-  "Id": "pv-input-textarea-gfL3h1",
-  "ComponentName": "pv-input-textarea",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.description" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "rows", "Value": "3" },
-    { "Name": "autocomplete", "Value": "off" },
-    { "Name": ":disabled", "Value": "!$h.is_user_author" }
+  "id": "pv-input-textarea-gfL3h1",
+  "componentName": "pv-input-textarea",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.description" },
+    { "name": "size", "value": "small" },
+    { "name": "rows", "value": "3" },
+    { "name": "autocomplete", "value": "off" },
+    { "name": ":disabled", "value": "!$h.is_user_author" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -77,18 +77,18 @@
 
 ```json
 {
-  "Id": "pv-input-textarea-h73byU",
-  "ComponentName": "pv-input-textarea",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.предмет_договора" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "rows", "Value": "3" },
-    { "Name": "autocomplete", "Value": "off" },
-    { "Name": ":disabled", "Value": "$h.edit_disabled" }
+  "id": "pv-input-textarea-h73byU",
+  "componentName": "pv-input-textarea",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.предмет_договора" },
+    { "name": "size", "value": "small" },
+    { "name": "rows", "value": "3" },
+    { "name": "autocomplete", "value": "off" },
+    { "name": ":disabled", "value": "$h.edit_disabled" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -96,17 +96,17 @@
 
 ```json
 {
-  "Id": "pv-input-textarea-IqZkUl",
-  "ComponentName": "pv-input-textarea",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.комментарий" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "rows", "Value": "5" },
-    { "Name": "autocomplete", "Value": "off" },
-    { "Name": ":disabled", "Value": "$h.edit_disabled" }
+  "id": "pv-input-textarea-IqZkUl",
+  "componentName": "pv-input-textarea",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.комментарий" },
+    { "name": "size", "value": "small" },
+    { "name": "rows", "value": "5" },
+    { "name": "autocomplete", "value": "off" },
+    { "name": ":disabled", "value": "$h.edit_disabled" }
   ],
-  "Items": []
+  "items": []
 }
 ```

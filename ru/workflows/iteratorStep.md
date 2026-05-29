@@ -54,36 +54,36 @@
 ```json
 [
   {
-    "Expression": "workflow.tasks_mail_send.step.tasks.bjs",
-    "KindName": "java_script",
-    "Title": "Tasks",
-    "Name": "tasks",
-    "IsActive": true
+    "expression": "workflow.tasks_mail_send.step.tasks.bjs",
+    "kindName": "java_script",
+    "title": "Tasks",
+    "name": "tasks",
+    "isActive": true
   },
   {
-    "SourcePath": "tasks",
-    "ItemName": "item",
-    "KindName": "iterator",
-    "Title": "Iterator",
-    "Name": "iterator",
-    "IsActive": true
+    "sourcePath": "tasks",
+    "itemName": "item",
+    "kindName": "iterator",
+    "title": "Iterator",
+    "name": "iterator",
+    "isActive": true
   },
   {
-    "Host": "smtp.example.com",
-    "From": "noreply@example.com",
-    "To": "{{item.user_name}}",
-    "Subject": "Задачи в системе",
-    "Body": "{{item.messages}}",
-    "KindName": "smtp_send",
-    "Title": "Mail send",
-    "Name": "mail_send",
-    "IsActive": true
+    "host": "smtp.example.com",
+    "from": "noreply@example.com",
+    "to": "{{item.user_name}}",
+    "subject": "Задачи в системе",
+    "body": "{{item.messages}}",
+    "kindName": "smtp_send",
+    "title": "Mail send",
+    "name": "mail_send",
+    "isActive": true
   },
   {
-    "KindName": "iterator_stop",
-    "Title": "Iterator stop",
-    "Name": "iterator_stop",
-    "IsActive": true
+    "kindName": "iterator_stop",
+    "title": "Iterator stop",
+    "name": "iterator_stop",
+    "isActive": true
   }
 ]
 ```
@@ -97,33 +97,33 @@
 ```json
 [
   {
-    "SourcePath": "messages",
-    "ItemName": "item",
-    "KindName": "iterator",
-    "Title": "Iterator",
-    "Name": "iterator",
-    "IsActive": true
+    "sourcePath": "messages",
+    "itemName": "item",
+    "kindName": "iterator",
+    "title": "Iterator",
+    "name": "iterator",
+    "isActive": true
   },
   {
-    "Condition": "_data.messages != null",
-    "TrueStepUid": "...",
-    "FalseStepUid": "",
-    "KindName": "if",
-    "Title": "Check mail",
-    "Name": "check_mail",
-    "IsActive": true
+    "condition": "_data.messages != null",
+    "trueStepUid": "...",
+    "falseStepUid": "",
+    "kindName": "if",
+    "title": "Check mail",
+    "name": "check_mail",
+    "isActive": true
   },
   {
-    "KindName": "smtp_send",
-    "Title": "Mail send",
-    "Name": "mail_send",
-    "IsActive": true
+    "kindName": "smtp_send",
+    "title": "Mail send",
+    "name": "mail_send",
+    "isActive": true
   },
   {
-    "KindName": "iterator_stop",
-    "Title": "Iterator stop",
-    "Name": "iterator_stop",
-    "IsActive": true
+    "kindName": "iterator_stop",
+    "title": "Iterator stop",
+    "name": "iterator_stop",
+    "isActive": true
   }
 ]
 ```

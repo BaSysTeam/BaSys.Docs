@@ -65,22 +65,22 @@
 
 ```json
 {
-  "Id": "pv-tab-panel-YccvYN",
-  "DataUid": "dc29dbd1-2a91-c867-3e20-4b9354d33c29",
-  "ComponentName": "pv-tab-panel",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "header", "Value": "Тарифы" }
+  "id": "pv-tab-panel-YccvYN",
+  "dataUid": "dc29dbd1-2a91-c867-3e20-4b9354d33c29",
+  "componentName": "pv-tab-panel",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "header", "value": "Тарифы" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-row-EhFAQP",
-      "ComponentName": "bs-row",
-      "CssClass": "grid",
-      "Style": "",
-      "Properties": [],
-      "Items": [ /* bs-col → pv-toolbar / bs-details-table / ... */ ]
+      "id": "bs-row-EhFAQP",
+      "componentName": "bs-row",
+      "cssClass": "grid",
+      "style": "",
+      "properties": [],
+      "items": [ /* bs-col → pv-toolbar / bs-details-table / ... */ ]
     }
   ]
 }
@@ -90,25 +90,25 @@
 
 ```json
 {
-  "Id": "pv-tab-panel-hTtZOk",
-  "DataUid": "7234d758-7b24-3f0f-c17e-e86d8e8f9f04",
-  "ComponentName": "pv-tab-panel",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "header", "Value": "Согласование замечаний" },
-    { "Name": ":key", "Value": "$h.статус" }
+  "id": "pv-tab-panel-hTtZOk",
+  "dataUid": "7234d758-7b24-3f0f-c17e-e86d8e8f9f04",
+  "componentName": "pv-tab-panel",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "header", "value": "Согласование замечаний" },
+    { "name": ":key", "value": "$h.статус" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-row-qG6zJ0",
-      "ComponentName": "bs-row",
-      "CssClass": "grid",
-      "Style": "",
-      "Properties": [
-        { "Name": "v-if", "Value": "$h.status_approve_remarks" }
+      "id": "bs-row-qG6zJ0",
+      "componentName": "bs-row",
+      "cssClass": "grid",
+      "style": "",
+      "properties": [
+        { "name": "v-if", "value": "$h.status_approve_remarks" }
       ],
-      "Items": [ /* содержимое вкладки */ ]
+      "items": [ /* содержимое вкладки */ ]
     }
   ]
 }

@@ -59,17 +59,17 @@
 
 ```json
 {
-  "Id": "pv-badge-DjS4sm",
-  "ComponentName": "pv-badge",
-  "CssClass": "ml-1",
-  "Style": "",
-  "Properties": [
-    { "Name": ":value", "Value": "$t.table_2?.count()" },
-    { "Name": "severity", "Value": "primary" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "slot", "Value": "end" }
+  "id": "pv-badge-DjS4sm",
+  "componentName": "pv-badge",
+  "cssClass": "ml-1",
+  "style": "",
+  "properties": [
+    { "name": ":value", "value": "$t.table_2?.count()" },
+    { "name": "severity", "value": "primary" },
+    { "name": "size", "value": "small" },
+    { "name": "slot", "value": "end" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -77,16 +77,16 @@
 
 ```json
 {
-  "Id": "pv-badge-gQIbPu",
-  "ComponentName": "pv-badge",
-  "CssClass": "ml-3",
-  "Style": "",
-  "Properties": [
-    { "Name": ":value", "Value": "data.tables.время?.count()" },
-    { "Name": "severity", "Value": "primary" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "slot", "Value": "end" }
+  "id": "pv-badge-gQIbPu",
+  "componentName": "pv-badge",
+  "cssClass": "ml-3",
+  "style": "",
+  "properties": [
+    { "name": ":value", "value": "data.tables.время?.count()" },
+    { "name": "severity", "value": "primary" },
+    { "name": "size", "value": "small" },
+    { "name": "slot", "value": "end" }
   ],
-  "Items": []
+  "items": []
 }
 ```

@@ -100,16 +100,16 @@
 
 ```json
 {
-  "ComponentName": "pv-button",
-  "CssClass": "ml-1",
-  "Style": "min-width: 180px;",
-  "Properties": [
-    { "Name": "label", "Value": "Сохранить" },
-    { "Name": "icon", "Value": "pi pi-save" },
-    { "Name": "severity", "Value": "primary" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "outlined", "Value": "outlined" },
-    { "Name": "@Click", "Value": "standard.save" }
+  "componentName": "pv-button",
+  "cssClass": "ml-1",
+  "style": "min-width: 180px;",
+  "properties": [
+    { "name": "label", "value": "Сохранить" },
+    { "name": "icon", "value": "pi pi-save" },
+    { "name": "severity", "value": "primary" },
+    { "name": "size", "value": "small" },
+    { "name": "outlined", "value": "outlined" },
+    { "name": "@Click", "value": "standard.save" }
   ]
 }
 ```

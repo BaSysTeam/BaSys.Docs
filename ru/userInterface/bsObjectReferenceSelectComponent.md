@@ -72,17 +72,17 @@
 
 ```json
 {
-  "Id": "bs-object-reference-select-G11qJn",
-  "DataUid": "44ff22fe-7fdc-8d14-cbc4-26f6b38816b3",
-  "ComponentName": "bs-object-reference-select",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.responsible" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "dataType", "Value": "30fa0620-3db1-43e2-a700-b6295739bbb6" }
+  "id": "bs-object-reference-select-G11qJn",
+  "dataUid": "44ff22fe-7fdc-8d14-cbc4-26f6b38816b3",
+  "componentName": "bs-object-reference-select",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.responsible" },
+    { "name": "size", "value": "small" },
+    { "name": "dataType", "value": "30fa0620-3db1-43e2-a700-b6295739bbb6" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -90,19 +90,19 @@
 
 ```json
 {
-  "Id": "bs-object-reference-select-oL7suj",
-  "DataUid": "bb909905-2e3d-eee0-8c70-fe74b106d3c8",
-  "ComponentName": "bs-object-reference-select",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.юр_лицо" },
-    { "Name": ":text", "Value": "$h.юр_лицо_display" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "dataType", "Value": "01ef2eff-8bd1-498a-9aeb-52aa9598fc35" },
-    { "Name": ":disabled", "Value": "$h.edit_disabled" }
+  "id": "bs-object-reference-select-oL7suj",
+  "dataUid": "bb909905-2e3d-eee0-8c70-fe74b106d3c8",
+  "componentName": "bs-object-reference-select",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.юр_лицо" },
+    { "name": ":text", "value": "$h.юр_лицо_display" },
+    { "name": "size", "value": "small" },
+    { "name": "dataType", "value": "01ef2eff-8bd1-498a-9aeb-52aa9598fc35" },
+    { "name": ":disabled", "value": "$h.edit_disabled" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -110,20 +110,20 @@
 
 ```json
 {
-  "Id": "bs-object-reference-select-shifrKj",
-  "ComponentName": "bs-object-reference-select",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.шифр_кж" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "dataType", "Value": "9838686b-9186-452e-b98c-3dfc4568d5b9" },
+  "id": "bs-object-reference-select-shifrKj",
+  "componentName": "bs-object-reference-select",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.шифр_кж" },
+    { "name": "size", "value": "small" },
+    { "name": "dataType", "value": "9838686b-9186-452e-b98c-3dfc4568d5b9" },
     {
-      "Name": "itemsSource",
-      "Value": "var project = $h.проект;\nvar t1 = await from('catalog.шифр_кж')\n  .where('проект = @project')\n  .parameter('project', project, 11)\n  .select(['id as value, title as text'])\n  .query();\n\nreturn t1;"
+      "name": "itemsSource",
+      "value": "var project = $h.проект;\nvar t1 = await from('catalog.шифр_кж')\n  .where('проект = @project')\n  .parameter('project', project, 11)\n  .select(['id as value, title as text'])\n  .query();\n\nreturn t1;"
     },
-    { "Name": ":header", "Value": "data.header" }
+    { "name": ":header", "value": "data.header" }
   ],
-  "Items": []
+  "items": []
 }
 ```

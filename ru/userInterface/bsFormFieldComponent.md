@@ -65,25 +65,25 @@
 
 ```json
 {
-  "Id": "bs-form-field-iSizb4",
-  "DataUid": "3714ed97-925b-a834-ca63-46efe62c3bbf",
-  "ComponentName": "bs-form-field",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "text", "Value": "Основание" },
-    { "Name": "labelCols", "Value": "4" }
+  "id": "bs-form-field-iSizb4",
+  "dataUid": "3714ed97-925b-a834-ca63-46efe62c3bbf",
+  "componentName": "bs-form-field",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "text", "value": "Основание" },
+    { "name": "labelCols", "value": "4" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-object-reference-select-nTEgyr",
-      "ComponentName": "bs-object-reference-select",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "vModel", "Value": "$h.base_task" }
+      "id": "bs-object-reference-select-nTEgyr",
+      "componentName": "bs-object-reference-select",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "vModel", "value": "$h.base_task" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -93,26 +93,26 @@
 
 ```json
 {
-  "Id": "bs-form-field-wAf07A",
-  "DataUid": "0d9fc741-1867-e208-b0db-4d1bc02b44d2",
-  "ComponentName": "bs-form-field",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "text", "Value": "Автор" },
-    { "Name": "labelCols", "Value": "4" },
-    { "Name": "required", "Value": "" }
+  "id": "bs-form-field-wAf07A",
+  "dataUid": "0d9fc741-1867-e208-b0db-4d1bc02b44d2",
+  "componentName": "bs-form-field",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "text", "value": "Автор" },
+    { "name": "labelCols", "value": "4" },
+    { "name": "required", "value": "" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-object-reference-select-author",
-      "ComponentName": "bs-object-reference-select",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "vModel", "Value": "$h.author" }
+      "id": "bs-object-reference-select-author",
+      "componentName": "bs-object-reference-select",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "vModel", "value": "$h.author" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -122,27 +122,27 @@
 
 ```json
 {
-  "Id": "bs-form-field-8gON6Q",
-  "DataUid": "0ebdd22a-3383-1b6f-95db-97ea72c38796",
-  "ComponentName": "bs-form-field",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "text", "Value": "Описание" },
-    { "Name": "labelCols", "Value": "1" }
+  "id": "bs-form-field-8gON6Q",
+  "dataUid": "0ebdd22a-3383-1b6f-95db-97ea72c38796",
+  "componentName": "bs-form-field",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "text", "value": "Описание" },
+    { "name": "labelCols", "value": "1" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "pv-input-textarea-gfL3h1",
-      "ComponentName": "pv-input-textarea",
-      "CssClass": "w-full",
-      "Style": "",
-      "Properties": [
-        { "Name": "vModel", "Value": "$h.description" },
-        { "Name": "rows", "Value": "5" },
-        { "Name": "size", "Value": "small" }
+      "id": "pv-input-textarea-gfL3h1",
+      "componentName": "pv-input-textarea",
+      "cssClass": "w-full",
+      "style": "",
+      "properties": [
+        { "name": "vModel", "value": "$h.description" },
+        { "name": "rows", "value": "5" },
+        { "name": "size", "value": "small" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -152,29 +152,29 @@
 
 ```json
 {
-  "Id": "bs-form-field-osnDog",
-  "DataUid": "523d6000-6839-7e1b-84c6-eb33b1eccb64",
-  "ComponentName": "bs-form-field",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": "text", "Value": "Основной договор" },
-    { "Name": "labelCols", "Value": "4" },
-    { "Name": "v-if", "Value": "$h.договор_допсоглашение == 'доп_соглашение'" },
-    { "Name": "labelAlign", "Value": "right" }
+  "id": "bs-form-field-osnDog",
+  "dataUid": "523d6000-6839-7e1b-84c6-eb33b1eccb64",
+  "componentName": "bs-form-field",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": "text", "value": "Основной договор" },
+    { "name": "labelCols", "value": "4" },
+    { "name": "v-if", "value": "$h.договор_допсоглашение == 'доп_соглашение'" },
+    { "name": "labelAlign", "value": "right" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-object-reference-select-ZpoFnx",
-      "ComponentName": "bs-object-reference-select",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "vModel", "Value": "$h.основной_договор" },
-        { "Name": ":text", "Value": "$h.основной_договор_display" },
-        { "Name": "size", "Value": "small" }
+      "id": "bs-object-reference-select-ZpoFnx",
+      "componentName": "bs-object-reference-select",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "vModel", "value": "$h.основной_договор" },
+        { "name": ":text", "value": "$h.основной_договор_display" },
+        { "name": "size", "value": "small" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }

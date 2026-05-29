@@ -84,28 +84,28 @@
 
 ```json
 {
-  "SourcePath": "read_file",
-  "SheetName": "Лист1",
-  "StartRow": 1,
-  "EndRow": 0,
-  "Mapping": [
+  "sourcePath": "read_file",
+  "sheetName": "Лист1",
+  "startRow": 1,
+  "endRow": 0,
+  "mapping": [
     {
-      "Uid": "23d7af0c-ce8d-2eb5-db3c-0641266cb110",
-      "SourceFieldName": "Марка",
-      "DestinationFieldName": "марки",
-      "DataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
+      "uid": "23d7af0c-ce8d-2eb5-db3c-0641266cb110",
+      "sourceFieldName": "Марка",
+      "destinationFieldName": "марки",
+      "dataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
     },
     {
-      "Uid": "bb2a197b-e688-fae3-9710-b194489ff900",
-      "SourceFieldName": "Кол-во, шт",
-      "DestinationFieldName": "колво_шт",
-      "DataTypeUid": "a05516ac-baae-4f66-9b67-6703998a6a1b"
+      "uid": "bb2a197b-e688-fae3-9710-b194489ff900",
+      "sourceFieldName": "Кол-во, шт",
+      "destinationFieldName": "колво_шт",
+      "dataTypeUid": "a05516ac-baae-4f66-9b67-6703998a6a1b"
     }
   ],
-  "KindName": "excel_mapping",
-  "Title": "Mapping",
-  "Name": "mapping",
-  "IsActive": true
+  "kindName": "excel_mapping",
+  "title": "Mapping",
+  "name": "mapping",
+  "isActive": true
 }
 ```
 
@@ -115,28 +115,28 @@
 
 ```json
 {
-  "SourcePath": "read_file",
-  "SheetName": "ведомость",
-  "StartRow": 7,
-  "EndRow": 0,
-  "Mapping": [
+  "sourcePath": "read_file",
+  "sheetName": "ведомость",
+  "startRow": 7,
+  "endRow": 0,
+  "mapping": [
     {
-      "Uid": "6da4f449-9c10-ea67-7d93-f7e8cf0e8771",
-      "SourceFieldName": "Фамилия И.О.",
-      "DestinationFieldName": "сотрудник_title",
-      "DataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
+      "uid": "6da4f449-9c10-ea67-7d93-f7e8cf0e8771",
+      "sourceFieldName": "Фамилия И.О.",
+      "destinationFieldName": "сотрудник_title",
+      "dataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
     },
     {
-      "Uid": "a6170193-6fb4-3962-5771-5d1be9d73d94",
-      "SourceFieldName": "Должность",
-      "DestinationFieldName": "должность",
-      "DataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
+      "uid": "a6170193-6fb4-3962-5771-5d1be9d73d94",
+      "sourceFieldName": "Должность",
+      "destinationFieldName": "должность",
+      "dataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
     }
   ],
-  "KindName": "excel_mapping",
-  "Title": "Mapping",
-  "Name": "mapping",
-  "IsActive": true
+  "kindName": "excel_mapping",
+  "title": "Mapping",
+  "name": "mapping",
+  "isActive": true
 }
 ```
 
@@ -153,45 +153,45 @@
 
 ```json
 {
-  "Steps": [
+  "steps": [
     {
-      "KindName": "java_script",
-      "Name": "find_file",
-      "Title": "Find file"
+      "kindName": "java_script",
+      "name": "find_file",
+      "title": "Find file"
     },
     {
-      "Regime": 1,
-      "OutputFormat": 0,
-      "AttachedFileUidExpression": "_data.find_file.rows[0].uid",
-      "KindName": "read_file",
-      "Name": "read_file",
-      "Title": "Read file"
+      "regime": 1,
+      "outputFormat": 0,
+      "attachedFileUidExpression": "_data.find_file.rows[0].uid",
+      "kindName": "read_file",
+      "name": "read_file",
+      "title": "Read file"
     },
     {
-      "SourcePath": "read_file",
-      "SheetName": "Sheet1",
-      "StartRow": 1,
-      "EndRow": 0,
-      "Mapping": [
+      "sourcePath": "read_file",
+      "sheetName": "Sheet1",
+      "startRow": 1,
+      "endRow": 0,
+      "mapping": [
         {
-          "SourceFieldName": "Name",
-          "DestinationFieldName": "name",
-          "DataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
+          "sourceFieldName": "Name",
+          "destinationFieldName": "name",
+          "dataTypeUid": "0234c067-7868-46b2-ba8e-e22fae5255cb"
         },
         {
-          "SourceFieldName": "Amount",
-          "DestinationFieldName": "amount",
-          "DataTypeUid": "a05516ac-baae-4f66-9b67-6703998a6a1b"
+          "sourceFieldName": "Amount",
+          "destinationFieldName": "amount",
+          "dataTypeUid": "a05516ac-baae-4f66-9b67-6703998a6a1b"
         }
       ],
-      "KindName": "excel_mapping",
-      "Name": "mapping",
-      "Title": "Mapping"
+      "kindName": "excel_mapping",
+      "name": "mapping",
+      "title": "Mapping"
     },
     {
-      "KindName": "java_script",
-      "Name": "process_data",
-      "Title": "Process data"
+      "kindName": "java_script",
+      "name": "process_data",
+      "title": "Process data"
     }
   ]
 }

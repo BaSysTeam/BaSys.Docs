@@ -323,13 +323,13 @@ setIsWaiting(false);
 
 ```json
 {
-  "Kind": 2,
-  "Title": "Список сотрудников ( по проекту )",
-  "Name": "pick_up_project",
-  "Parameters": [
+  "kind": 2,
+  "title": "Список сотрудников ( по проекту )",
+  "name": "pick_up_project",
+  "parameters": [
     {
-      "Name": "data_source",
-      "Value": "(await from('operation.штатное_расписание')\n  .select(['сотрудники as id', 'сотрудники as сотрудник', 'полное_имя', 'должность', 'подразделение', 'ставка_час as ставка'])\n  .getDisplays()\n  .orderBy('полное_имя')\n  .where('проект_заказ = @project AND уволен = @flagFalse')\n  .parameter('project', $h.проект_заказ, 11)\n  .parameter('flagFalse', false, 3)\n  .query())\n  .deleteColumn('id_display')\n  .addColumn({name: 'кту', dataType: 'number'})\n  .process(row => row.кту = 1)"
+      "name": "data_source",
+      "value": "(await from('operation.штатное_расписание')\n  .select(['сотрудники as id', 'сотрудники as сотрудник', 'полное_имя', 'должность', 'подразделение', 'ставка_час as ставка'])\n  .getDisplays()\n  .orderBy('полное_имя')\n  .where('проект_заказ = @project AND уволен = @flagFalse')\n  .parameter('project', $h.проект_заказ, 11)\n  .parameter('flagFalse', false, 3)\n  .query())\n  .deleteColumn('id_display')\n  .addColumn({name: 'кту', dataType: 'number'})\n  .process(row => row.кту = 1)"
     }
   ]
 }
@@ -412,15 +412,15 @@ openPickUp(result, 'table_1');
 
 ```json
 {
-  "Kind": 1,
-  "Title": "Сотрудники по группе",
-  "Name": "сотрудники",
-  "Parameters": [
+  "kind": 1,
+  "title": "Сотрудники по группе",
+  "name": "сотрудники",
+  "parameters": [
     {
-      "Name": "data_source",
-      "Value": "await from('catalog.сотрудники')\n  .where('группа = 1')\n  .select(['id as сотрудники', 'title as сотрудники_display'])\n  .orderBy('title')\n  .query()"
+      "name": "data_source",
+      "value": "await from('catalog.сотрудники')\n  .where('группа = 1')\n  .select(['id as сотрудники', 'title as сотрудники_display'])\n  .orderBy('title')\n  .query()"
     },
-    { "Name": "clear", "Value": "true" }
+    { "name": "clear", "value": "true" }
   ]
 }
 ```

@@ -55,13 +55,13 @@ _data.load_data.rows.length > 0
 
 ```json
 {
-  "Condition": "_data.messages != null",
-  "TrueStepUid": "f5644333-9480-ff9c-ef02-1ef071d5c426",
-  "FalseStepUid": "",
-  "KindName": "if",
-  "Title": "Check mail",
-  "Name": "check_mail",
-  "IsActive": true
+  "condition": "_data.messages != null",
+  "trueStepUid": "f5644333-9480-ff9c-ef02-1ef071d5c426",
+  "falseStepUid": "",
+  "kindName": "if",
+  "title": "Check mail",
+  "name": "check_mail",
+  "isActive": true
 }
 ```
 
@@ -73,13 +73,13 @@ _data.load_data.rows.length > 0
 
 ```json
 {
-  "Condition": "_parameters.approved == true",
-  "TrueStepUid": "aaa11111-1111-1111-1111-111111111111",
-  "FalseStepUid": "bbb22222-2222-2222-2222-222222222222",
-  "KindName": "if",
-  "Title": "Check approval",
-  "Name": "check_approval",
-  "IsActive": true
+  "condition": "_parameters.approved == true",
+  "trueStepUid": "aaa11111-1111-1111-1111-111111111111",
+  "falseStepUid": "bbb22222-2222-2222-2222-222222222222",
+  "kindName": "if",
+  "title": "Check approval",
+  "name": "check_approval",
+  "isActive": true
 }
 ```
 

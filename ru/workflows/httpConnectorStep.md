@@ -62,16 +62,16 @@ HTTP-метод запроса. Допустимые значения:
 Пример в JSON-описании процесса:
 
 ```json
-"Headers": [
+"headers": [
   {
-    "Name": "Authorization",
-    "Value": "Bearer eyJhbGci...",
-    "Description": "Токен авторизации"
+    "name": "Authorization",
+    "value": "Bearer eyJhbGci...",
+    "description": "Токен авторизации"
   },
   {
-    "Name": "Content-Type",
-    "Value": "application/json",
-    "Description": ""
+    "name": "Content-Type",
+    "value": "application/json",
+    "description": ""
   }
 ]
 ```
@@ -159,24 +159,24 @@ HTTP-метод запроса. Допустимые значения:
 
 ```json
 {
-  "Url": "https://api.example.com/v1/trigger/start",
-  "BodyKind": 1,
-  "BodyEncoding": 1,
-  "Body": "{ \"token\": \"abc123\" }",
-  "Method": 1,
-  "Timeout": 100,
-  "LogResponse": false,
-  "AutoParse": true,
-  "BypassSslCertificate": false,
-  "ReturnResponseInfo": false,
-  "AllowSetCookieFromHeaders": false,
-  "Headers": [],
-  "Parameters": [],
-  "FormData": [],
-  "KindName": "http_connector",
-  "Title": "Request",
-  "Name": "request",
-  "IsActive": true
+  "url": "https://api.example.com/v1/trigger/start",
+  "bodyKind": 1,
+  "bodyEncoding": 1,
+  "body": "{ \"token\": \"abc123\" }",
+  "method": 1,
+  "timeout": 100,
+  "logResponse": false,
+  "autoParse": true,
+  "bypassSslCertificate": false,
+  "returnResponseInfo": false,
+  "allowSetCookieFromHeaders": false,
+  "headers": [],
+  "parameters": [],
+  "formData": [],
+  "kindName": "http_connector",
+  "title": "Request",
+  "name": "request",
+  "isActive": true
 }
 ```
 
@@ -186,30 +186,30 @@ HTTP-метод запроса. Допустимые значения:
 
 ```json
 {
-  "Url": "https://api.example.com/v1/data",
-  "BodyKind": 1,
-  "BodyEncoding": 0,
-  "Body": "",
-  "Method": 0,
-  "Timeout": 30,
-  "LogResponse": true,
-  "AutoParse": true,
-  "BypassSslCertificate": false,
-  "ReturnResponseInfo": true,
-  "AllowSetCookieFromHeaders": false,
-  "Headers": [
+  "url": "https://api.example.com/v1/data",
+  "bodyKind": 1,
+  "bodyEncoding": 0,
+  "body": "",
+  "method": 0,
+  "timeout": 30,
+  "logResponse": true,
+  "autoParse": true,
+  "bypassSslCertificate": false,
+  "returnResponseInfo": true,
+  "allowSetCookieFromHeaders": false,
+  "headers": [
     {
-      "Name": "Authorization",
-      "Value": "Bearer eyJhbGci...",
-      "Description": "API-токен"
+      "name": "Authorization",
+      "value": "Bearer eyJhbGci...",
+      "description": "API-токен"
     }
   ],
-  "Parameters": [],
-  "FormData": [],
-  "KindName": "http_connector",
-  "Title": "Fetch data",
-  "Name": "fetch_data",
-  "IsActive": true
+  "parameters": [],
+  "formData": [],
+  "kindName": "http_connector",
+  "title": "Fetch data",
+  "name": "fetch_data",
+  "isActive": true
 }
 ```
 

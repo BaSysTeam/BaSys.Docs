@@ -60,22 +60,22 @@
 
 ```json
 {
-  "Id": "pv-toolbar-DRhQLt",
-  "ComponentName": "pv-toolbar",
-  "CssClass": "",
-  "Style": "display: flex; flex-wrap: wrap; gap: 5px;",
-  "Properties": [],
-  "Items": [
+  "id": "pv-toolbar-DRhQLt",
+  "componentName": "pv-toolbar",
+  "cssClass": "",
+  "style": "display: flex; flex-wrap: wrap; gap: 5px;",
+  "properties": [],
+  "items": [
     {
-      "Id": "bs-text-sQnSOG",
-      "ComponentName": "bs-text",
-      "CssClass": "w-full",
-      "Style": "",
-      "Properties": [
-        { "Name": "text", "Value": "Мои задачи" },
-        { "Name": "slot", "Value": "end" }
+      "id": "bs-text-sQnSOG",
+      "componentName": "bs-text",
+      "cssClass": "w-full",
+      "style": "",
+      "properties": [
+        { "name": "text", "value": "Мои задачи" },
+        { "name": "slot", "value": "end" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -85,39 +85,39 @@
 
 ```json
 {
-  "Id": "pv-toolbar-So32GH",
-  "ComponentName": "pv-toolbar",
-  "CssClass": "",
-  "Style": "display: flex; flex-wrap: wrap; gap: 5px; padding: 3px;",
-  "Properties": [],
-  "Items": [
+  "id": "pv-toolbar-So32GH",
+  "componentName": "pv-toolbar",
+  "cssClass": "",
+  "style": "display: flex; flex-wrap: wrap; gap: 5px; padding: 3px;",
+  "properties": [],
+  "items": [
     {
-      "Id": "pv-button-lj78VU",
-      "ComponentName": "pv-button",
-      "Properties": [
-        { "Name": "label", "Value": "Обновить" },
-        { "Name": "icon", "Value": "pi pi-refresh" },
-        { "Name": "@Click", "Value": "messages_refresh" },
-        { "Name": "severity", "Value": "primary" },
-        { "Name": "size", "Value": "small" },
-        { "Name": "slot", "Value": "start" },
-        { "Name": "text", "Value": "" }
+      "id": "pv-button-lj78VU",
+      "componentName": "pv-button",
+      "properties": [
+        { "name": "label", "value": "Обновить" },
+        { "name": "icon", "value": "pi pi-refresh" },
+        { "name": "@Click", "value": "messages_refresh" },
+        { "name": "severity", "value": "primary" },
+        { "name": "size", "value": "small" },
+        { "name": "slot", "value": "start" },
+        { "name": "text", "value": "" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-button-UacQEU",
-      "ComponentName": "pv-button",
-      "Properties": [
-        { "Name": "label", "Value": "Сообщения мной прочитаны" },
-        { "Name": "icon", "Value": "pi pi-check" },
-        { "Name": "@Click", "Value": "mark_messages" },
-        { "Name": "severity", "Value": "danger" },
-        { "Name": "size", "Value": "small" },
-        { "Name": "slot", "Value": "end" },
-        { "Name": "vIf", "Value": "$h.is_task_user" }
+      "id": "pv-button-UacQEU",
+      "componentName": "pv-button",
+      "properties": [
+        { "name": "label", "value": "Сообщения мной прочитаны" },
+        { "name": "icon", "value": "pi pi-check" },
+        { "name": "@Click", "value": "mark_messages" },
+        { "name": "severity", "value": "danger" },
+        { "name": "size", "value": "small" },
+        { "name": "slot", "value": "end" },
+        { "name": "vIf", "value": "$h.is_task_user" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -127,45 +127,45 @@
 
 ```json
 {
-  "Id": "pv-toolbar-JVyHFb",
-  "ComponentName": "pv-toolbar",
-  "CssClass": "",
-  "Style": "padding: 0.2rem; margin-bottom: 0.2rem",
-  "Properties": [],
-  "Items": [
+  "id": "pv-toolbar-JVyHFb",
+  "componentName": "pv-toolbar",
+  "cssClass": "",
+  "style": "padding: 0.2rem; margin-bottom: 0.2rem",
+  "properties": [],
+  "items": [
     {
-      "Id": "pv-button-Px6yls",
-      "ComponentName": "pv-button",
-      "Properties": [
-        { "Name": "icon", "Value": "pi pi-plus" },
-        { "Name": "@Click", "Value": "standard.table_add:время" },
-        { "Name": "severity", "Value": "primary" },
-        { "Name": "size", "Value": "small" },
-        { "Name": "text", "Value": "" },
-        { "Name": "slot", "Value": "start" }
+      "id": "pv-button-Px6yls",
+      "componentName": "pv-button",
+      "properties": [
+        { "name": "icon", "value": "pi pi-plus" },
+        { "name": "@Click", "value": "standard.table_add:время" },
+        { "name": "severity", "value": "primary" },
+        { "name": "size", "value": "small" },
+        { "name": "text", "value": "" },
+        { "name": "slot", "value": "start" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "bs-text-ZCPAci",
-      "ComponentName": "bs-text",
-      "Properties": [
-        { "Name": "text", "Value": "Учет отработанного времени" },
-        { "Name": "slot", "Value": "end" }
+      "id": "bs-text-ZCPAci",
+      "componentName": "bs-text",
+      "properties": [
+        { "name": "text", "value": "Учет отработанного времени" },
+        { "name": "slot", "value": "end" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-badge-gQIbPu",
-      "ComponentName": "pv-badge",
-      "CssClass": "ml-1",
-      "Properties": [
-        { "Name": ":value", "Value": "data.tables.время?.count()" },
-        { "Name": "severity", "Value": "primary" },
-        { "Name": "size", "Value": "small" },
-        { "Name": "slot", "Value": "end" }
+      "id": "pv-badge-gQIbPu",
+      "componentName": "pv-badge",
+      "cssClass": "ml-1",
+      "properties": [
+        { "name": ":value", "value": "data.tables.время?.count()" },
+        { "name": "severity", "value": "primary" },
+        { "name": "size", "value": "small" },
+        { "name": "slot", "value": "end" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }

@@ -72,13 +72,13 @@ _parameters.fileUid
 
 ```json
 {
-  "Regime": 1,
-  "OutputFormat": 0,
-  "AttachedFileUidExpression": "_data.find_file.rows[0].uid",
-  "KindName": "read_file",
-  "Title": "Read file",
-  "Name": "read_file",
-  "IsActive": true
+  "regime": 1,
+  "outputFormat": 0,
+  "attachedFileUidExpression": "_data.find_file.rows[0].uid",
+  "kindName": "read_file",
+  "title": "Read file",
+  "name": "read_file",
+  "isActive": true
 }
 ```
 
@@ -88,13 +88,13 @@ _parameters.fileUid
 
 ```json
 {
-  "Regime": 1,
-  "OutputFormat": 1,
-  "AttachedFileUidExpression": "_parameters.fileUid",
-  "KindName": "read_file",
-  "Title": "Read config",
-  "Name": "read_config",
-  "IsActive": true
+  "regime": 1,
+  "outputFormat": 1,
+  "attachedFileUidExpression": "_parameters.fileUid",
+  "kindName": "read_file",
+  "title": "Read config",
+  "name": "read_config",
+  "isActive": true
 }
 ```
 
@@ -111,26 +111,26 @@ _parameters.fileUid
 
 ```json
 {
-  "Steps": [
+  "steps": [
     {
-      "KindName": "java_script",
-      "Name": "find_file",
-      "Title": "Find file"
+      "kindName": "java_script",
+      "name": "find_file",
+      "title": "Find file"
     },
     {
-      "Regime": 1,
-      "OutputFormat": 0,
-      "AttachedFileUidExpression": "_data.find_file.rows[0].uid",
-      "KindName": "read_file",
-      "Name": "read_file",
-      "Title": "Read file"
+      "regime": 1,
+      "outputFormat": 0,
+      "attachedFileUidExpression": "_data.find_file.rows[0].uid",
+      "kindName": "read_file",
+      "name": "read_file",
+      "title": "Read file"
     },
     {
-      "SourcePath": "read_file",
-      "SheetName": "Sheet1",
-      "KindName": "excel_mapping",
-      "Name": "mapping",
-      "Title": "Mapping"
+      "sourcePath": "read_file",
+      "sheetName": "Sheet1",
+      "kindName": "excel_mapping",
+      "name": "mapping",
+      "title": "Mapping"
     }
   ]
 }

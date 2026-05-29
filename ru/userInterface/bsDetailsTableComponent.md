@@ -141,49 +141,49 @@
 
 ```json
 {
-  "Id": "bs-details-table-x2mds1",
-  "ComponentName": "bs-details-table",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": ":header", "Value": "data.header" },
-    { "Name": ":table", "Value": "$t.время" },
-    { "Name": "height", "Value": "stretch" },
-    { "Name": ":resizableColumns", "Value": "true" },
-    { "Name": ":reorderableColumns", "Value": "true" },
-    { "Name": "name", "Value": "время" }
+  "id": "bs-details-table-x2mds1",
+  "componentName": "bs-details-table",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": ":header", "value": "data.header" },
+    { "name": ":table", "value": "$t.время" },
+    { "name": "height", "value": "stretch" },
+    { "name": ":resizableColumns", "value": "true" },
+    { "name": ":reorderableColumns", "value": "true" },
+    { "name": "name", "value": "время" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-details-table-column-сотрудник",
-      "ComponentName": "bs-details-table-column",
-      "Properties": [
-        { "Name": "title", "Value": "Сотрудник" },
-        { "Name": "name", "Value": "сотрудник_display" },
-        { "Name": "width", "Value": "250px" },
-        { "Name": "control", "Value": "dropdown" },
-        { "Name": "dataType", "Value": "c47d3835-48d8-427f-be89-e84c082575ef" },
-        { "Name": "frozen", "Value": "true" },
-        { "Name": "sortable", "Value": "true" },
-        { "Name": "sortField", "Value": "сотрудник_display" },
-        { "Name": "filterKind", "Value": "string" },
-        { "Name": ":disabled", "Value": "!$h.ред_фио" }
+      "id": "bs-details-table-column-сотрудник",
+      "componentName": "bs-details-table-column",
+      "properties": [
+        { "name": "title", "value": "Сотрудник" },
+        { "name": "name", "value": "сотрудник_display" },
+        { "name": "width", "value": "250px" },
+        { "name": "control", "value": "dropdown" },
+        { "name": "dataType", "value": "c47d3835-48d8-427f-be89-e84c082575ef" },
+        { "name": "frozen", "value": "true" },
+        { "name": "sortable", "value": "true" },
+        { "name": "sortField", "value": "сотрудник_display" },
+        { "name": "filterKind", "value": "string" },
+        { "name": ":disabled", "value": "!$h.ред_фио" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "bs-details-table-column-кту_часы",
-      "ComponentName": "bs-details-table-column",
-      "Properties": [
-        { "Name": "title", "Value": "КТУ*∑" },
-        { "Name": "name", "Value": "кту_часы" },
-        { "Name": "control", "Value": "input-number" },
-        { "Name": "numberDigits", "Value": "3" },
-        { "Name": "width", "Value": "80px" },
-        { "Name": "disabled", "Value": "true" },
-        { "Name": ":visible", "Value": "$h.показать_скрытые" }
+      "id": "bs-details-table-column-кту_часы",
+      "componentName": "bs-details-table-column",
+      "properties": [
+        { "name": "title", "value": "КТУ*∑" },
+        { "name": "name", "value": "кту_часы" },
+        { "name": "control", "value": "input-number" },
+        { "name": "numberDigits", "value": "3" },
+        { "name": "width", "value": "80px" },
+        { "name": "disabled", "value": "true" },
+        { "name": ":visible", "value": "$h.показать_скрытые" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -193,26 +193,26 @@
 
 ```json
 {
-  "Id": "bs-details-table-tqVFVK",
-  "ComponentName": "bs-details-table",
-  "CssClass": "",
-  "Style": "",
-  "Properties": [
-    { "Name": ":header", "Value": "data.header" },
-    { "Name": ":table", "Value": "$t.table_1" },
-    { "Name": "height", "Value": "stretch" }
+  "id": "bs-details-table-tqVFVK",
+  "componentName": "bs-details-table",
+  "cssClass": "",
+  "style": "",
+  "properties": [
+    { "name": ":header", "value": "data.header" },
+    { "name": ":table", "value": "$t.table_1" },
+    { "name": "height", "value": "stretch" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "bs-details-table-column-тариф",
-      "ComponentName": "bs-details-table-column",
-      "Properties": [
-        { "Name": "title", "Value": "Тариф, руб" },
-        { "Name": "name", "Value": "тариф" },
-        { "Name": "control", "Value": "input-number" },
-        { "Name": "width", "Value": "auto" }
+      "id": "bs-details-table-column-тариф",
+      "componentName": "bs-details-table-column",
+      "properties": [
+        { "name": "title", "value": "Тариф, руб" },
+        { "name": "name", "value": "тариф" },
+        { "name": "control", "value": "input-number" },
+        { "name": "width", "value": "auto" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }

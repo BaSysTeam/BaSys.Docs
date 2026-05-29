@@ -66,16 +66,16 @@
 
 ```json
 {
-  "Id": "pv-input-text-p0wIZs",
-  "DataUid": "a495af2d-6724-0753-e335-e2f8290a6127",
-  "ComponentName": "pv-input-text",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.комментарий" },
-    { "Name": "size", "Value": "small" }
+  "id": "pv-input-text-p0wIZs",
+  "dataUid": "a495af2d-6724-0753-e335-e2f8290a6127",
+  "componentName": "pv-input-text",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.комментарий" },
+    { "name": "size", "value": "small" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -83,16 +83,16 @@
 
 ```json
 {
-  "Id": "pv-input-text-4zUnCt",
-  "DataUid": "a212f9bf-d77b-3342-cb78-f0ba1bdbdd39",
-  "ComponentName": "pv-input-text",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "vModel", "Value": "$h.topic" },
-    { "Name": "size", "Value": "small" },
-    { "Name": ":disabled", "Value": "!$h.is_user_author" }
+  "id": "pv-input-text-4zUnCt",
+  "dataUid": "a212f9bf-d77b-3342-cb78-f0ba1bdbdd39",
+  "componentName": "pv-input-text",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "vModel", "value": "$h.topic" },
+    { "name": "size", "value": "small" },
+    { "name": ":disabled", "value": "!$h.is_user_author" }
   ],
-  "Items": []
+  "items": []
 }
 ```

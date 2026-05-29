@@ -42,28 +42,28 @@
 
 ```json
 {
-  "Id": "pv-split-button-e2fvUY",
-  "ComponentName": "pv-split-button",
-  "CssClass": "ml-1",
-  "Style": "",
-  "Properties": [
-    { "Name": "label", "Value": "Действия" },
-    { "Name": "severity", "Value": "primary" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "outlined", "Value": "outlined" }
+  "id": "pv-split-button-e2fvUY",
+  "componentName": "pv-split-button",
+  "cssClass": "ml-1",
+  "style": "",
+  "properties": [
+    { "name": "label", "value": "Действия" },
+    { "name": "severity", "value": "primary" },
+    { "name": "size", "value": "small" },
+    { "name": "outlined", "value": "outlined" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "pv-split-button-item-DXaf6N",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Лог вычислений" },
-        { "Name": "icon", "Value": "pi pi-list" },
-        { "Name": "command", "Value": "standard.open_log" }
+      "id": "pv-split-button-item-DXaf6N",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Лог вычислений" },
+        { "name": "icon", "value": "pi pi-list" },
+        { "name": "command", "value": "standard.open_log" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -73,64 +73,64 @@
 
 ```json
 {
-  "Id": "pv-split-button-u0LAOa",
-  "ComponentName": "pv-split-button",
-  "CssClass": "ml-1",
-  "Style": "",
-  "Properties": [
-    { "Name": "label", "Value": "Действия" },
-    { "Name": "severity", "Value": "primary" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "outlined", "Value": "outlined" }
+  "id": "pv-split-button-u0LAOa",
+  "componentName": "pv-split-button",
+  "cssClass": "ml-1",
+  "style": "",
+  "properties": [
+    { "name": "label", "value": "Действия" },
+    { "name": "severity", "value": "primary" },
+    { "name": "size", "value": "small" },
+    { "name": "outlined", "value": "outlined" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "pv-split-button-item-VaAnSX",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Создать записи" },
-        { "Name": "icon", "Value": "pi pi-check" },
-        { "Name": "command", "Value": "standard.create_records" }
+      "id": "pv-split-button-item-VaAnSX",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Создать записи" },
+        { "name": "icon", "value": "pi pi-check" },
+        { "name": "command", "value": "standard.create_records" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-split-button-item-DeTm1M",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Удалить записи" },
-        { "Name": "icon", "Value": "pi pi-times" },
-        { "Name": "command", "Value": "standard.delete_records" }
+      "id": "pv-split-button-item-DeTm1M",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Удалить записи" },
+        { "name": "icon", "value": "pi pi-times" },
+        { "name": "command", "value": "standard.delete_records" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-split-button-item-dSdtWl",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Обновить" },
-        { "Name": "icon", "Value": "pi pi-refresh" },
-        { "Name": "command", "Value": "standard.refresh:list" }
+      "id": "pv-split-button-item-dSdtWl",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Обновить" },
+        { "name": "icon", "value": "pi pi-refresh" },
+        { "name": "command", "value": "standard.refresh:list" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-split-button-item-TJkC1o",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Очистить фильтры" },
-        { "Name": "icon", "Value": "pi pi-filter-slash" },
-        { "Name": "command", "Value": "standard.clear_filters:list" }
+      "id": "pv-split-button-item-TJkC1o",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Очистить фильтры" },
+        { "name": "icon", "value": "pi pi-filter-slash" },
+        { "name": "command", "value": "standard.clear_filters:list" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }
@@ -140,76 +140,76 @@
 
 ```json
 {
-  "Id": "pv-split-button-ntucHA",
-  "ComponentName": "pv-split-button",
-  "CssClass": "ml-1",
-  "Style": "",
-  "Properties": [
-    { "Name": "label", "Value": "Действия" },
-    { "Name": "severity", "Value": "primary" },
-    { "Name": "size", "Value": "small" },
-    { "Name": "outlined", "Value": "outlined" }
+  "id": "pv-split-button-ntucHA",
+  "componentName": "pv-split-button",
+  "cssClass": "ml-1",
+  "style": "",
+  "properties": [
+    { "name": "label", "value": "Действия" },
+    { "name": "severity", "value": "primary" },
+    { "name": "size", "value": "small" },
+    { "name": "outlined", "value": "outlined" }
   ],
-  "Items": [
+  "items": [
     {
-      "Id": "pv-split-button-item-iDpPmb",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Лог вычислений" },
-        { "Name": "icon", "Value": "pi pi-list" },
-        { "Name": "command", "Value": "standard.open_log" }
+      "id": "pv-split-button-item-iDpPmb",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Лог вычислений" },
+        { "name": "icon", "value": "pi pi-list" },
+        { "name": "command", "value": "standard.open_log" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-split-button-item-9SQNQr",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Пересчитать" },
-        { "Name": "icon", "Value": "pi pi-refresh" },
-        { "Name": "command", "Value": "standard.recalculate" }
+      "id": "pv-split-button-item-9SQNQr",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Пересчитать" },
+        { "name": "icon", "value": "pi pi-refresh" },
+        { "name": "command", "value": "standard.recalculate" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-split-button-item-u59SPi",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Создать записи" },
-        { "Name": "icon", "Value": "pi pi-check" },
-        { "Name": "command", "Value": "standard.create_records" }
+      "id": "pv-split-button-item-u59SPi",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Создать записи" },
+        { "name": "icon", "value": "pi pi-check" },
+        { "name": "command", "value": "standard.create_records" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-split-button-item-r6hOkZ",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Удалить записи" },
-        { "Name": "icon", "Value": "pi pi-times" },
-        { "Name": "command", "Value": "standard.delete_records" }
+      "id": "pv-split-button-item-r6hOkZ",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Удалить записи" },
+        { "name": "icon", "value": "pi pi-times" },
+        { "name": "command", "value": "standard.delete_records" }
       ],
-      "Items": []
+      "items": []
     },
     {
-      "Id": "pv-split-button-item-tV09Ly",
-      "ComponentName": "pv-split-button-item",
-      "CssClass": "",
-      "Style": "",
-      "Properties": [
-        { "Name": "label", "Value": "Excel" },
-        { "Name": "icon", "Value": "pi pi-file-excel" },
-        { "Name": "command", "Value": "standard.export_excel" }
+      "id": "pv-split-button-item-tV09Ly",
+      "componentName": "pv-split-button-item",
+      "cssClass": "",
+      "style": "",
+      "properties": [
+        { "name": "label", "value": "Excel" },
+        { "name": "icon", "value": "pi pi-file-excel" },
+        { "name": "command", "value": "standard.export_excel" }
       ],
-      "Items": []
+      "items": []
     }
   ]
 }

@@ -50,15 +50,15 @@
 
 ```json
 {
-  "Id": "bs-label-0zY3rv",
-  "ComponentName": "bs-label",
-  "CssClass": "ml-7 mt-1",
-  "Style": "",
-  "Properties": [
-    { "Name": "text", "Value": "История изменений" },
-    { "Name": "labelFor", "Value": "" }
+  "id": "bs-label-0zY3rv",
+  "componentName": "bs-label",
+  "cssClass": "ml-7 mt-1",
+  "style": "",
+  "properties": [
+    { "name": "text", "value": "История изменений" },
+    { "name": "labelFor", "value": "" }
   ],
-  "Items": []
+  "items": []
 }
 ```
 
@@ -66,15 +66,15 @@
 
 ```json
 {
-  "Id": "bs-label-required",
-  "ComponentName": "bs-label",
-  "CssClass": "w-full",
-  "Style": "",
-  "Properties": [
-    { "Name": "text", "Value": "Ответственный" },
-    { "Name": "labelFor", "Value": "responsible-input" },
-    { "Name": ":required", "Value": "true" }
+  "id": "bs-label-required",
+  "componentName": "bs-label",
+  "cssClass": "w-full",
+  "style": "",
+  "properties": [
+    { "name": "text", "value": "Ответственный" },
+    { "name": "labelFor", "value": "responsible-input" },
+    { "name": ":required", "value": "true" }
   ],
-  "Items": []
+  "items": []
 }
 ```

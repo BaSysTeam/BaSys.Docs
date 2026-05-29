@@ -157,20 +157,20 @@ return source;
 Ниже приведён фрагмент настроек реальной операции «Оприходование товаров». Для регистра остатков номенклатуры формируются записи по каждой строке табличной части `goods` с направлением «Приход» (`Direction: 0`):
 
 ```json
-"RecordsSettings": [
+"recordsSettings": [
   {
-    "DestinationMetaObjectUid": "8a1c4e7b-2f3d-4a5b-9c6e-1d8f3b5e7a92",
-    "Rows": [
+    "destinationMetaObjectUid": "8a1c4e7b-2f3d-4a5b-9c6e-1d8f3b5e7a92",
+    "rows": [
       {
-        "SourceUid": "a5c6e39f-4b82-4d8e-9c1f-7e3a5b8d2c91",
-        "Direction": 0,
-        "Condition": "",
-        "Columns": [
-          { "DestinationColumnUid": "4b6d8e0a-...", "Expression": "$h.date" },
-          { "DestinationColumnUid": "8c0e2d4f-...", "Expression": "$r.nomenclature" },
-          { "DestinationColumnUid": "1d3e5f7a-...", "Expression": "$h.warehouse" },
-          { "DestinationColumnUid": "4f6a8c0e-...", "Expression": "$r.quantity" },
-          { "DestinationColumnUid": "7a9c1d3e-...", "Expression": "$r.amount" }
+        "sourceUid": "a5c6e39f-4b82-4d8e-9c1f-7e3a5b8d2c91",
+        "direction": 0,
+        "condition": "",
+        "columns": [
+          { "destinationColumnUid": "4b6d8e0a-...", "expression": "$h.date" },
+          { "destinationColumnUid": "8c0e2d4f-...", "expression": "$r.nomenclature" },
+          { "destinationColumnUid": "1d3e5f7a-...", "expression": "$h.warehouse" },
+          { "destinationColumnUid": "4f6a8c0e-...", "expression": "$r.quantity" },
+          { "destinationColumnUid": "7a9c1d3e-...", "expression": "$r.amount" }
         ]
       }
     ]
