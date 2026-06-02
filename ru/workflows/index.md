@@ -2,6 +2,8 @@
 
 [Введение](introduction.md)
 
+[Параметры процессов](workflowParameters.md)
+
 [Шаг "Скрипт"](scriptStep.md)
 
 [Шаг "HTTP Connector"](httpConnectorStep.md)
