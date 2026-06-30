@@ -7,3 +7,5 @@
 [MCP-сервер](mcp.md)
 
 [Подключение MCP-сервера к Cursor](mcpCursor.md)
+
+[Подключение MCP-сервера к OpenCode](mcpOpenCode.md)
