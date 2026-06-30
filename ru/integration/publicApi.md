@@ -435,6 +435,21 @@ curl https://<host>/api/public/v1/metadata/meta-objects/<kind>/<uid> \
 
 > Рекомендация: после успешного HTTP-ответа всегда проверяйте поле `status` (или `isOK`) и только затем используйте `data`.
 
+## Примеры запросов (коллекция Bruno)
+
+Готовая коллекция примеров запросов к публичному API доступна в репозитории [BaSysTeam/BaSYS.PublicAPI.Examples](https://github.com/BaSysTeam/BaSYS.PublicAPI.Examples). Коллекция рассчитана на API-клиент [Bruno](https://www.usebruno.com/), который хранит запросы в виде обычных текстовых файлов и удобен для работы через Git.
+
+Порядок использования:
+
+1. Установите Bruno (скачать можно с сайта [https://www.usebruno.com/](https://www.usebruno.com/)).
+2. Откройте репозиторий как коллекцию Bruno (`Open Collection`).
+3. Выберите окружение `local`.
+4. Заполните переменные окружения: `baseUrl` (адрес backend BaSYS), `dbName` (имя базы тенанта), `login` и `password` (учётные данные), а также `accessToken` и `refreshToken` (токены из ответа авторизации) и идентификаторы запрашиваемых объектов (`kind`, `metaObjectKindUid`, `metaObjectUid`).
+5. Выполните запрос авторизации, скопируйте полученные токены в переменные окружения и запускайте остальные запросы коллекции.
+
+> В репозитории сохранены только placeholder-значения. Не коммитьте реальные логины, пароли и JWT-токены.
+
 ## Связанные разделы
 
 - [Авторизация](auth.md) — получение и обновление JWT-токенов для доступа к публичному API.
+- [Коллекция примеров Bruno](https://github.com/BaSysTeam/BaSYS.PublicAPI.Examples) — готовые запросы к публичному API для клиента [Bruno](https://www.usebruno.com/).
