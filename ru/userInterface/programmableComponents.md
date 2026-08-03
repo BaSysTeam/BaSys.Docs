@@ -180,7 +180,7 @@ export default {
 | Табличная часть         | [`BsDetailsTableComponent`](bsDetailsTableComponent.md) | Редактируемая табличная часть документа/справочника; колонки описываются через `DetailsTableColumnViewModel`.    |
 | Текст                   | [`BsTextComponent`](bsTextComponent.md)              | Отображение текста с учётом семантики (severity, форматирование).                                                   |
 | Подпись                 | [`BsLabelComponent`](bsLabelComponent.md)            | Подпись (`<label>`) к полю ввода или элементу формы.                                                                |
-| Поле формы              | [`BsFormFieldComponent`](bsFormFieldComponent.md)    | Контейнер «подпись + элемент ввода» в 12-колоночной сетке PrimeFlex.                                                |
+| Поле формы              | [`BsFormFieldComponent`](bsFormFieldComponent.md)    | Контейнер «подпись + элемент ввода» с фиксированной шириной подписи (`labelWidth`) и резиновым полем ввода.         |
 | Поле с маской           | [`BsInputPattern`](bsInputPatternComponent.md)       | Однострочное поле ввода с проверкой значения по регулярному выражению.                                              |
 | Сворачиваемая группа    | [`BsCollapsibleGroup`](bsCollapsibleGroupComponent.md) | Сворачиваемая группа элементов с кликабельным заголовком и шевроном.                                              |
 | Выбор элемента          | [`BsObjectReferenceSelect`](bsObjectReferenceSelectComponent.md) | Выпадающий список со ссылкой на объект метаданных.                                                                  |
