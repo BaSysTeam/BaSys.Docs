@@ -76,6 +76,9 @@ export default {
 | `parseNumber(value)` | Преобразование значения в число с учётом локали. |
 | `dateTimeNow()` | Текущая дата/время. |
 | `dateDifference(a, b, unit)` | Разница между датами. |
+| `loadFormPreferences(subKey?)` | Чтение [пользовательских настроек формы](userFormPreferences.md#использование-в-программируемых-формах). Возвращает сохранённый объект или `null`. |
+| `saveFormPreferences(payload, subKey?)` | Сохранение [пользовательских настроек формы](userFormPreferences.md#использование-в-программируемых-формах). Возвращает признак успеха. |
+| `resetFormPreferences(subKey?)` | Удаление [пользовательских настроек формы](userFormPreferences.md#использование-в-программируемых-формах). Возвращает признак успеха. |
 
 Пример типового запроса (из `operation.task.form.tasks_tree.vue`):
 
