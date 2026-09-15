@@ -20,8 +20,8 @@
 
 Как обратиться к этим данным в макете:
 
-- в Excel-макете — `{{header.number}}`, `{{item["quantity"]}}` внутри именованного диапазона (см. [Макет на базе Excel](excelTemplate.md));
-- в PDF-макете — метка `{{header.number}}` или поле с именем `header.number`, колонки внутри полосы — `item.quantity` (см. [Макет на базе PDF](pdfTemplate.md)).
+- в Excel-макете — `{% raw %}{{header.number}}{% endraw %}`, `{% raw %}{{item["quantity"]}}{% endraw %}` внутри именованного диапазона (см. [Макет на базе Excel](excelTemplate.md));
+- в PDF-макете — метка `{% raw %}{{header.number}}{% endraw %}` или поле с именем `header.number`, колонки внутри полосы — `item.quantity` (см. [Макет на базе PDF](pdfTemplate.md)).
 
 ## Источники данных
 
