@@ -188,7 +188,7 @@ export default {
 | Сворачиваемая группа    | [`BsCollapsibleGroup`](bsCollapsibleGroupComponent.md) | Сворачиваемая группа элементов с кликабельным заголовком и шевроном.                                              |
 | Выбор элемента          | [`BsObjectReferenceSelect`](bsObjectReferenceSelectComponent.md) | Выпадающий список со ссылкой на объект метаданных.                                                                  |
 | Множественный выбор     | `BsObjectReferenceMultiSelect`                       | Выпадающий список с множественным выбором ссылок на объекты метаданных.                                             |
-| Выбор периода           | `BsPeriodSelector`                                   | Выбор периода (для отчётов и фильтров).                                                                             |
+| Выбор периода           | [`BsPeriodSelector`](bsPeriodSelector.md)            | Выбор периода (для отчётов и фильтров).                                                                             |
 | Строка фильтра          | `BsFilterRow`                                        | Строка фильтра для отчётов.                                                                                         |
 
 > Для использования значка PrimeIcons (`pi pi-…`) дополнительные действия не требуются — иконки подключены глобально.
