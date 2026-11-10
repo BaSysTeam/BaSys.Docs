@@ -9,7 +9,9 @@
 | Date      | [addQuarters](dateFunctions.md#addquarters)                | Добавление указанного количество кварталов к дате |
 | DataTable | [addRow](dataTable.md#addrow)                              | Добавление строки к таблице данных                |
 | Date      | [addYears](dateFunctions.md#addyears)                      | Добавление указанного количество лет к дате       |
+| QueryBuilder | [afterMoment](queryBuilder.md#aftermoment)             | Выборка строго после даты или момента операции    |
 | Date      | [avg](dataTable.md#avg)                                    | Вычисление среднего по колонке таблицы            |
+| QueryBuilder | [beforeMoment](queryBuilder.md#beforemoment)           | Выборка строго до даты или момента операции       |
 | Date      | [beginDay](dateFunctions.md#beginday)                      | Вычисление начала дня для указанной даты          |
 | Date      | [beginMonth](dateFunctions.md#beginmonth)                  | Вычисление начала месяца для указанной даты       |
 | Date      | [beginQuarter](dateFunctions.md#beginquarter)              | Вычисление начала квартала для указанной даты     |
@@ -31,6 +33,8 @@
 | Date      | [endYear](dateFunctions.md#endyear)                        | Вычисление конца года для указанной даты          |
 | DataTable | [filter](dataTable.md#filter)                              | Фильтрация строк таблицы                          |
 |           | [format](otherFunctions.md#format)                         | Форматирование значения в строку                  |
+|           | [formatNumber](otherFunctions.md#formatnumber)             | Форматирование числа в строку                     |
+| QueryBuilder | [fromMoment](queryBuilder.md#frommoment)               | Выборка с даты или момента операции включительно  |
 | DataTable | [fullJoin](dataTableJoins.md#full-join)                    | Полное внешнее соединение таблиц                  |
 | DataTable | [getColumn](dataTable.md#getcolumn)                        | Поиск колонки таблицы по имени                    |
 | DataTable | [groupBy](dataTable.md#groupby)                            | Группировка таблицы                               |
@@ -43,11 +47,13 @@
 | DataTable | [load](dataTable.md#load)                                  | Добавление данных в таблицу                       |
 | DataTable | [max](dataTable#max)                                       | Вычисление максимума по колонке таблицы           |
 | DataTable | [min](dataTable#min)                                       | Вычисление минимума по колонке таблицы            |
+|           | [moment](queryBuilder.md#moment)                           | Создание момента операции по шапке и метаобъекту  |
 | DataTable | [newRow](dataTable.md#newrow)                              | Создание новой строки таблицы                     |
-| DataTable | [orderBy](dataTable.md#orderby)                            | Сортировка строк таблицы                          |
+| DataTable | [orderBy](dataTable.md#orderby)                            | Сортировка по колонкам или функции сравнения      |
 |           | [parseNumber](otherFunctions.md#parsenumber)               | Преобразование строки в число                     |
 | DataTable | [process](dataTable.md#process)                            | Обработка строк таблицы                           |
 | DataTable | [rightJoin](dataTableJoins.md#right-join)                  | Правое внешнее соединение таблиц                  |
+|           | [round](otherFunctions.md#round)                           | Округление числа до указанного разряда             |
 |           | [runWorkflow](otherFunctions.md#runworkflow)               | Запуск процесса                                   |
 | DataTable | [sum](dataTable.md#sum)                                    | Вычисление суммы по колонке таблицы               |
 | Array     | [toArray](dataTable.md#toarray)                            | Преобразование колонки в массив                   |
@@ -55,3 +61,6 @@
 | DataTable | [union](dataTable.md#union)                                | Объединение уникальных строк таблиц               |
 | DataTable | [unionAll](dataTable.md#unionall)                          | Объединение всех строк таблиц                     |
 | DataTable | [unpivot](dataTable.md#unpivot)                            | Преобразует кросс-таблицу в плоскую таблицу       |
+| QueryBuilder | [upToMoment](queryBuilder.md#uptomoment)                | Выборка до даты или момента операции включительно |
+| QueryBuilder | [whereAnd](queryBuilder.md#whereand)                    | Добавление условия запроса через И                |
+| QueryBuilder | [whereOr](queryBuilder.md#whereor)                      | Добавление условия запроса через ИЛИ              |
