@@ -10,6 +10,8 @@
 
 [Шаг "Загрузка объекта данных"](dataObjectLoaderStep.md)
 
+[Шаг "Удаление объектов данных"](dataObjectDeleteStep.md)
+
 [Шаг "Чтение файла"](readFileStep.md)
 
 [Шаг "Мэппинг Excel"](excelMappingStep.md)
